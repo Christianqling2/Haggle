@@ -1,24 +1,19 @@
-package com.mall4j.cloud.order.service;
+package com.Haggle.cloud.order.service;
 
-import com.mall4j.cloud.api.order.bo.EsOrderBO;
-import com.mall4j.cloud.api.order.bo.OrderSimpleAmountInfoBO;
-import com.mall4j.cloud.api.order.bo.OrderStatusBO;
-import com.mall4j.cloud.api.order.dto.DeliveryOrderDTO;
-import com.mall4j.cloud.api.order.vo.OrderAmountVO;
-import com.mall4j.cloud.common.order.vo.ShopCartOrderMergerVO;
-import com.mall4j.cloud.order.bo.SubmitOrderPayAmountInfoBO;
-import com.mall4j.cloud.order.model.Order;
-import com.mall4j.cloud.order.vo.OrderCountVO;
-import com.mall4j.cloud.order.vo.OrderVO;
+import com.Haggle.cloud.api.order.bo.EsOrderBO;
+import com.Haggle.cloud.api.order.bo.OrderSimpleAmountInfoBO;
+import com.Haggle.cloud.api.order.bo.OrderStatusBO;
+import com.Haggle.cloud.api.order.dto.DeliveryOrderDTO;
+import com.Haggle.cloud.api.order.vo.OrderAmountVO;
+import com.Haggle.cloud.common.order.vo.ShopCartOrderMergerVO;
+import com.Haggle.cloud.order.bo.SubmitOrderPayAmountInfoBO;
+import com.Haggle.cloud.order.model.Order;
+import com.Haggle.cloud.order.vo.OrderCountVO;
+import com.Haggle.cloud.order.vo.OrderVO;
 
 import java.util.List;
 
-/**
- * 订单信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 14:13:50
- */
+
 public interface OrderService {
 
 	/**

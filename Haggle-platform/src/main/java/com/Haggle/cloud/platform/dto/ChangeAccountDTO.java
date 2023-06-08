@@ -1,14 +1,10 @@
-package com.mall4j.cloud.platform.dto;
+package com.Haggle.cloud.platform.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-/**
- * @author lhd
- * @date 2020/12/22
- */
 public class ChangeAccountDTO {
 
     @NotNull(message = "userId not null")

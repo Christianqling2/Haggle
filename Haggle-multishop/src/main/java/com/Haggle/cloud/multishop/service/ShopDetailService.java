@@ -1,19 +1,19 @@
-package com.mall4j.cloud.multishop.service;
+package com.Haggle.cloud.multishop.service;
 
-import com.mall4j.cloud.api.multishop.bo.EsShopDetailBO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.multishop.dto.ShopDetailDTO;
-import com.mall4j.cloud.multishop.model.ShopDetail;
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.multishop.vo.ShopDetailAppVO;
+import com.Haggle.cloud.api.multishop.bo.EsShopDetailBO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.multishop.dto.ShopDetailDTO;
+import com.Haggle.cloud.multishop.model.ShopDetail;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.multishop.vo.ShopDetailAppVO;
 
 import java.util.List;
 
 /**
  * 店铺详情
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-12-05 15:50:25
  */
 public interface ShopDetailService {

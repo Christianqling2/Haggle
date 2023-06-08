@@ -180,7 +180,7 @@ export default {
     getSearchList() {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_search/ua/search/simple_page',
+        url: '/Haggle_search/ua/search/simple_page',
         method: 'GET',
         data: this.pageQuery,
         callBack: res => {
@@ -209,7 +209,7 @@ export default {
     getShopList() {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_multishop/ua/shop_detail/page',
+        url: '/Haggle_multishop/ua/shop_detail/page',
         method: 'get',
         data: {
           pageNum: this.pageNum,

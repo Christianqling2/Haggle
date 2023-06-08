@@ -1,4 +1,4 @@
-package com.mall4j.cloud.order.vo;
+package com.Haggle.cloud.order.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -6,12 +6,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-/**
- * 订单下的每个店铺
- *
- * @author FrozenWatermelon
- */
-public class OrderShopVO implements Serializable {
+ OrderShopVO implements Serializable {
 
     @Schema(description = "店铺id" , required = true)
     private Long shopId;

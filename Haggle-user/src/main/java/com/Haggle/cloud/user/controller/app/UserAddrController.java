@@ -1,13 +1,13 @@
-package com.mall4j.cloud.user.controller.app;
+package com.Haggle.cloud.user.controller.app;
 
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.order.vo.UserAddrVO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.user.dto.UserAddrDTO;
-import com.mall4j.cloud.user.model.UserAddr;
-import com.mall4j.cloud.user.service.UserAddrService;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.order.vo.UserAddrVO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.user.dto.UserAddrDTO;
+import com.Haggle.cloud.user.model.UserAddr;
+import com.Haggle.cloud.user.service.UserAddrService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -17,10 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-/**
- * @Author lth
- * @Date 2021/7/1 17:18
- */
+
 @RestController("appUserAddrController")
 @RequestMapping("/user_addr")
 @Tag(name = "app-用户地址")
@@ -78,11 +75,11 @@ public class UserAddrController {
         Long userId = AuthUserContext.get().getUserId();
         UserAddrVO dbUserAddr = userAddrService.getUserAddrByUserId(userAddrDTO.getAddrId(), userId);
         if (dbUserAddr == null) {
-            throw new Mall4cloudException("该地址已被删除");
+            throw new HaggleException("该地址已被删除");
         }
         // 默认地址不能修改为普通地址
         else if (dbUserAddr.getIsDefault().equals(UserAddr.DEFAULT_ADDR) && userAddrDTO.getIsDefault().equals(UserAddr.NOT_DEFAULT_ADDR)) {
-            throw new Mall4cloudException(ResponseEnum.DATA_ERROR);
+            throw new HaggleException(ResponseEnum.DATA_ERROR);
         }
         UserAddr userAddr = mapperFacade.map(userAddrDTO, UserAddr.class);
         userAddr.setUserId(userId);
@@ -100,9 +97,9 @@ public class UserAddrController {
         Long userId = AuthUserContext.get().getUserId();
         UserAddrVO dbUserAddr = userAddrService.getUserAddrByUserId(addrId, userId);
         if (dbUserAddr == null) {
-            throw new Mall4cloudException("该地址已被删除");
+            throw new HaggleException("该地址已被删除");
         } else if (dbUserAddr.getIsDefault().equals(UserAddr.DEFAULT_ADDR)) {
-            throw new Mall4cloudException("默认地址不能删除");
+            throw new HaggleException("默认地址不能删除");
         }
         userAddrService.deleteUserAddrByUserId(addrId, userId);
         return ServerResponseEntity.success();

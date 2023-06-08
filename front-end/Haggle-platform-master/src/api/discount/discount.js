@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function page(pageParam) {
   return request({
-    url: '/mall4cloud_discount/m/discount/page',
+    url: '/Haggle_discount/m/discount/page',
     method: 'get',
     params: pageParam
   })
@@ -10,7 +10,7 @@ export function page(pageParam) {
 
 export function get(discountId) {
   return request({
-    url: `/mall4cloud_discount/m/discount/info/${discountId}`,
+    url: `/Haggle_discount/m/discount/info/${discountId}`,
     method: 'get',
     params: {
     }
@@ -19,7 +19,7 @@ export function get(discountId) {
 
 export function save(data) {
   return request({
-    url: '/mall4cloud_discount/m/discount',
+    url: '/Haggle_discount/m/discount',
     method: 'post',
     data
   })
@@ -27,7 +27,7 @@ export function save(data) {
 
 export function update(data) {
   return request({
-    url: '/mall4cloud_discount/m/discount',
+    url: '/Haggle_discount/m/discount',
     method: 'put',
     data
   })
@@ -35,7 +35,7 @@ export function update(data) {
 
 export function deleteById(discountId) {
   return request({
-    url: `/mall4cloud_discount/m/discount/${discountId}`,
+    url: `/Haggle_discount/m/discount/${discountId}`,
     method: 'delete',
     params: {
     }

@@ -1,16 +1,11 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.product.model.SpuExtension;
-import com.mall4j.cloud.product.vo.SpuExtensionVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.product.model.SpuExtension;
+import com.Haggle.cloud.product.vo.SpuExtensionVO;
 
-/**
- *
- *
- * @author FrozenWatermelon
- * @date 2020-11-11 13:49:06
- */
+
 public interface SpuExtensionService {
 
 	/**

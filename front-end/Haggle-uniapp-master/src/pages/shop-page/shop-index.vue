@@ -127,7 +127,7 @@ export default {
      */
     getShopInfo() {
       const params = {
-        url: '/mall4cloud_multishop/ua/shop_detail/head_info',
+        url: '/Haggle_multishop/ua/shop_detail/head_info',
         method: 'GET',
         data: {
           shopId: this.shopId
@@ -147,7 +147,7 @@ export default {
      */
     getProd() {
       const params = {
-        url: '/mall4cloud_search/ua/search/simple_page',
+        url: '/Haggle_search/ua/search/simple_page',
         method: 'GET',
         data: {
           shopId: this.shopId,

@@ -1,7 +1,7 @@
-package com.mall4j.cloud.biz.config;
+package com.Haggle.cloud.biz.config;
 
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ResponseEnum;
 import io.minio.*;
 import io.minio.http.Method;
 import org.slf4j.Logger;
@@ -17,7 +17,7 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 @Component
 public class MinioTemplate implements InitializingBean {
@@ -57,7 +57,7 @@ public class MinioTemplate implements InitializingBean {
             return presignedObjectUrl;
         } catch (Exception e) {
             e.printStackTrace();
-            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+            throw new HaggleException(ResponseEnum.EXCEPTION);
         }
     }
 

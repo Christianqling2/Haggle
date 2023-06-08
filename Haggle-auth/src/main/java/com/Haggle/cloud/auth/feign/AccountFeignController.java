@@ -1,23 +1,23 @@
-package com.mall4j.cloud.auth.feign;
+package com.Haggle.cloud.auth.feign;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.constant.SysTypeEnum;
-import com.mall4j.cloud.api.auth.dto.AuthAccountDTO;
-import com.mall4j.cloud.api.auth.feign.AccountFeignClient;
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.api.leaf.feign.SegmentFeignClient;
-import com.mall4j.cloud.auth.manager.TokenStore;
-import com.mall4j.cloud.auth.mapper.AuthAccountMapper;
-import com.mall4j.cloud.auth.model.AuthAccount;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.security.bo.AuthAccountInVerifyBO;
-import com.mall4j.cloud.common.security.constant.InputUserNameEnum;
-import com.mall4j.cloud.api.auth.vo.TokenInfoVO;
-import com.mall4j.cloud.common.util.PrincipalUtil;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.constant.SysTypeEnum;
+import com.Haggle.cloud.api.auth.dto.AuthAccountDTO;
+import com.Haggle.cloud.api.auth.feign.AccountFeignClient;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.api.leaf.feign.SegmentFeignClient;
+import com.Haggle.cloud.auth.manager.TokenStore;
+import com.Haggle.cloud.auth.mapper.AuthAccountMapper;
+import com.Haggle.cloud.auth.model.AuthAccount;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.security.bo.AuthAccountInVerifyBO;
+import com.Haggle.cloud.common.security.constant.InputUserNameEnum;
+import com.Haggle.cloud.api.auth.vo.TokenInfoVO;
+import com.Haggle.cloud.common.util.PrincipalUtil;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -26,10 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/9/22
- */
+
 @RestController
 public class AccountFeignController implements AccountFeignClient {
 
@@ -51,9 +48,9 @@ public class AccountFeignController implements AccountFeignClient {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public ServerResponseEntity<Long> save(AuthAccountDTO authAccountDTO) {
-        ServerResponseEntity<Long> segmentIdResponse = segmentFeignClient.getSegmentId("mall4cloud-auth-account");
+        ServerResponseEntity<Long> segmentIdResponse = segmentFeignClient.getSegmentId("Haggle-auth-account");
         if (!segmentIdResponse.isSuccess()) {
-            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+            throw new HaggleException(ResponseEnum.EXCEPTION);
         }
 
         ServerResponseEntity<AuthAccount> verify = verify(authAccountDTO);
@@ -82,7 +79,7 @@ public class AccountFeignController implements AccountFeignClient {
     @Transactional(rollbackFor = Exception.class)
     public ServerResponseEntity<Void> updateAuthAccountStatus(AuthAccountDTO authAccountDTO) {
         if (Objects.isNull(authAccountDTO.getStatus())) {
-            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+            throw new HaggleException(ResponseEnum.EXCEPTION);
         }
         AuthAccount authAccount = mapperFacade.map(authAccountDTO, AuthAccount.class);
         authAccountMapper.updateAccountInfo(authAccount);
@@ -144,7 +141,7 @@ public class AccountFeignController implements AccountFeignClient {
         AuthAccount authAccount = mapperFacade.map(userInfoInTokenBO, AuthAccount.class);
         int res = authAccountMapper.updateUserInfoByUserId(authAccount, userId, sysType);
         if (res != 1) {
-            throw new Mall4cloudException("用户信息错误，更新失败");
+            throw new HaggleException("用户信息错误，更新失败");
         }
         return ServerResponseEntity.success();
     }

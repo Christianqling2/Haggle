@@ -1,8 +1,8 @@
-package com.mall4j.cloud.api.user.vo;
+package com.Haggle.cloud.api.user.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 用户表VO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-08 11:18:04
  */
 public class UserApiVO extends BaseVO{

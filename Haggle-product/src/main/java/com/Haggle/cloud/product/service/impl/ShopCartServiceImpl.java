@@ -1,15 +1,15 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.CacheManagerUtil;
-import com.mall4j.cloud.common.order.vo.ShopCartItemVO;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.dto.shopcart.ChangeShopCartItemDTO;
-import com.mall4j.cloud.product.dto.shopcart.CheckShopCartItemDTO;
-import com.mall4j.cloud.product.mapper.ShopCartItemMapper;
-import com.mall4j.cloud.product.model.ShopCartItem;
-import com.mall4j.cloud.product.service.ShopCartService;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.CacheManagerUtil;
+import com.Haggle.cloud.common.order.vo.ShopCartItemVO;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.dto.shopcart.ChangeShopCartItemDTO;
+import com.Haggle.cloud.product.dto.shopcart.CheckShopCartItemDTO;
+import com.Haggle.cloud.product.mapper.ShopCartItemMapper;
+import com.Haggle.cloud.product.model.ShopCartItem;
+import com.Haggle.cloud.product.service.ShopCartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -17,12 +17,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * 购物车
- *
- * @author FrozenWatermelon
- * @date 2020-11-20 15:47:32
- */
+
 @Service
 public class ShopCartServiceImpl implements ShopCartService {
 

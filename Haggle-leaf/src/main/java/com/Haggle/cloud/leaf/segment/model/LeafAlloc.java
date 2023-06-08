@@ -1,8 +1,6 @@
-package com.mall4j.cloud.leaf.segment.model;
+package com.Haggle.cloud.leaf.segment.model;
 
-/**
- * @author leaf
- */
+
 public class LeafAlloc {
 
 	private String key;

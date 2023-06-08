@@ -1,4 +1,4 @@
-package com.mall4j.cloud.api.dto;
+package com.Haggle.cloud.api.dto;
 
 
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/16
  */
 public class ProductSearchDTO {

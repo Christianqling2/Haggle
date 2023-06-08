@@ -198,7 +198,7 @@ export default {
      */
     addCart(spuId,skuId,count) {
       const params = {
-        url: '/mall4cloud_product/a/shop_cart/change_item',
+        url: '/Haggle_product/a/shop_cart/change_item',
         method: 'POST',
         data: {
           skuId: skuId,
@@ -222,7 +222,7 @@ export default {
     payNow() {
       // 检查订单状态
       const params = {
-        url: '/mall4cloud_payment/pay/isPay/' + this.orderId,
+        url: '/Haggle_payment/pay/isPay/' + this.orderId,
         method: 'GET',
         data: {},
         callBack: res => {
@@ -242,13 +242,13 @@ export default {
       let url = ''
       let reqMethod = ''
       if (operType===0) {
-        url = '/mall4cloud_order/p/myOrder/'
+        url = '/Haggle_order/p/myOrder/'
         reqMethod = 'DELETE'
       } else if (operType===1) {
-        url = '/mall4cloud_order/p/myOrder/cancel/'
+        url = '/Haggle_order/p/myOrder/cancel/'
         reqMethod = 'PUT'
       } else if (operType===2) {
-        url = '/mall4cloud_order/p/myOrder/receipt/'
+        url = '/Haggle_order/p/myOrder/receipt/'
         reqMethod = 'PUT'
       }
       url = url + this.orderId
@@ -290,7 +290,7 @@ export default {
      */
     loadOrderDetail() {
       const params = {
-        url: '/mall4cloud_order/p/myOrder/order_detail',
+        url: '/Haggle_order/p/myOrder/order_detail',
         method: 'GET',
         data: {
           orderId: this.orderId

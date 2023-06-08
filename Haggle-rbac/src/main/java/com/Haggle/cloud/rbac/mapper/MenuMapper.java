@@ -1,15 +1,13 @@
-package com.mall4j.cloud.rbac.mapper;
+package com.Haggle.cloud.rbac.mapper;
 
-import com.mall4j.cloud.rbac.model.Menu;
-import com.mall4j.cloud.rbac.vo.MenuSimpleVO;
-import com.mall4j.cloud.rbac.vo.MenuVO;
+import com.Haggle.cloud.rbac.model.Menu;
+import com.Haggle.cloud.rbac.vo.MenuSimpleVO;
+import com.Haggle.cloud.rbac.vo.MenuVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- */
+
 public interface MenuMapper {
 
 	/**

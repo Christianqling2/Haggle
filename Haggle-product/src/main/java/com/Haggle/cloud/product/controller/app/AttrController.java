@@ -1,20 +1,15 @@
-package com.mall4j.cloud.product.controller.app;
+package com.Haggle.cloud.product.controller.app;
 
-import com.mall4j.cloud.product.service.AttrService;
-import com.mall4j.cloud.api.product.vo.AttrVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.service.AttrService;
+import com.Haggle.cloud.api.product.vo.AttrVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * 属性信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:23
- */
+
 @RestController("appAttrController")
 @RequestMapping("/ua/attr")
 @Tag(name = "app-属性信息")

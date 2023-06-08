@@ -1,14 +1,9 @@
-package com.mall4j.cloud.product.model;
+package com.Haggle.cloud.product.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 库存锁定信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-22 16:12:10
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
 public class SkuStockLock extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

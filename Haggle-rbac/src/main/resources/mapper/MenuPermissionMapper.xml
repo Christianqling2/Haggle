@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mall4j.cloud.rbac.mapper.MenuPermissionMapper">
-    <resultMap id="BaseResultMap" type="com.mall4j.cloud.rbac.model.MenuPermission">
+<mapper namespace="com.Haggle.cloud.rbac.mapper.MenuPermissionMapper">
+    <resultMap id="BaseResultMap" type="com.Haggle.cloud.rbac.model.MenuPermission">
         <!--@Table menu_permission-->
         <id column="menu_permission_id" property="menuPermissionId"/>
         <result column="create_time" property="createTime"/>
@@ -18,7 +18,7 @@
         `menu_permission_id`,`menu_id`,`biz_type`,`permission`,`name`,`uri`,`method`
 
     </sql>
-    <select id="list" resultType="com.mall4j.cloud.rbac.vo.MenuPermissionVO">
+    <select id="list" resultType="com.Haggle.cloud.rbac.vo.MenuPermissionVO">
 
         select mp.`menu_permission_id`,
                mp.`menu_id`,
@@ -34,7 +34,7 @@
         order by mp.menu_permission_id desc
 
     </select>
-    <select id="getByMenuPermissionId" resultType="com.mall4j.cloud.rbac.vo.MenuPermissionVO">
+    <select id="getByMenuPermissionId" resultType="com.Haggle.cloud.rbac.vo.MenuPermissionVO">
 
         select
 
@@ -112,14 +112,14 @@
             ON rm.menu_permission_id = mp.menu_permission_id
             WHERE ur.user_id = #{userId}
     </select>
-    <select id="listUriPermissionInfo" resultType="com.mall4j.cloud.api.rbac.bo.UriPermissionBO">
+    <select id="listUriPermissionInfo" resultType="com.Haggle.cloud.api.rbac.bo.UriPermissionBO">
 
         select permission, uri, method
         from menu_permission
         where biz_type = #{sysType}
 
     </select>
-    <select id="listByMenuId" resultType="com.mall4j.cloud.rbac.vo.MenuPermissionVO">
+    <select id="listByMenuId" resultType="com.Haggle.cloud.rbac.vo.MenuPermissionVO">
 
         select
 

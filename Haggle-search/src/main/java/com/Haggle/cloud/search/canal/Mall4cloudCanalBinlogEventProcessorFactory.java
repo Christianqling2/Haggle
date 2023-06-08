@@ -1,4 +1,4 @@
-package com.mall4j.cloud.search.canal;
+package com.Haggle.cloud.search.canal;
 
 import cn.throwx.canal.gule.model.ModelTable;
 import cn.throwx.canal.gule.support.processor.BaseCanalBinlogEventProcessor;
@@ -9,10 +9,8 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-/**
- * @author FrozenWatermelon
- */
-public class Mall4cloudCanalBinlogEventProcessorFactory implements CanalBinlogEventProcessorFactory {
+
+public class HaggleCanalBinlogEventProcessorFactory implements CanalBinlogEventProcessorFactory {
 
     private final ConcurrentMap<ModelTable, List<BaseCanalBinlogEventProcessor<?>>> cache = new ConcurrentHashMap<>(16);
 
@@ -29,10 +27,10 @@ public class Mall4cloudCanalBinlogEventProcessorFactory implements CanalBinlogEv
         return this.cache.get(modelTable);
     }
 
-    private Mall4cloudCanalBinlogEventProcessorFactory() {
+    private HaggleCanalBinlogEventProcessorFactory() {
     }
 
-    public static Mall4cloudCanalBinlogEventProcessorFactory of() {
-        return new Mall4cloudCanalBinlogEventProcessorFactory();
+    public static HaggleCanalBinlogEventProcessorFactory of() {
+        return new HaggleCanalBinlogEventProcessorFactory();
     }
 }

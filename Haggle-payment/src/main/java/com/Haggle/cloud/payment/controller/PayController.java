@@ -1,13 +1,13 @@
-package com.mall4j.cloud.payment.controller;
+package com.Haggle.cloud.payment.controller;
 
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.util.BooleanUtil;
-import com.mall4j.cloud.payment.bo.PayInfoBO;
-import com.mall4j.cloud.payment.dto.PayInfoDTO;
-import com.mall4j.cloud.payment.service.PayInfoService;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.util.BooleanUtil;
+import com.Haggle.cloud.payment.bo.PayInfoBO;
+import com.Haggle.cloud.payment.dto.PayInfoDTO;
+import com.Haggle.cloud.payment.service.PayInfoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
-/**
- * @author FrozenWatermelon
- */
+
 @RestController
 @RequestMapping("/pay")
 @Tag(name = "订单接口")
@@ -38,7 +36,7 @@ public class PayController {
     @Operation(summary = "根据订单号进行支付" , description = "根据订单号进行支付")
     public ServerResponseEntity<?> pay(HttpServletRequest request, @Valid @RequestBody PayInfoDTO payParam) {
         // 这里的地址是网关通过转发过来的时候，获取到当前服务器的地址，测试环境要用测试环境的uri
-        String gatewayUri = "http://192.168.1.17:8126/mall4cloud_payment";
+        String gatewayUri = "http://192.168.1.17:8126/Haggle_payment";
         UserInfoInTokenBO userInfoInTokenBO = AuthUserContext.get();
         Long userId = userInfoInTokenBO.getUserId();
         PayInfoBO payInfo = payInfoService.pay(userId, payParam);

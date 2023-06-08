@@ -1,9 +1,9 @@
-package com.mall4j.cloud.common.cache.constant;
+package com.Haggle.cloud.common.cache.constant;
 
 /**
  * 缓存名字
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/9
  */
 public interface CacheNames extends RbacCacheNames,OauthCacheNames,ProductCacheNames,MultishopCacheNames,PlatformCacheNames,BizCacheNames, UserCacheNames {

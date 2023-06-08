@@ -1,12 +1,12 @@
-package com.mall4j.cloud.multishop.vo;
+package com.Haggle.cloud.multishop.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 热搜VO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2021-01-27 09:10:00
  */
 public class HotSearchVO extends BaseVO{

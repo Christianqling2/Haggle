@@ -1,4 +1,4 @@
-package com.mall4j.cloud.auth.manager;
+package com.Haggle.cloud.auth.manager;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.collection.CollUtil;
@@ -6,15 +6,15 @@ import cn.hutool.core.util.BooleanUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.symmetric.AES;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.security.bo.TokenInfoBO;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.constant.SysTypeEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.api.auth.vo.TokenInfoVO;
-import com.mall4j.cloud.common.util.PrincipalUtil;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.security.bo.TokenInfoBO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.constant.SysTypeEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.auth.vo.TokenInfoVO;
+import com.Haggle.cloud.common.util.PrincipalUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -30,12 +30,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-/**
- * token管理 1. 登陆返回token 2. 刷新token 3. 清除用户过去token 4. 校验token
- *
- * @author FrozenWatermelon
- * @date 2020/7/2
- */
+
 @Component
 @RefreshScope
 public class TokenStore {
@@ -301,7 +296,7 @@ public class TokenStore {
 		String uidKey = getUidToAccessKey(getApprovalKey(appId, uid));
 		Set<String> tokenInfoBoList = stringRedisTemplate.opsForSet().members(uidKey);
 		if (tokenInfoBoList == null || tokenInfoBoList.size() == 0) {
-			throw new Mall4cloudException(ResponseEnum.UNAUTHORIZED);
+			throw new HaggleException(ResponseEnum.UNAUTHORIZED);
 		}
 		for (String accessTokenWithRefreshToken : tokenInfoBoList) {
 			String[] accessTokenWithRefreshTokenArr = accessTokenWithRefreshToken.split(StrUtil.COLON);

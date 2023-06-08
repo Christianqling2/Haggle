@@ -1,9 +1,9 @@
-package com.mall4j.cloud.api.rbac.feign;
+package com.Haggle.cloud.api.rbac.feign;
 
-import com.mall4j.cloud.api.rbac.dto.ClearUserPermissionsCacheDTO;
-import com.mall4j.cloud.common.constant.Auth;
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.rbac.dto.ClearUserPermissionsCacheDTO;
+import com.Haggle.cloud.common.constant.Auth;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/09/02
  */
 @FeignClient(value = PermissionFeignClient.SERVICE_NAME,contextId = "permission")
 public interface PermissionFeignClient {
 
-	String SERVICE_NAME = "mall4cloud-rbac";
+	String SERVICE_NAME = "Haggle-rbac";
 
 	/**
 	 * 校验是否有某个uri的权限

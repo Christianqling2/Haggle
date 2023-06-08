@@ -1,13 +1,10 @@
-package com.mall4j.cloud.product.dto.shopcart;
+package com.Haggle.cloud.product.dto.shopcart;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotNull;
 
-/**
- * @author FrozenWatermelon
- * @date 2020-11-20 15:47:32
- */
+
 public class ChangeShopCartItemDTO {
 
     @Schema(description = "购物车ID" , required = true)

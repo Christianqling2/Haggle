@@ -1,9 +1,6 @@
-package com.mall4j.cloud.api.order.bo;
+package com.Haggle.cloud.api.order.bo;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/12/30
- */
+
 public class OrderStatusBO {
 
     private Long orderId;

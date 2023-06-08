@@ -1,15 +1,15 @@
-package com.mall4j.cloud.auth.service.impl;
+package com.Haggle.cloud.auth.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.auth.constant.AuthAccountStatusEnum;
-import com.mall4j.cloud.auth.model.AuthAccount;
-import com.mall4j.cloud.common.security.bo.AuthAccountInVerifyBO;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.common.security.constant.InputUserNameEnum;
-import com.mall4j.cloud.auth.mapper.AuthAccountMapper;
-import com.mall4j.cloud.auth.service.AuthAccountService;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.util.PrincipalUtil;
+import com.Haggle.cloud.auth.constant.AuthAccountStatusEnum;
+import com.Haggle.cloud.auth.model.AuthAccount;
+import com.Haggle.cloud.common.security.bo.AuthAccountInVerifyBO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.common.security.constant.InputUserNameEnum;
+import com.Haggle.cloud.auth.mapper.AuthAccountMapper;
+import com.Haggle.cloud.auth.service.AuthAccountService;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.util.PrincipalUtil;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -19,7 +19,7 @@ import javax.annotation.Resource;
 import java.util.Objects;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/2
  */
 @Service

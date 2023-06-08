@@ -1,8 +1,8 @@
-package com.mall4j.cloud.product.controller.app;
+package com.Haggle.cloud.product.controller.app;
 
-import com.mall4j.cloud.product.service.CategoryService;
-import com.mall4j.cloud.api.product.vo.CategoryVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.service.CategoryService;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -12,12 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * 分类信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @RestController("appCategoryController")
 @RequestMapping("/ua/category")
 @Tag(name = "app-分类信息")

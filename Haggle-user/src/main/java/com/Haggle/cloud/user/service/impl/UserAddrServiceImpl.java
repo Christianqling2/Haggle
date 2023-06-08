@@ -1,10 +1,10 @@
-package com.mall4j.cloud.user.service.impl;
+package com.Haggle.cloud.user.service.impl;
 
-import com.mall4j.cloud.common.cache.constant.UserCacheNames;
-import com.mall4j.cloud.common.order.vo.UserAddrVO;
-import com.mall4j.cloud.user.mapper.UserAddrMapper;
-import com.mall4j.cloud.user.model.UserAddr;
-import com.mall4j.cloud.user.service.UserAddrService;
+import com.Haggle.cloud.common.cache.constant.UserCacheNames;
+import com.Haggle.cloud.common.order.vo.UserAddrVO;
+import com.Haggle.cloud.user.mapper.UserAddrMapper;
+import com.Haggle.cloud.user.model.UserAddr;
+import com.Haggle.cloud.user.service.UserAddrService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
@@ -12,10 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * @Author lth
- * @Date 2021/7/1 17:38
- */
+
+
 @Service
 public class UserAddrServiceImpl implements UserAddrService {
 

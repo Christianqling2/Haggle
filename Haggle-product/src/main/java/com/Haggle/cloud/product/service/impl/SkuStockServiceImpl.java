@@ -1,12 +1,12 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.product.dto.SkuDTO;
-import com.mall4j.cloud.product.mapper.SkuStockMapper;
-import com.mall4j.cloud.product.model.SkuStock;
-import com.mall4j.cloud.product.service.SkuStockService;
-import com.mall4j.cloud.product.vo.SkuStockVO;
-import com.mall4j.cloud.api.product.vo.SkuVO;
+import com.Haggle.cloud.product.dto.SkuDTO;
+import com.Haggle.cloud.product.mapper.SkuStockMapper;
+import com.Haggle.cloud.product.model.SkuStock;
+import com.Haggle.cloud.product.service.SkuStockService;
+import com.Haggle.cloud.product.vo.SkuStockVO;
+import com.Haggle.cloud.api.product.vo.SkuVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,12 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 库存信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
 @Service
 public class SkuStockServiceImpl implements SkuStockService {
 

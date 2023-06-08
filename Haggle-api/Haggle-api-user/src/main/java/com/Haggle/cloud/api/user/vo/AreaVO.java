@@ -1,6 +1,6 @@
-package com.mall4j.cloud.api.user.vo;
+package com.Haggle.cloud.api.user.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 省市区地区信息VO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-25 15:16:14
  */
 public class AreaVO extends BaseVO{

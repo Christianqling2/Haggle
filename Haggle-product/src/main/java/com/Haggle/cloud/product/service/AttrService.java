@@ -1,19 +1,14 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.product.dto.AttrDTO;
-import com.mall4j.cloud.product.model.Attr;
-import com.mall4j.cloud.api.product.vo.AttrVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.product.dto.AttrDTO;
+import com.Haggle.cloud.product.model.Attr;
+import com.Haggle.cloud.api.product.vo.AttrVO;
 
 import java.util.List;
 
-/**
- * 属性信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:23
- */
+
 public interface AttrService {
 
 	/**

@@ -1,14 +1,11 @@
-package com.mall4j.cloud.api.order.bo;
+package com.Haggle.cloud.api.order.bo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2021/2/5
- */
+
 public class EsOrderBO {
 
     @Schema(description = "订单项" ,required=true)

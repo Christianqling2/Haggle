@@ -1,18 +1,13 @@
-package com.mall4j.cloud.rbac.service;
+package com.Haggle.cloud.rbac.service;
 
-import com.mall4j.cloud.rbac.model.Menu;
+import com.Haggle.cloud.rbac.model.Menu;
 
 import java.util.List;
 
-import com.mall4j.cloud.rbac.vo.MenuSimpleVO;
-import com.mall4j.cloud.rbac.vo.MenuVO;
+import com.Haggle.cloud.rbac.vo.MenuSimpleVO;
+import com.Haggle.cloud.rbac.vo.MenuVO;
 
-/**
- * 菜单管理
- *
- * @author FrozenWatermelon
- * @date 2020-09-14 16:27:55
- */
+
 public interface MenuService {
 
 	/**

@@ -1,15 +1,11 @@
-package com.mall4j.cloud.order.vo;
+package com.Haggle.cloud.order.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 import java.util.List;
 
-/**
- * 提交订单的支付信息
- * @author FrozenWatermelon
- * @date 2021/2/4
- */
+
 public class SubmitOrderPayInfoVO {
 
     @Schema(description = "商品名称" )

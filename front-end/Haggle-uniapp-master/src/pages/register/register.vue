@@ -124,7 +124,7 @@ export default {
       const isvalid = this.validate()
       if (!isvalid) { return }
       var params = {
-        url: '/mall4cloud_user/ua/user/register',
+        url: '/Haggle_user/ua/user/register',
         method: 'POST',
         data: {
           userName: this.userName, // 昵称

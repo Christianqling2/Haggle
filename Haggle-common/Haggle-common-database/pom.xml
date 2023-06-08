@@ -3,21 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>mall4cloud-common</artifactId>
-        <groupId>com.mall4j.cloud</groupId>
+        <artifactId>Haggle-common</artifactId>
+        <groupId>com.Haggle.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mall4cloud-common-database</artifactId>
-    <description>mall4cloud 数据库连接相关代码</description>
+    <artifactId>Haggle-common-database</artifactId>
+    <description>Haggle 数据库连接相关代码</description>
     <packaging>jar</packaging>
 
 
     <dependencies>
         <dependency>
-            <groupId>com.mall4j.cloud</groupId>
-            <artifactId>mall4cloud-common-core</artifactId>
+            <groupId>com.Haggle.cloud</groupId>
+            <artifactId>Haggle-common-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -33,8 +33,8 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.mall4j.cloud</groupId>
-            <artifactId>mall4cloud-api-leaf</artifactId>
+            <groupId>com.Haggle.cloud</groupId>
+            <artifactId>Haggle-api-leaf</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

@@ -1,11 +1,11 @@
-package com.mall4j.cloud.common.security.bo;
+package com.Haggle.cloud.common.security.bo;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
 
 /**
  * token信息，该信息存在redis中
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/2
  */
 public class TokenInfoBO {

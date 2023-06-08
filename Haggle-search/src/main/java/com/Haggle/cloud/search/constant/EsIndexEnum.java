@@ -1,10 +1,6 @@
-package com.mall4j.cloud.search.constant;
+package com.Haggle.cloud.search.constant;
 
-/**
- * es当中的index
- * @author FrozenWatermelon
- * @date 2020/11/12
- */
+
 public enum EsIndexEnum {
 
     /**

@@ -1,21 +1,18 @@
-package com.mall4j.cloud.product.feign;
+package com.Haggle.cloud.product.feign;
 
-import com.mall4j.cloud.api.multishop.bo.EsShopDetailBO;
-import com.mall4j.cloud.api.multishop.feign.ShopDetailFeignClient;
-import com.mall4j.cloud.api.product.bo.EsProductBO;
-import com.mall4j.cloud.api.product.feign.ProductFeignClient;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.product.service.SpuService;
+import com.Haggle.cloud.api.multishop.bo.EsShopDetailBO;
+import com.Haggle.cloud.api.multishop.feign.ShopDetailFeignClient;
+import com.Haggle.cloud.api.product.bo.EsProductBO;
+import com.Haggle.cloud.api.product.feign.ProductFeignClient;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.service.SpuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/11/27
- */
+
 @RestController
 public class ProductFeignController implements ProductFeignClient {
 

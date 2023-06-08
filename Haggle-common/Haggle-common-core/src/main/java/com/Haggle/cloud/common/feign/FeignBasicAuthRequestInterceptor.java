@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.feign;
+package com.Haggle.cloud.common.feign;
 
 import cn.hutool.core.util.StrUtil;
 import feign.RequestInterceptor;
@@ -14,7 +14,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/27
  */
 @Component

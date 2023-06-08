@@ -1,11 +1,11 @@
-package com.mall4j.cloud.common.database.util;
+package com.Haggle.cloud.common.database.util;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
 
 
 /**
  * 分页适配
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class PageAdapter {
 

@@ -1,7 +1,7 @@
-package com.mall4j.cloud.leaf.exception;
+package com.Haggle.cloud.leaf.exception;
 
 /**
- * @author leaf
+ * /**/ leaf
  */
 public class InitException extends Exception {
 

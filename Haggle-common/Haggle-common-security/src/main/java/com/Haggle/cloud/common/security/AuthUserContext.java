@@ -1,9 +1,9 @@
-package com.mall4j.cloud.common.security;
+package com.Haggle.cloud.common.security;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/16
  */
 public class AuthUserContext {

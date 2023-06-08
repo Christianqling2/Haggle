@@ -1,4 +1,4 @@
-package com.mall4j.cloud.auth.config;
+package com.Haggle.cloud.auth.config;
 
 import cn.hutool.core.io.FileUtil;
 import com.anji.captcha.model.common.CaptchaTypeEnum;
@@ -10,10 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/8/12
- */
+/
 @Configuration
 public class CaptchaConfig {
 

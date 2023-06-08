@@ -1,15 +1,15 @@
-package com.mall4j.cloud.multishop.vo;
+package com.Haggle.cloud.multishop.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 轮播图VO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-24 16:38:32
  */
 public class IndexImgVO extends BaseVO{

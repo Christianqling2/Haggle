@@ -116,7 +116,7 @@ export default {
         return
       }
       var params = {
-        url: '/mall4cloud_biz/oss/info',
+        url: '/Haggle_biz/oss/info',
         method: 'GET',
         data: {
           fileNum: this.tempFilePaths.length // 需要获取token的文件数量
@@ -210,7 +210,7 @@ export default {
     mioIoUpload() {
       //const filePath = this.ossList[0].dir + this.ossList[0].fileName
       const  params = {
-        url: '/mall4cloud_biz/oss/upload_minio',
+        url: '/Haggle_biz/oss/upload_minio',
         filePath: this.tempFilePaths[0],
         name: 'file',
         callBack: res => {
@@ -268,7 +268,7 @@ export default {
       
     //   // 保存上传文件记录
     //   var params = {
-    //     url: '/mall4cloud_biz/m/attach_file',
+    //     url: '/Haggle_biz/m/attach_file',
     //     method: 'POST',
     //     data: uploadFile,
     //     callBack: res => {

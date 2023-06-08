@@ -1,13 +1,10 @@
-package com.mall4j.cloud.order.bo;
+package com.Haggle.cloud.order.bo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 
-/**
- * @author FrozenWatermelon
- * @date 2021/2/4
- */
+
 public class SubmitOrderPayAmountInfoBO {
 
 

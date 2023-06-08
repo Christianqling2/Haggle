@@ -1,17 +1,13 @@
-package com.mall4j.cloud.user.mapper;
+package com.Haggle.cloud.user.mapper;
 
-import com.mall4j.cloud.api.user.vo.AreaVO;
-import com.mall4j.cloud.user.model.Area;
+import com.Haggle.cloud.api.user.vo.AreaVO;
+import com.Haggle.cloud.user.model.Area;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 省市区地区信息
- *
- * @author YXF
- * @date 2020-11-25 15:10:06
- */
+
+
 public interface AreaMapper {
 
 	/**

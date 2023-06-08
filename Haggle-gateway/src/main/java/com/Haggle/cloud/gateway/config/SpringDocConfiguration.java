@@ -1,4 +1,4 @@
-package com.mall4j.cloud.gateway.config;
+package com.Haggle.cloud.gateway.config;
 
 import org.springdoc.core.GroupedOpenApi;
 import org.springdoc.core.SwaggerUiConfigParameters;

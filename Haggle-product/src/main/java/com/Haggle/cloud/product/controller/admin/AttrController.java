@@ -1,19 +1,19 @@
-package com.mall4j.cloud.product.controller.admin;
+package com.Haggle.cloud.product.controller.admin;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.product.vo.AttrVO;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.constant.AttrType;
-import com.mall4j.cloud.product.constant.SearchType;
-import com.mall4j.cloud.product.dto.AttrDTO;
-import com.mall4j.cloud.product.model.Attr;
-import com.mall4j.cloud.product.model.AttrValue;
-import com.mall4j.cloud.product.service.AttrService;
+import com.Haggle.cloud.api.product.vo.AttrVO;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.constant.AttrType;
+import com.Haggle.cloud.product.constant.SearchType;
+import com.Haggle.cloud.product.dto.AttrDTO;
+import com.Haggle.cloud.product.model.Attr;
+import com.Haggle.cloud.product.model.AttrValue;
+import com.Haggle.cloud.product.service.AttrService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -25,12 +25,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 属性信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:23
- */
+
 @RestController("platformAttrController")
 @RequestMapping("/admin/attr")
 @Tag(name = "admin-属性信息")
@@ -59,7 +54,7 @@ public class AttrController {
     @Operation(summary = "保存属性信息" , description = "保存属性信息")
     public ServerResponseEntity<Void> save(@Valid @RequestBody AttrDTO attrDTO) {
         if (Objects.equals(Constant.PLATFORM_SHOP_ID, AuthUserContext.get().getTenantId()) && Objects.isNull(attrDTO.getAttrType())) {
-            throw new Mall4cloudException("属性类型不能为空");
+            throw new HaggleException("属性类型不能为空");
         }
 	    checkAttrInfo(attrDTO);
         Attr attr = mapperFacade.map(attrDTO, Attr.class);
@@ -124,10 +119,10 @@ public class AttrController {
             return;
         }
         if (CollUtil.isEmpty(attrDTO.getCategoryIds())) {
-            throw new Mall4cloudException("关联分类不能为空");
+            throw new HaggleException("关联分类不能为空");
         }
         if (Objects.isNull(attrDTO.getSearchType())) {
-            throw new Mall4cloudException("搜索属性不能为空");
+            throw new HaggleException("搜索属性不能为空");
         }
     }
 

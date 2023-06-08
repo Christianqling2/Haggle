@@ -1,18 +1,14 @@
-package com.mall4j.cloud.user.model;
+package com.Haggle.cloud.user.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 用户表
- *
- * @author YXF
- * @date 2020-12-08 11:18:04
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
+
 public class User extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 
-	public static final String DISTRIBUTED_ID_KEY = "mall4cloud-user";
+	public static final String DISTRIBUTED_ID_KEY = "Haggle-user";
 
     /**
      * ID

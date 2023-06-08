@@ -1,14 +1,14 @@
-package com.mall4j.cloud.biz.service;
+package com.Haggle.cloud.biz.service;
 
-import com.mall4j.cloud.biz.model.AttachFileGroup;
-import com.mall4j.cloud.biz.vo.AttachFileGroupVO;
+import com.Haggle.cloud.biz.model.AttachFileGroup;
+import com.Haggle.cloud.biz.vo.AttachFileGroupVO;
 
 import java.util.List;
 
 /**
  *
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-04 16:15:02
  */
 public interface AttachFileGroupService {

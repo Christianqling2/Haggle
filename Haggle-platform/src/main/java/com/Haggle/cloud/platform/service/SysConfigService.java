@@ -1,13 +1,8 @@
-package com.mall4j.cloud.platform.service;
+package com.Haggle.cloud.platform.service;
 
-import com.mall4j.cloud.platform.model.SysConfig;
+import com.Haggle.cloud.platform.model.SysConfig;
 
-/**
- * 系统配置信息表
- *
- * @author lhd
- * @date 2020-12-23 16:27:57
- */
+
 public interface SysConfigService {
 	/**
 	 * 根据key，更新value

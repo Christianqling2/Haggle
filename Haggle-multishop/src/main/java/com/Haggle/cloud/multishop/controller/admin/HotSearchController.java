@@ -1,14 +1,14 @@
-package com.mall4j.cloud.multishop.controller.admin;
+package com.Haggle.cloud.multishop.controller.admin;
 
-import com.mall4j.cloud.multishop.model.HotSearch;
-import com.mall4j.cloud.multishop.service.HotSearchService;
-import com.mall4j.cloud.multishop.vo.HotSearchVO;
-import com.mall4j.cloud.multishop.dto.HotSearchDTO;
+import com.Haggle.cloud.multishop.model.HotSearch;
+import com.Haggle.cloud.multishop.service.HotSearchService;
+import com.Haggle.cloud.multishop.vo.HotSearchVO;
+import com.Haggle.cloud.multishop.dto.HotSearchDTO;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -16,12 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
-/**
- * 热搜
- *
- * @author YXF
- * @date 2021-01-27 09:10:00
- */
+
 @RestController("adminHotSearchController")
 @RequestMapping("/admin/hot_search")
 @Tag(name = "admin-热搜")

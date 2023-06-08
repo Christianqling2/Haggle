@@ -1,9 +1,6 @@
-package com.mall4j.cloud.api.order.vo;
+package com.Haggle.cloud.api.order.vo;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/12/25
- */
+
 public class OrderAmountVO {
 
     /**

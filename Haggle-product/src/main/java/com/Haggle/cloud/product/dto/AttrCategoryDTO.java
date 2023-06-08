@@ -1,13 +1,8 @@
-package com.mall4j.cloud.product.dto;
+package com.Haggle.cloud.product.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 属性与属性分组关联信息DTO
- *
- * @author YXF
- * @date 2020-11-23 16:20:01
- */
+
 public class AttrCategoryDTO{
     private static final long serialVersionUID = 1L;
 

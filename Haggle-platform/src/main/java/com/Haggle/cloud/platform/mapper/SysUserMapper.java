@@ -1,16 +1,13 @@
-package com.mall4j.cloud.platform.mapper;
+package com.Haggle.cloud.platform.mapper;
 
-import com.mall4j.cloud.platform.model.SysUser;
-import com.mall4j.cloud.platform.vo.SysUserVO;
-import com.mall4j.cloud.platform.vo.SysUserSimpleVO;
+import com.Haggle.cloud.platform.model.SysUser;
+import com.Haggle.cloud.platform.vo.SysUserVO;
+import com.Haggle.cloud.platform.vo.SysUserSimpleVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * @author lhd
- * @date 2020/12/22
- */
+
 public interface SysUserMapper {
 
     /**

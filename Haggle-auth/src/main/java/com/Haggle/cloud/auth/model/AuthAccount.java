@@ -1,20 +1,15 @@
-package com.mall4j.cloud.auth.model;
+package com.Haggle.cloud.auth.model;
 
-import com.mall4j.cloud.common.database.annotations.DistributedId;
-import com.mall4j.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.database.annotations.DistributedId;
+import com.Haggle.cloud.common.model.BaseModel;
 
-/**
- * 统一账户信息
- *
- * @author FrozenWatermelon
- * @date 2020/07/02
- */
+
 public class AuthAccount extends BaseModel {
 
 	/**
 	 * 全平台用户唯一id
 	 */
-	@DistributedId("mall4cloud-auth-account")
+	@DistributedId("Haggle-auth-account")
 	private Long uid;
 
 	/**

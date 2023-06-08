@@ -1,18 +1,13 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.product.dto.SkuDTO;
-import com.mall4j.cloud.product.model.SkuStock;
-import com.mall4j.cloud.product.vo.SkuStockVO;
-import com.mall4j.cloud.api.product.vo.SkuVO;
+import com.Haggle.cloud.product.dto.SkuDTO;
+import com.Haggle.cloud.product.model.SkuStock;
+import com.Haggle.cloud.product.vo.SkuStockVO;
+import com.Haggle.cloud.api.product.vo.SkuVO;
 
 import java.util.List;
 
-/**
- * 库存信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface SkuStockService {
 
 	/**

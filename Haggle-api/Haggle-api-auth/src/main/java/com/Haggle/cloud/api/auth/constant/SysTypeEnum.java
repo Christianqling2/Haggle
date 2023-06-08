@@ -1,10 +1,6 @@
-package com.mall4j.cloud.api.auth.constant;
+package com.Haggle.cloud.api.auth.constant;
 
-/**
- * 系统类型
- * @author FrozenWatermelon
- * @date 2020/7/2
- */
+
 public enum SysTypeEnum {
 
 	/**

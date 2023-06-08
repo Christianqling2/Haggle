@@ -1,14 +1,9 @@
-package com.mall4j.cloud.multishop.dto;
+package com.Haggle.cloud.multishop.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.NotNull;
 
-/**
- * 轮播图DTO
- *
- * @author YXF
- * @date 2020-11-24 16:38:32
- */
+
 public class IndexImgDTO{
     private static final long serialVersionUID = 1L;
 

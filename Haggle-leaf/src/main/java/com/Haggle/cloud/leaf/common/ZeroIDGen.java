@@ -1,10 +1,8 @@
-package com.mall4j.cloud.leaf.common;
+package com.Haggle.cloud.leaf.common;
 
-import com.mall4j.cloud.leaf.IDGen;
+import com.Haggle.cloud.leaf.IDGen;
 
-/**
- * @author left
- */
+
 public class ZeroIDGen implements IDGen {
 
 	@Override

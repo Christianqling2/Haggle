@@ -1,10 +1,10 @@
-package com.mall4j.cloud.biz.controller.multishop;
+package com.Haggle.cloud.biz.controller.multishop;
 
-import com.mall4j.cloud.biz.dto.AttachFileGroupDTO;
-import com.mall4j.cloud.biz.model.AttachFileGroup;
-import com.mall4j.cloud.biz.service.AttachFileGroupService;
-import com.mall4j.cloud.biz.vo.AttachFileGroupVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.biz.dto.AttachFileGroupDTO;
+import com.Haggle.cloud.biz.model.AttachFileGroup;
+import com.Haggle.cloud.biz.service.AttachFileGroupService;
+import com.Haggle.cloud.biz.vo.AttachFileGroupVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-04 16:15:02
  */
 @RestController("multishopAttachFileGroupController")

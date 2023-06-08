@@ -1,18 +1,18 @@
-package com.mall4j.cloud.multishop.controller.multishop;
+package com.Haggle.cloud.multishop.controller.multishop;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.multishop.dto.ShopUserDTO;
-import com.mall4j.cloud.multishop.model.ShopUser;
-import com.mall4j.cloud.multishop.service.ShopDetailService;
-import com.mall4j.cloud.multishop.service.ShopUserService;
-import com.mall4j.cloud.multishop.vo.ShopUserVO;
-import com.mall4j.cloud.multishop.vo.ShopUserSimpleVO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.multishop.dto.ShopUserDTO;
+import com.Haggle.cloud.multishop.model.ShopUser;
+import com.Haggle.cloud.multishop.service.ShopDetailService;
+import com.Haggle.cloud.multishop.service.ShopUserService;
+import com.Haggle.cloud.multishop.vo.ShopUserVO;
+import com.Haggle.cloud.multishop.vo.ShopUserSimpleVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -22,10 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/09/02
- */
+
 @RequestMapping(value = "/m/shop_user")
 @RestController("multishopShopUserController")
 @Tag(name = "店铺用户信息")

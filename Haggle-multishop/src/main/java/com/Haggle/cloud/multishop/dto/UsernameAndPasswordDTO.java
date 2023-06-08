@@ -1,14 +1,11 @@
-package com.mall4j.cloud.multishop.dto;
+package com.Haggle.cloud.multishop.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-/**
- * @author lhd
- * @date 2020/12/30
- */
+
 @Schema(description = "用户名和密码参数")
 public class UsernameAndPasswordDTO {
 

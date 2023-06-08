@@ -1,9 +1,9 @@
-package com.mall4j.cloud.biz.vo;
+package com.Haggle.cloud.biz.vo;
 
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/12
  */
 public class OssVO {

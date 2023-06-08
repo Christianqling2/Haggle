@@ -1,11 +1,11 @@
-package com.mall4j.cloud.biz.dto;
+package com.Haggle.cloud.biz.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 上传文件记录表DTO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-21 10:21:40
  */
 public class AttachFileDTO {

@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.cache.constant;
+package com.Haggle.cloud.common.cache.constant;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/23
  */
 public interface RbacCacheNames {
@@ -10,7 +10,7 @@ public interface RbacCacheNames {
     /**
      * 前缀
      */
-    String RBAC_PREFIX = "mall4cloud_rbac:";
+    String RBAC_PREFIX = "Haggle_rbac:";
 
     /**
      * 所有权限列表缓存key

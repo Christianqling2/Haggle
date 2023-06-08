@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.order.vo;
+package com.Haggle.cloud.common.order.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 购物车VO
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-11-20 15:47:32
  */
 public class ShopCartVO {

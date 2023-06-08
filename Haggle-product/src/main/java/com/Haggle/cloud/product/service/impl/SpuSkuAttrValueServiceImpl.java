@@ -1,20 +1,15 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.product.mapper.SpuSkuAttrValueMapper;
-import com.mall4j.cloud.product.model.SpuSkuAttrValue;
-import com.mall4j.cloud.product.service.SpuSkuAttrValueService;
+import com.Haggle.cloud.product.mapper.SpuSkuAttrValueMapper;
+import com.Haggle.cloud.product.model.SpuSkuAttrValue;
+import com.Haggle.cloud.product.service.SpuSkuAttrValueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * 商品sku销售属性关联信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class SpuSkuAttrValueServiceImpl implements SpuSkuAttrValueService {
 

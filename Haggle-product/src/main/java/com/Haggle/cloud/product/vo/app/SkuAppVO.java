@@ -1,15 +1,10 @@
-package com.mall4j.cloud.product.vo.app;
+package com.Haggle.cloud.product.vo.app;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * sku信息VO
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+/
 public class SkuAppVO{
 
 	@Schema(description = "属性id" )

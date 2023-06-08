@@ -1,16 +1,12 @@
-package com.mall4j.cloud.search.bo;
+package com.Haggle.cloud.search.bo;
 
 import cn.throwx.canal.gule.annotation.CanalModel;
 import cn.throwx.canal.gule.common.FieldNamingPolicy;
 
 import java.util.Date;
 
-/**
- * 商品拓展信息
- *
- * @author FrozenWatermelon
- */
-@CanalModel(database = "mall4cloud_product", table = "spu_extension", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
+
+@CanalModel(database = "Haggle_product", table = "spu_extension", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
 public class SpuExtensionBO {
     /**
      * 商品扩展信息表id

@@ -1,19 +1,16 @@
-package com.mall4j.cloud.auth.controller;
+package com.Haggle.cloud.auth.controller;
 
 import com.anji.captcha.model.common.ResponseModel;
 import com.anji.captcha.model.vo.CaptchaVO;
 import com.anji.captcha.service.CaptchaService;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/7/30
- */
+
 @RestController
 @RequestMapping("/ua/captcha")
 @Tag(name = "验证码")

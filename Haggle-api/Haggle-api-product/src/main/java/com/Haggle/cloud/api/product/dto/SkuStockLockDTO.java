@@ -1,4 +1,4 @@
-package com.mall4j.cloud.api.product.dto;
+package com.Haggle.cloud.api.product.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -6,7 +6,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/12/22
  */
 public class SkuStockLockDTO {

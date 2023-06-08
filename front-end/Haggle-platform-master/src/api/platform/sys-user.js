@@ -2,14 +2,14 @@ import request from '@/utils/request'
 
 export function shopUserInfo() {
   return request({
-    url: '/mall4cloud_platform/sys_user/info',
+    url: '/Haggle_platform/sys_user/info',
     method: 'get'
   })
 }
 
 export function page(pageParam) {
   return request({
-    url: '/mall4cloud_platform/sys_user/page',
+    url: '/Haggle_platform/sys_user/page',
     method: 'get',
     params: pageParam
   })
@@ -17,7 +17,7 @@ export function page(pageParam) {
 
 export function get(sysUserId) {
   return request({
-    url: '/mall4cloud_platform/sys_user',
+    url: '/Haggle_platform/sys_user',
     method: 'get',
     params: {
       sysUserId
@@ -27,7 +27,7 @@ export function get(sysUserId) {
 
 export function save(data) {
   return request({
-    url: '/mall4cloud_platform/sys_user',
+    url: '/Haggle_platform/sys_user',
     method: 'post',
     data
   })
@@ -35,7 +35,7 @@ export function save(data) {
 
 export function update(data) {
   return request({
-    url: '/mall4cloud_platform/sys_user',
+    url: '/Haggle_platform/sys_user',
     method: 'put',
     data
   })
@@ -43,7 +43,7 @@ export function update(data) {
 
 export function deleteById(sysUserId) {
   return request({
-    url: '/mall4cloud_platform/sys_user',
+    url: '/Haggle_platform/sys_user',
     method: 'delete',
     params: {
       sysUserId

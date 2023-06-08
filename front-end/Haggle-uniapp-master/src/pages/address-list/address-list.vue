@@ -46,7 +46,7 @@ export default {
      */
     getAddressList() {
       const params = {
-        url: '/mall4cloud_user/user_addr/list',
+        url: '/Haggle_user/user_addr/list',
         method: 'GET',
         data: {},
         callBack: res => {

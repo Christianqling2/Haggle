@@ -1,20 +1,17 @@
-package com.mall4j.cloud.user.feign;
+package com.Haggle.cloud.user.feign;
 
-import com.mall4j.cloud.api.user.feign.UserFeignClient;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.user.service.UserService;
-import com.mall4j.cloud.api.user.vo.UserApiVO;
+import com.Haggle.cloud.api.user.feign.UserFeignClient;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.user.service.UserService;
+import com.Haggle.cloud.api.user.vo.UserApiVO;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * 用户地址feign连接
- * @author FrozenWatermelon
- * @date 2020/12/07
- */
+
+
 @RestController
 public class UserFeignController implements UserFeignClient {
 

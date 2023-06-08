@@ -1,10 +1,6 @@
-package com.mall4j.cloud.multishop.constant;
+package com.Haggle.cloud.multishop.constant;
 
-/**
- * 店铺状态
- *
- * @author YXF
- */
+
 public enum ShopStatus {
 
     /**

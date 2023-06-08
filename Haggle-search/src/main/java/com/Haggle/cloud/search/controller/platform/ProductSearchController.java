@@ -1,12 +1,12 @@
-package com.mall4j.cloud.search.controller.platform;
+package com.Haggle.cloud.search.controller.platform;
 
-import com.mall4j.cloud.api.dto.EsPageDTO;
-import com.mall4j.cloud.api.dto.ProductSearchDTO;
-import com.mall4j.cloud.api.vo.EsPageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.search.constant.SearchTypeEnum;
-import com.mall4j.cloud.search.manager.ProductSearchManager;
-import com.mall4j.cloud.search.vo.SpuAdminVO;
+import com.Haggle.cloud.api.dto.EsPageDTO;
+import com.Haggle.cloud.api.dto.ProductSearchDTO;
+import com.Haggle.cloud.api.vo.EsPageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.search.constant.SearchTypeEnum;
+import com.Haggle.cloud.search.manager.ProductSearchManager;
+import com.Haggle.cloud.search.vo.SpuAdminVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
-/**
- * @Author lth
- * @Date 2021/6/21 13:48
- */
+
 @RestController("platformSearchSpuController")
 @RequestMapping("/p/search")
 @Tag(name = "platform-spu列表接口")

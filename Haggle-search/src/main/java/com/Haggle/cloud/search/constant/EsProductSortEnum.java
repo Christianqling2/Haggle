@@ -1,12 +1,8 @@
-package com.mall4j.cloud.search.constant;
+package com.Haggle.cloud.search.constant;
 
 import java.util.Objects;
 
-/**
- * es当中的商品排序
- * @author FrozenWatermelon
- * @date 2020/11/17
- */
+
 public enum EsProductSortEnum {
 
     /**

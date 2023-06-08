@@ -1,13 +1,8 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.product.model.SpuDetail;
+import com.Haggle.cloud.product.model.SpuDetail;
 
-/**
- * 商品详情信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface SpuDetailService {
 
 	/**

@@ -1,12 +1,12 @@
-package com.mall4j.cloud.common.order.vo;
+package com.Haggle.cloud.common.order.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 用户地址VO
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-12-07 15:50:02
  */
 public class UserAddrVO extends BaseVO{

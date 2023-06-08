@@ -1,23 +1,20 @@
-package com.mall4j.cloud.multishop.controller;
+package com.Haggle.cloud.multishop.controller;
 
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.multishop.dto.ChangeAccountDTO;
-import com.mall4j.cloud.multishop.service.ShopUserAccountService;
-import com.mall4j.cloud.multishop.service.ShopUserService;
-import com.mall4j.cloud.multishop.vo.ShopUserVO;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.multishop.dto.ChangeAccountDTO;
+import com.Haggle.cloud.multishop.service.ShopUserAccountService;
+import com.Haggle.cloud.multishop.service.ShopUserService;
+import com.Haggle.cloud.multishop.vo.ShopUserVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/09/02
- */
+
 @RequestMapping(value = "/shop_user/account")
 @RestController
 @Tag(name = "店铺用户账号信息")

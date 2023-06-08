@@ -1,14 +1,14 @@
-package com.mall4j.cloud.multishop.service.impl;
+package com.Haggle.cloud.multishop.service.impl;
 
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.multishop.dto.IndexImgDTO;
-import com.mall4j.cloud.multishop.model.IndexImg;
-import com.mall4j.cloud.multishop.mapper.IndexImgMapper;
-import com.mall4j.cloud.multishop.service.IndexImgService;
-import com.mall4j.cloud.multishop.vo.IndexImgVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.multishop.dto.IndexImgDTO;
+import com.Haggle.cloud.multishop.model.IndexImg;
+import com.Haggle.cloud.multishop.mapper.IndexImgMapper;
+import com.Haggle.cloud.multishop.service.IndexImgService;
+import com.Haggle.cloud.multishop.vo.IndexImgVO;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.Caching;
@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 轮播图
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-24 16:38:32
  */
 @Service

@@ -1,14 +1,14 @@
-package com.mall4j.cloud.product.feign;
+package com.Haggle.cloud.product.feign;
 
-import com.mall4j.cloud.api.product.feign.SpuFeignClient;
-import com.mall4j.cloud.api.product.vo.SkuVO;
-import com.mall4j.cloud.api.product.vo.SpuAndSkuVO;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.product.service.SkuService;
-import com.mall4j.cloud.product.service.SpuService;
+import com.Haggle.cloud.api.product.feign.SpuFeignClient;
+import com.Haggle.cloud.api.product.vo.SkuVO;
+import com.Haggle.cloud.api.product.vo.SpuAndSkuVO;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.service.SkuService;
+import com.Haggle.cloud.product.service.SpuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,10 +16,6 @@ import java.util.List;
 
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/12/8
- */
 @RestController
 public class SpuFeignController implements SpuFeignClient {
 

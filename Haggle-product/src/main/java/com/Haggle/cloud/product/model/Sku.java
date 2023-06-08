@@ -1,15 +1,11 @@
-package com.mall4j.cloud.product.model;
+package com.Haggle.cloud.product.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * sku信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-08 15:54:22
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
+
 public class Sku extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

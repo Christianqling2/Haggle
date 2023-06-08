@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.response;
+package com.Haggle.cloud.common.response;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/9
  */
 public enum ResponseEnum {

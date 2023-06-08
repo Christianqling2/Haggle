@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.xss;
+package com.Haggle.cloud.common.xss;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -7,7 +7,7 @@ import org.jsoup.safety.Whitelist;
 /**
  * 描述: 过滤 HTML 标签中 XSS 代码
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/11
  */
 public class XssUtil {

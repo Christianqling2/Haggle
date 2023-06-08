@@ -1,18 +1,13 @@
-package com.mall4j.cloud.user.mapper;
+package com.Haggle.cloud.user.mapper;
 
-import com.mall4j.cloud.api.user.vo.UserApiVO;
-import com.mall4j.cloud.user.model.User;
-import com.mall4j.cloud.user.vo.UserVO;
+import com.Haggle.cloud.api.user.vo.UserApiVO;
+import com.Haggle.cloud.user.model.User;
+import com.Haggle.cloud.user.vo.UserVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 用户表
- *
- * @author YXF
- * @date 2020-12-08 11:18:04
- */
+
 public interface UserMapper {
 
 	/**

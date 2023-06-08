@@ -1,16 +1,11 @@
-package com.mall4j.cloud.order.mapper;
+package com.Haggle.cloud.order.mapper;
 
-import com.mall4j.cloud.order.model.OrderItem;
+import com.Haggle.cloud.order.model.OrderItem;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 订单项
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+
 public interface OrderItemMapper {
 
 	/**

@@ -1,18 +1,14 @@
-package com.mall4j.cloud.platform.controller;
+package com.Haggle.cloud.platform.controller;
 
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.platform.model.SysConfig;
-import com.mall4j.cloud.platform.service.SysConfigService;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.platform.model.SysConfig;
+import com.Haggle.cloud.platform.service.SysConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-/**
- * @author chenlin
- * @DateTime: 2020/3/19 8:29
- * @description: 支付配置、文件上传配置、短信配置、快递配置、小程序配置、公众号配置
- */
+
 @RestController
 @RequestMapping("/sys_config")
 public class SysConfigController {

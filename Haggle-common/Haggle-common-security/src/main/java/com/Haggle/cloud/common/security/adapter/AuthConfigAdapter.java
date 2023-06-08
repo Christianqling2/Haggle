@@ -1,11 +1,11 @@
-package com.mall4j.cloud.common.security.adapter;
+package com.Haggle.cloud.common.security.adapter;
 
 import java.util.List;
 
 /**
  * 实现该接口之后，修改需要授权登陆的路径，不需要授权登陆的路径
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/4
  */
 public interface AuthConfigAdapter {

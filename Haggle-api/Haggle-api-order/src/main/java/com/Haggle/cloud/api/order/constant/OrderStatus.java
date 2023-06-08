@@ -1,10 +1,6 @@
-package com.mall4j.cloud.api.order.constant;
+package com.Haggle.cloud.api.order.constant;
 
-/**
- * 订单状态
- * @author FrozenWatermelon
- * @date 2020/12/18
- */
+
 public enum OrderStatus {
 
     /**

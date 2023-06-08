@@ -1,17 +1,17 @@
-package com.mall4j.cloud.rbac.service.impl;
+package com.Haggle.cloud.rbac.service.impl;
 
-import com.mall4j.cloud.api.rbac.bo.UriPermissionBO;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.CacheManagerUtil;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.rbac.mapper.MenuPermissionMapper;
-import com.mall4j.cloud.rbac.model.MenuPermission;
-import com.mall4j.cloud.rbac.service.MenuPermissionService;
-import com.mall4j.cloud.rbac.vo.MenuPermissionVO;
+import com.Haggle.cloud.api.rbac.bo.UriPermissionBO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.CacheManagerUtil;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.rbac.mapper.MenuPermissionMapper;
+import com.Haggle.cloud.rbac.model.MenuPermission;
+import com.Haggle.cloud.rbac.service.MenuPermissionService;
+import com.Haggle.cloud.rbac.vo.MenuPermissionVO;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -22,12 +22,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 菜单资源
- *
- * @author FrozenWatermelon
- * @date 2020-09-14 16:27:55
- */
+
 @Service
 public class MenuPermissionServiceImpl implements MenuPermissionService {
 

@@ -1,18 +1,18 @@
-package com.mall4j.cloud.search.manager;
+package com.Haggle.cloud.search.manager;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.api.vo.*;
-import com.mall4j.cloud.api.vo.search.*;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.util.BooleanUtil;
-import com.mall4j.cloud.common.util.Json;
-import com.mall4j.cloud.search.constant.*;
-import com.mall4j.cloud.api.dto.EsPageDTO;
-import com.mall4j.cloud.api.dto.ProductSearchDTO;
-import com.mall4j.cloud.search.vo.SpuAdminVO;
+import com.Haggle.cloud.api.vo.*;
+import com.Haggle.cloud.api.vo.search.*;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.util.BooleanUtil;
+import com.Haggle.cloud.common.util.Json;
+import com.Haggle.cloud.search.constant.*;
+import com.Haggle.cloud.api.dto.EsPageDTO;
+import com.Haggle.cloud.api.dto.ProductSearchDTO;
+import com.Haggle.cloud.search.vo.SpuAdminVO;
 import org.apache.lucene.search.join.ScoreMode;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -47,10 +47,7 @@ import java.util.Map;
 import java.util.Objects;
 
 
-/**
- * @author FrozenWatermelon
- * @date 2020/11/16
- */
+
 @Component
 public class ProductSearchManager {
 
@@ -100,7 +97,7 @@ public class ProductSearchManager {
             spuList = getSpuListByResponse(response.getHits().getHits());
         } catch (IOException e) {
             log.error(e.toString());
-            throw new Mall4cloudException("搜索服务出了点小差，请稍后再试", e);
+            throw new HaggleException("搜索服务出了点小差，请稍后再试", e);
         }
         return spuList;
     }
@@ -124,7 +121,7 @@ public class ProductSearchManager {
             log.debug("搜索返回结果：" + response.toString());
         } catch (IOException e) {
             log.error(e.toString());
-            throw new Mall4cloudException("搜索服务出了点小差，请稍后再试", e);
+            throw new HaggleException("搜索服务出了点小差，请稍后再试", e);
         }
         return response;
     }

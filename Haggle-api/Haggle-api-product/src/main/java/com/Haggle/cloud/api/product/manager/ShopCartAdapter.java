@@ -1,19 +1,19 @@
-package com.mall4j.cloud.api.product.manager;
+package com.Haggle.cloud.api.product.manager;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.mall4j.cloud.api.multishop.feign.ShopDetailFeignClient;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.api.product.dto.ShopCartItemDTO;
-import com.mall4j.cloud.api.product.feign.ShopCartFeignClient;
-import com.mall4j.cloud.api.product.feign.SpuFeignClient;
-import com.mall4j.cloud.common.order.vo.ShopCartItemVO;
-import com.mall4j.cloud.api.product.vo.SkuVO;
-import com.mall4j.cloud.api.product.vo.SpuAndSkuVO;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.common.order.vo.ShopCartVO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.util.BooleanUtil;
+import com.Haggle.cloud.api.multishop.feign.ShopDetailFeignClient;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.api.product.dto.ShopCartItemDTO;
+import com.Haggle.cloud.api.product.feign.ShopCartFeignClient;
+import com.Haggle.cloud.api.product.feign.SpuFeignClient;
+import com.Haggle.cloud.common.order.vo.ShopCartItemVO;
+import com.Haggle.cloud.api.product.vo.SkuVO;
+import com.Haggle.cloud.api.product.vo.SpuAndSkuVO;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.common.order.vo.ShopCartVO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.util.BooleanUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 
 /**
  * 购物车适配器
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/12/07
  */
 @Component
@@ -112,7 +112,7 @@ public class ShopCartAdapter {
             // 店铺信息
             ServerResponseEntity<String> shopNameResponse = shopDetailFeignClient.getShopNameByShopId(shopId);
             if (!shopNameResponse.isSuccess()) {
-                throw new Mall4cloudException(shopNameResponse.getMsg());
+                throw new HaggleException(shopNameResponse.getMsg());
             }
             shopCart.setShopName(shopNameResponse.getData());
             shopCarts.add(shopCart);

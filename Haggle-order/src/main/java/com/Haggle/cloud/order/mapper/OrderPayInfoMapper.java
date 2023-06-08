@@ -1,14 +1,9 @@
-package com.mall4j.cloud.order.mapper;
+package com.Haggle.cloud.order.mapper;
 
-import com.mall4j.cloud.order.model.OrderPayInfo;
+import com.Haggle.cloud.order.model.OrderPayInfo;
 import org.apache.ibatis.annotations.Param;
 
-/**
- * 订单支付记录
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+
 public interface OrderPayInfoMapper {
 	/**
 	 * 保存订单支付记录

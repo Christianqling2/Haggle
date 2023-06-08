@@ -1,11 +1,11 @@
-package com.mall4j.cloud.api.vo.search;
+package com.Haggle.cloud.api.vo.search;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/16
  */
 public class ProductSearchVO {

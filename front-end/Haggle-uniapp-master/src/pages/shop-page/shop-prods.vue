@@ -131,7 +131,7 @@ export default {
      */
     getProd() {
       const params = {
-        url: '/mall4cloud_search/ua/search/simple_page',
+        url: '/Haggle_search/ua/search/simple_page',
         method: 'GET',
         data: {
           shopId: this.shopId,

@@ -1,19 +1,19 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.RedisUtil;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.product.dto.BrandDTO;
-import com.mall4j.cloud.product.model.Brand;
-import com.mall4j.cloud.product.mapper.BrandMapper;
-import com.mall4j.cloud.product.service.BrandService;
-import com.mall4j.cloud.product.service.CategoryBrandService;
-import com.mall4j.cloud.api.product.vo.BrandVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.RedisUtil;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.product.dto.BrandDTO;
+import com.Haggle.cloud.product.model.Brand;
+import com.Haggle.cloud.product.mapper.BrandMapper;
+import com.Haggle.cloud.product.service.BrandService;
+import com.Haggle.cloud.product.service.CategoryBrandService;
+import com.Haggle.cloud.api.product.vo.BrandVO;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -22,12 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
-/**
- * 品牌信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class BrandServiceImpl implements BrandService {
 
@@ -65,7 +60,7 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public void deleteById(Long brandId) {
         if (getUseNum(brandId) > 0){
-            throw new Mall4cloudException("有部分商品在使用该品牌，不能进行删除操作");
+            throw new HaggleException("有部分商品在使用该品牌，不能进行删除操作");
         }
         brandMapper.deleteById(brandId);
         categoryBrandService.deleteByBrandId(brandId);

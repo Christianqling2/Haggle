@@ -1,6 +1,6 @@
-package com.mall4j.cloud.order.service;
+package com.Haggle.cloud.order.service;
 
-import com.mall4j.cloud.order.model.OrderItem;
+import com.Haggle.cloud.order.model.OrderItem;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 订单项
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-12-04 11:27:35
  */
 public interface OrderItemService {

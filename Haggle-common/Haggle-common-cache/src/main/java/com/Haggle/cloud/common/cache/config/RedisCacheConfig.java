@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.cache.config;
+package com.Haggle.cloud.common.cache.config;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -6,8 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.jsontype.impl.LaissezFaireSubTypeValidator;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.mall4j.cloud.common.cache.adapter.CacheTtlAdapter;
-import com.mall4j.cloud.common.cache.bo.CacheNameWithTtlBO;
+import com.Haggle.cloud.common.cache.adapter.CacheTtlAdapter;
+import com.Haggle.cloud.common.cache.bo.CacheNameWithTtlBO;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
@@ -30,7 +30,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/4
  */
 @EnableCaching

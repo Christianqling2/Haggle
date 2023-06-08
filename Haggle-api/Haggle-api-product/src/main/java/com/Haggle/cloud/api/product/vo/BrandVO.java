@@ -1,8 +1,8 @@
-package com.mall4j.cloud.api.product.vo;
+package com.Haggle.cloud.api.product.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 品牌信息VO
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-10-28 15:27:24
  */
 public class BrandVO extends BaseVO{

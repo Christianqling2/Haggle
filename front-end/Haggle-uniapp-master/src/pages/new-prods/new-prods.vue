@@ -111,7 +111,7 @@ export default {
     getPlatformCategoryList() {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_product/ua/category/category_list',
+        url: '/Haggle_product/ua/category/category_list',
         method: 'GET',
         data: {
           shopId: 0,
@@ -162,7 +162,7 @@ export default {
       this.isLoadAll = false
       this.pageQuery.primaryCategoryId = this.selectedCategoryId
       const params = {
-        url: '/mall4cloud_search/ua/search/simple_page',
+        url: '/Haggle_search/ua/search/simple_page',
         method: 'GET',
         data: this.pageQuery,
         callBack: res => {

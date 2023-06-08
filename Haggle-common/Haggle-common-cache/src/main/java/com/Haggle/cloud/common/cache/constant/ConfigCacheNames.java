@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.cache.constant;
+package com.Haggle.cloud.common.cache.constant;
 
 /**
- * @author lhd
+ * /**/ lhd
  * @date 2020/12/28
  */
 public interface ConfigCacheNames {

@@ -149,7 +149,7 @@ export default {
      */
     getSimpleInfo() {
       const params = {
-        url: '/mall4cloud_user/a/user/simple_info',
+        url: '/Haggle_user/a/user/simple_info',
         method: 'GET',
         data: {},
         callBack: res => {
@@ -164,7 +164,7 @@ export default {
      */
     loadOrderCountFun() {
       const params = {
-        url: '/mall4cloud_order/p/myOrder/order_count',
+        url: '/Haggle_order/p/myOrder/order_count',
         method: 'GET',
         data: {},
         callBack: res => {
@@ -178,7 +178,7 @@ export default {
      */
     queryUserInfo() {
       const params = {
-        url: '/mall4cloud_user/a/user/ma/user_detail_info',
+        url: '/Haggle_user/a/user/ma/user_detail_info',
         method: 'GET',
         data: {},
         callBack: res => {

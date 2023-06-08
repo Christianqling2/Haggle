@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.util;
+package com.Haggle.cloud.common.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/11
  */
 public class Json {

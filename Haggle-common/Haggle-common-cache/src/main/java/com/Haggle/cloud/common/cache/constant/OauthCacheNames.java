@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.cache.constant;
+package com.Haggle.cloud.common.cache.constant;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/23
  */
 public interface OauthCacheNames {
@@ -9,7 +9,7 @@ public interface OauthCacheNames {
     /**
      * oauth 授权相关key
      */
-    String OAUTH_PREFIX = "mall4cloud_oauth:";
+    String OAUTH_PREFIX = "Haggle_oauth:";
 
     /**
      * token 授权相关key

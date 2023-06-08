@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // 获取验证图片  以及token
 export function reqGet(data) {
   return request({
-    url: '/mall4cloud_auth/ua/captcha/get',
+    url: '/Haggle_auth/ua/captcha/get',
     method: 'post',
     data
   })
@@ -12,7 +12,7 @@ export function reqGet(data) {
 // 滑动或者点选验证
 export function reqCheck(data) {
   return request({
-    url: '/mall4cloud_auth/ua/captcha/check',
+    url: '/Haggle_auth/ua/captcha/check',
     method: 'post',
     data
   })

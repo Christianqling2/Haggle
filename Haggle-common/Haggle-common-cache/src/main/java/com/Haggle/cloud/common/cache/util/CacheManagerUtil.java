@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.cache.util;
+package com.Haggle.cloud.common.cache.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.Cache;
@@ -6,7 +6,7 @@ import org.springframework.cache.CacheManager;
 import org.springframework.stereotype.Component;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/09/03
  */
 @Component

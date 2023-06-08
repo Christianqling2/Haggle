@@ -1,20 +1,20 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.api.product.constant.CategoryLevel;
-import com.mall4j.cloud.api.product.vo.CategoryVO;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.dto.CategoryDTO;
-import com.mall4j.cloud.product.mapper.CategoryMapper;
-import com.mall4j.cloud.product.model.Category;
-import com.mall4j.cloud.product.service.CategoryAndSpuService;
-import com.mall4j.cloud.product.service.CategoryService;
-import com.mall4j.cloud.product.service.SpuService;
+import com.Haggle.cloud.api.product.constant.CategoryLevel;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.dto.CategoryDTO;
+import com.Haggle.cloud.product.mapper.CategoryMapper;
+import com.Haggle.cloud.product.model.Category;
+import com.Haggle.cloud.product.service.CategoryAndSpuService;
+import com.Haggle.cloud.product.service.CategoryService;
+import com.Haggle.cloud.product.service.SpuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -25,12 +25,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * 分类及商品的关联处理信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class CategoryAndSpuServiceImpl implements CategoryAndSpuService {
 

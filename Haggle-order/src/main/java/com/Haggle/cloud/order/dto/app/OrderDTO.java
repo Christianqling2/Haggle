@@ -1,16 +1,11 @@
-package com.mall4j.cloud.order.dto.app;
+package com.Haggle.cloud.order.dto.app;
 
-import com.mall4j.cloud.api.product.dto.ShopCartItemDTO;
+import com.Haggle.cloud.api.product.dto.ShopCartItemDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotNull;
 
-/**
- * 订单参数
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+
 public class OrderDTO {
 
     @Schema(description = "立即购买时提交的商品项,如果该值为空，则说明是从购物车进入，如果该值不为空则说明为立即购买" )

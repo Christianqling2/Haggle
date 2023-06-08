@@ -1,12 +1,12 @@
-package com.mall4j.cloud.rbac.feign;
+package com.Haggle.cloud.rbac.feign;
 
-import com.mall4j.cloud.api.rbac.bo.UriPermissionBO;
-import com.mall4j.cloud.api.rbac.dto.ClearUserPermissionsCacheDTO;
-import com.mall4j.cloud.api.rbac.feign.PermissionFeignClient;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.util.BooleanUtil;
-import com.mall4j.cloud.rbac.service.MenuPermissionService;
+import com.Haggle.cloud.api.rbac.bo.UriPermissionBO;
+import com.Haggle.cloud.api.rbac.dto.ClearUserPermissionsCacheDTO;
+import com.Haggle.cloud.api.rbac.feign.PermissionFeignClient;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.util.BooleanUtil;
+import com.Haggle.cloud.rbac.service.MenuPermissionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/7/15
- */
+
 @RestController
 public class PermissionFeignController implements PermissionFeignClient {
 

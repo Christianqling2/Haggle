@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.config;
+package com.Haggle.cloud.common.config;
 
 import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * MapperFacade 用于dto ->entity的转换
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/11
  */
 @Configuration

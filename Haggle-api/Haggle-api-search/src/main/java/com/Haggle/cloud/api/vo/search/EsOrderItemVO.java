@@ -1,13 +1,13 @@
-package com.mall4j.cloud.api.vo.search;
+package com.Haggle.cloud.api.vo.search;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2021/2/5
  */
 public class EsOrderItemVO {

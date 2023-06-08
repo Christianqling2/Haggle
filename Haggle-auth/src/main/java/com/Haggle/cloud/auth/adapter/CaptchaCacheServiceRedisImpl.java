@@ -1,14 +1,9 @@
-package com.mall4j.cloud.auth.adapter;
+package com.Haggle.cloud.auth.adapter;
 
 import com.anji.captcha.service.CaptchaCacheService;
-import com.mall4j.cloud.common.cache.util.RedisUtil;
+import com.Haggle.cloud.common.cache.util.RedisUtil;
 
-/**
- * 适配验证码在redis的存储
- *
- * @author FrozenWatermelon
- * @date 2020/8/12
- */
+
 public class CaptchaCacheServiceRedisImpl implements CaptchaCacheService {
 
 	@Override

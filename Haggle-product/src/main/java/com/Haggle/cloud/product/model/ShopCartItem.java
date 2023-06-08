@@ -1,14 +1,10 @@
-package com.mall4j.cloud.product.model;
+package com.Haggle.cloud.product.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 购物车
- *
- * @author FrozenWatermelon
- * @date 2020-11-21 10:01:23
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
+
 public class ShopCartItem extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.response;
+package com.Haggle.cloud.common.response;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,7 +9,7 @@ import java.util.Objects;
 /**
  * 统一的返回数据
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/3
  */
 public class ServerResponseEntity<T> implements Serializable {

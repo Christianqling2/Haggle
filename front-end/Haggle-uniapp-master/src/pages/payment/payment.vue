@@ -115,7 +115,7 @@ export default {
      */
     getOrderPaymentInfo() {
       const params = {
-        url: '/mall4cloud_order/a/order/order_pay_info',
+        url: '/Haggle_order/a/order/order_pay_info',
         method: 'GET',
         data: {
           orderIds: this.orderIds
@@ -196,7 +196,7 @@ export default {
     orderPay() {
       let orderIdList = this.orderIds.split(',')
       const params = {
-        url: '/mall4cloud_payment/pay/order',
+        url: '/Haggle_payment/pay/order',
         method: 'POST',
         data: {
           orderIds: orderIdList

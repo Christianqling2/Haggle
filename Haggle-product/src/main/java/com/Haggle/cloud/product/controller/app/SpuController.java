@@ -1,13 +1,13 @@
-package com.mall4j.cloud.product.controller.app;
+package com.Haggle.cloud.product.controller.app;
 
-import com.mall4j.cloud.product.vo.app.*;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.product.model.SpuExtension;
-import com.mall4j.cloud.product.service.SkuService;
-import com.mall4j.cloud.product.service.SpuService;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.product.vo.app.SkuAppVO;
-import com.mall4j.cloud.product.vo.app.SpuAppVO;
+import com.Haggle.cloud.product.vo.app.*;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.model.SpuExtension;
+import com.Haggle.cloud.product.service.SkuService;
+import com.Haggle.cloud.product.service.SpuService;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.product.vo.app.SkuAppVO;
+import com.Haggle.cloud.product.vo.app.SpuAppVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -20,12 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * spu信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @RestController("appSpuController")
 @RequestMapping("/ua/spu")
 @Tag(name = "app-spu信息")

@@ -1,12 +1,9 @@
-package com.mall4j.cloud.api.auth.dto;
+package com.Haggle.cloud.api.auth.dto;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/9/22
- */
+
 public class AuthAccountDTO {
 
     /**

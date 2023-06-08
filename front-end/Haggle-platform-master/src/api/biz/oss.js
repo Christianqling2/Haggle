@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function ossInfo(fileNum) {
   return request({
-    url: '/mall4cloud_biz/oss/info',
+    url: '/Haggle_biz/oss/info',
     method: 'get',
     params: { fileNum: fileNum }
   })
@@ -10,14 +10,14 @@ export function ossInfo(fileNum) {
 
 export function pageFileGroup() {
   return request({
-    url: '/mall4cloud_biz/m/attach_file_group/list',
+    url: '/Haggle_biz/m/attach_file_group/list',
     method: 'get'
   })
 }
 
 export function getFileGroup(param) {
   return request({
-    url: '/mall4cloud_biz/m/attach_file_group',
+    url: '/Haggle_biz/m/attach_file_group',
     method: 'get',
     params: param
   })
@@ -25,7 +25,7 @@ export function getFileGroup(param) {
 
 export function saveFileGroup(data) {
   return request({
-    url: '/mall4cloud_biz/m/attach_file_group',
+    url: '/Haggle_biz/m/attach_file_group',
     method: 'post',
     data
   })
@@ -33,7 +33,7 @@ export function saveFileGroup(data) {
 
 export function updateFileGroup(data) {
   return request({
-    url: '/mall4cloud_biz/m/attach_file_group',
+    url: '/Haggle_biz/m/attach_file_group',
     method: 'put',
     data
   })
@@ -41,7 +41,7 @@ export function updateFileGroup(data) {
 
 export function deleteFileGroup(param) {
   return request({
-    url: '/mall4cloud_biz/m/attach_file_group',
+    url: '/Haggle_biz/m/attach_file_group',
     method: 'delete',
     params: param
   })

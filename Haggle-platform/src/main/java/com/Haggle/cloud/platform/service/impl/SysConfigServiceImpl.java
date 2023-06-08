@@ -1,11 +1,11 @@
-package com.mall4j.cloud.platform.service.impl;
+package com.Haggle.cloud.platform.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.common.cache.constant.ConfigCacheNames;
-import com.mall4j.cloud.common.util.Json;
-import com.mall4j.cloud.platform.model.SysConfig;
-import com.mall4j.cloud.platform.mapper.SysConfigMapper;
-import com.mall4j.cloud.platform.service.SysConfigService;
+import com.Haggle.cloud.common.cache.constant.ConfigCacheNames;
+import com.Haggle.cloud.common.util.Json;
+import com.Haggle.cloud.platform.model.SysConfig;
+import com.Haggle.cloud.platform.mapper.SysConfigMapper;
+import com.Haggle.cloud.platform.service.SysConfigService;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.Caching;
@@ -14,12 +14,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Objects;
 
-/**
- * 系统配置信息表
- *
- * @author lhd
- * @date 2020-12-23 16:27:57
- */
+
 @Service
 public class SysConfigServiceImpl implements SysConfigService {
 

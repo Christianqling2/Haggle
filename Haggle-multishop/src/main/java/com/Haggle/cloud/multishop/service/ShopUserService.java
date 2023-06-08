@@ -1,14 +1,14 @@
-package com.mall4j.cloud.multishop.service;
+package com.Haggle.cloud.multishop.service;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.multishop.model.ShopUser;
-import com.mall4j.cloud.multishop.vo.ShopUserVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.multishop.model.ShopUser;
+import com.Haggle.cloud.multishop.vo.ShopUserVO;
 
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/09/03
  */
 public interface ShopUserService {

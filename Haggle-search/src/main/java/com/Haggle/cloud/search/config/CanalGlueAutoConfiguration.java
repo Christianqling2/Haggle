@@ -1,4 +1,4 @@
-package com.mall4j.cloud.search.config;
+package com.Haggle.cloud.search.config;
 
 import cn.throwx.canal.gule.CanalGlue;
 import cn.throwx.canal.gule.support.parser.*;
@@ -6,9 +6,9 @@ import cn.throwx.canal.gule.support.parser.converter.CanalFieldConverterFactory;
 import cn.throwx.canal.gule.support.parser.converter.InMemoryCanalFieldConverterFactory;
 import cn.throwx.canal.gule.support.processor.BaseCanalBinlogEventProcessor;
 import cn.throwx.canal.gule.support.processor.CanalBinlogEventProcessorFactory;
-import com.mall4j.cloud.search.canal.Mall4cloudCanalBinLogEventParser;
-import com.mall4j.cloud.search.canal.Mall4cloudCanalBinlogEventProcessorFactory;
-import com.mall4j.cloud.search.canal.Mall4cloudCanalGlue;
+import com.Haggle.cloud.search.canal.HaggleCanalBinLogEventParser;
+import com.Haggle.cloud.search.canal.HaggleCanalBinlogEventProcessorFactory;
+import com.Haggle.cloud.search.canal.HaggleCanalGlue;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
@@ -21,12 +21,7 @@ import org.springframework.context.annotation.Primary;
 
 import java.util.Map;
 
-/**
- * @author throwable
- * @version v1
- * @description
- * @since 2020/9/20 17:05
- */
+
 @Configuration
 public class CanalGlueAutoConfiguration implements SmartInitializingSingleton, BeanFactoryAware {
 
@@ -35,7 +30,7 @@ public class CanalGlueAutoConfiguration implements SmartInitializingSingleton, B
     @Bean
     @ConditionalOnMissingBean
     public CanalBinlogEventProcessorFactory canalBinlogEventProcessorFactory() {
-        return Mall4cloudCanalBinlogEventProcessorFactory.of();
+        return HaggleCanalBinlogEventProcessorFactory.of();
     }
 
     @Bean
@@ -53,7 +48,7 @@ public class CanalGlueAutoConfiguration implements SmartInitializingSingleton, B
     @Bean
     @ConditionalOnMissingBean
     public CanalBinLogEventParser canalBinLogEventParser() {
-        return Mall4cloudCanalBinLogEventParser.of();
+        return HaggleCanalBinLogEventParser.of();
     }
 
     @Bean
@@ -65,7 +60,7 @@ public class CanalGlueAutoConfiguration implements SmartInitializingSingleton, B
     @Bean
     @Primary
     public CanalGlue canalGlue(CanalBinlogEventProcessorFactory canalBinlogEventProcessorFactory) {
-        return Mall4cloudCanalGlue.of(canalBinlogEventProcessorFactory);
+        return HaggleCanalGlue.of(canalBinlogEventProcessorFactory);
     }
 
     @Override

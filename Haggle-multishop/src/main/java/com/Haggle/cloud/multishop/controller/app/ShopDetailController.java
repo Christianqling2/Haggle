@@ -1,10 +1,10 @@
-package com.mall4j.cloud.multishop.controller.app;
+package com.Haggle.cloud.multishop.controller.app;
 
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.multishop.service.ShopDetailService;
-import com.mall4j.cloud.multishop.vo.ShopHeadInfoVO;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.multishop.service.ShopDetailService;
+import com.Haggle.cloud.multishop.vo.ShopHeadInfoVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Objects;
 
-/**
- * @Author lth
- * @Date 2021/6/29 18:39
- */
+
 @RequestMapping(value = "/ua/shop_detail")
 @RestController("appShopDetailController")
 @Tag(name = "app-店铺详情信息")
@@ -37,7 +34,7 @@ public class ShopDetailController {
         ShopHeadInfoVO shopHeadInfoVO = new ShopHeadInfoVO();
         ShopDetailVO shopDetailVO = shopDetailService.getByShopId(shopId);
         if (Objects.isNull(shopDetailVO)) {
-            throw new Mall4cloudException("店铺不存在");
+            throw new HaggleException("店铺不存在");
         }
         shopHeadInfoVO.setShopStatus(shopDetailVO.getShopStatus());
         if (!Objects.equals(shopDetailVO.getShopStatus(), 1)) {

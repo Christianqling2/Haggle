@@ -1,14 +1,9 @@
-package com.mall4j.cloud.rbac.model;
+package com.Haggle.cloud.rbac.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 菜单管理
- *
- * @author FrozenWatermelon
- * @date 2020-09-15 16:36:50
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
 public class Menu extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

@@ -1,12 +1,10 @@
-package com.mall4j.cloud.order.vo;
+package com.Haggle.cloud.order.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * @author FrozenWatermelon
- */
+
 @Schema(description = "我的订单-订单项")
 public class MyOrderItemVO {
 

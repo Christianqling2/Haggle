@@ -1,21 +1,21 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.RedisUtil;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageAdapter;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.constant.AttrType;
-import com.mall4j.cloud.product.dto.AttrDTO;
-import com.mall4j.cloud.product.model.Attr;
-import com.mall4j.cloud.product.mapper.AttrMapper;
-import com.mall4j.cloud.product.service.*;
-import com.mall4j.cloud.api.product.vo.AttrVO;
-import com.mall4j.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.RedisUtil;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageAdapter;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.constant.AttrType;
+import com.Haggle.cloud.product.dto.AttrDTO;
+import com.Haggle.cloud.product.model.Attr;
+import com.Haggle.cloud.product.mapper.AttrMapper;
+import com.Haggle.cloud.product.service.*;
+import com.Haggle.cloud.api.product.vo.AttrVO;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * 属性信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:23
- */
+
 @Service
 public class AttrServiceImpl implements AttrService {
 
@@ -58,7 +53,7 @@ public class AttrServiceImpl implements AttrService {
     public AttrVO getByAttrId(Long attrId) {
         AttrVO attrVO = attrMapper.getByAttrId(attrId);
         if (Objects.isNull(attrVO)) {
-            throw new Mall4cloudException("属性不存在或已删除");
+            throw new HaggleException("属性不存在或已删除");
         }
         if (Objects.equals(attrVO.getAttrType(), AttrType.BASIC.value())) {
             attrVO.setCategories(attrCategoryService.listByAttrId(attrId));
@@ -107,7 +102,7 @@ public class AttrServiceImpl implements AttrService {
     public void deleteById(Long attrId) {
         AttrVO dbAttr = getByAttrId(attrId);
         if (Objects.isNull(dbAttr)) {
-            throw new Mall4cloudException("该属性已删除或不存在");
+            throw new HaggleException("该属性已删除或不存在");
         }
         if (Objects.equals(dbAttr.getAttrType(), AttrType.BASIC.value())) {
             List<Long> categoryIds = dbAttr.getCategories().stream().map(CategoryVO::getCategoryId).collect(Collectors.toList());
@@ -126,7 +121,7 @@ public class AttrServiceImpl implements AttrService {
     public List<Long> getAttrOfCategoryIdByAttrId(Long attrId) {
         AttrVO attr = attrMapper.getByAttrId(attrId);
         if (Objects.isNull(attr)) {
-            throw new Mall4cloudException("属性不存在");
+            throw new HaggleException("属性不存在");
         }
         if (CollUtil.isEmpty(attr.getCategories())) {
             return new ArrayList<>();

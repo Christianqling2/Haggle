@@ -1,11 +1,11 @@
-package com.mall4j.cloud.multishop.service;
+package com.Haggle.cloud.multishop.service;
 
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.multishop.dto.ChangeAccountDTO;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.multishop.dto.ChangeAccountDTO;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/09/03
  */
 public interface ShopUserAccountService {

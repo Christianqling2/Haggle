@@ -1,12 +1,12 @@
-package com.mall4j.cloud.biz.controller;
+package com.Haggle.cloud.biz.controller;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
-import com.mall4j.cloud.biz.config.MinioTemplate;
-import com.mall4j.cloud.biz.config.OssConfig;
-import com.mall4j.cloud.biz.constant.OssType;
-import com.mall4j.cloud.biz.vo.OssVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.biz.config.MinioTemplate;
+import com.Haggle.cloud.biz.config.OssConfig;
+import com.Haggle.cloud.biz.constant.OssType;
+import com.Haggle.cloud.biz.vo.OssVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/10
  */
 @RequestMapping(value = "/oss")

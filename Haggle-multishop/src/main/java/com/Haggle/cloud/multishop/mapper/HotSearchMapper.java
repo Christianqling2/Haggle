@@ -1,18 +1,13 @@
-package com.mall4j.cloud.multishop.mapper;
+package com.Haggle.cloud.multishop.mapper;
 
-import com.mall4j.cloud.multishop.dto.HotSearchDTO;
-import com.mall4j.cloud.multishop.model.HotSearch;
-import com.mall4j.cloud.multishop.vo.HotSearchVO;
+import com.Haggle.cloud.multishop.dto.HotSearchDTO;
+import com.Haggle.cloud.multishop.model.HotSearch;
+import com.Haggle.cloud.multishop.vo.HotSearchVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 热搜
- *
- * @author YXF
- * @date 2021-01-27 09:10:00
- */
+
 public interface HotSearchMapper {
 
 	/**

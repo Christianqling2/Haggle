@@ -1,15 +1,15 @@
-package com.mall4j.cloud.rbac.controller;
+package com.Haggle.cloud.rbac.controller;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.util.BooleanUtil;
-import com.mall4j.cloud.rbac.dto.MenuPermissionDTO;
-import com.mall4j.cloud.rbac.model.MenuPermission;
-import com.mall4j.cloud.rbac.service.MenuPermissionService;
-import com.mall4j.cloud.rbac.vo.MenuPermissionVO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.util.BooleanUtil;
+import com.Haggle.cloud.rbac.dto.MenuPermissionDTO;
+import com.Haggle.cloud.rbac.model.MenuPermission;
+import com.Haggle.cloud.rbac.service.MenuPermissionService;
+import com.Haggle.cloud.rbac.vo.MenuPermissionVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -18,10 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/09/02
- */
+
 @RequestMapping(value = "/menu_permission")
 @RestController
 @Tag(name = "权限接口")

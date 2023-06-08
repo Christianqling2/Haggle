@@ -1,8 +1,8 @@
-package com.mall4j.cloud.product.controller.admin;
+package com.Haggle.cloud.product.controller.admin;
 
-import com.mall4j.cloud.api.product.vo.BrandVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.product.service.BrandService;
+import com.Haggle.cloud.api.product.vo.BrandVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.service.BrandService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -11,12 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * 品牌信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @RestController("adminBrandController")
 @RequestMapping("/admin/brand")
 @Tag(name = "admin-品牌信息")

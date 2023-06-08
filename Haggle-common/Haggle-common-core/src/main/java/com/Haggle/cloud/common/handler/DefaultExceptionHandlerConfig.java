@@ -1,9 +1,9 @@
-package com.mall4j.cloud.common.handler;
+package com.Haggle.cloud.common.handler;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.seata.core.context.RootContext;
 import io.seata.core.exception.TransactionException;
 import io.seata.tm.api.GlobalTransactionContext;
@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * 自定义错误处理器，除了授权只要请求服务器成功，就返回200，错误根据错误码前端进行处理
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/11
  */
 @RestController
@@ -65,9 +65,9 @@ public class DefaultExceptionHandlerConfig {
 				.body(ServerResponseEntity.fail(ResponseEnum.HTTP_MESSAGE_NOT_READABLE));
 	}
 
-	@ExceptionHandler(Mall4cloudException.class)
-	public ResponseEntity<ServerResponseEntity<Object>> mall4cloudExceptionHandler(Mall4cloudException e) {
-		logger.error("mall4cloudExceptionHandler", e);
+	@ExceptionHandler(HaggleException.class)
+	public ResponseEntity<ServerResponseEntity<Object>> HaggleExceptionHandler(HaggleException e) {
+		logger.error("HaggleExceptionHandler", e);
 
 		ResponseEnum responseEnum = e.getResponseEnum();
 		// 失败返回失败消息 + 状态码

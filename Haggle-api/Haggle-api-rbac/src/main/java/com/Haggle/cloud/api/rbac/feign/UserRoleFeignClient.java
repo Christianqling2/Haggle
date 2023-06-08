@@ -1,18 +1,18 @@
-package com.mall4j.cloud.api.rbac.feign;
+package com.Haggle.cloud.api.rbac.feign;
 
-import com.mall4j.cloud.api.rbac.dto.UserRoleDTO;
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.rbac.dto.UserRoleDTO;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/25
  */
-@FeignClient(value = "mall4cloud-rbac",contextId = "userRole")
+@FeignClient(value = "Haggle-rbac",contextId = "userRole")
 public interface UserRoleFeignClient {
 
 

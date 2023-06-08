@@ -1,15 +1,15 @@
-package com.mall4j.cloud.platform.controller;
+package com.Haggle.cloud.platform.controller;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.platform.dto.SysUserDTO;
-import com.mall4j.cloud.platform.model.SysUser;
-import com.mall4j.cloud.platform.service.SysUserService;
-import com.mall4j.cloud.platform.vo.SysUserVO;
-import com.mall4j.cloud.platform.vo.SysUserSimpleVO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.platform.dto.SysUserDTO;
+import com.Haggle.cloud.platform.model.SysUser;
+import com.Haggle.cloud.platform.service.SysUserService;
+import com.Haggle.cloud.platform.vo.SysUserVO;
+import com.Haggle.cloud.platform.vo.SysUserSimpleVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -18,10 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-/**
- * @author lhd
- * @date 2020/12/21
- */
+
 @RequestMapping(value = "/sys_user")
 @RestController
 @Tag(name = "平台用户信息")

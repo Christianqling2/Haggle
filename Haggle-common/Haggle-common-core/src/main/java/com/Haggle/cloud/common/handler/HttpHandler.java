@@ -1,10 +1,10 @@
-package com.mall4j.cloud.common.handler;
+package com.Haggle.cloud.common.handler;
 
 import cn.hutool.core.util.CharsetUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.xss.XssUtil;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.xss.XssUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/16
  */
 @Component
@@ -55,7 +55,7 @@ public class HttpHandler {
 			printWriter.write(XssUtil.clean(objectMapper.writeValueAsString(serverResponseEntity)));
 		}
 		catch (IOException e) {
-			throw new Mall4cloudException("io 异常", e);
+			throw new HaggleException("io 异常", e);
 		}
 	}
 

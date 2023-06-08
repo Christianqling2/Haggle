@@ -287,7 +287,7 @@ export default {
       }
       // 保存地址
       const params = {
-        url: '/mall4cloud_user/a/user_addr',
+        url: '/Haggle_user/a/user_addr',
         method: 'POST',
         data: {
           addr: this.addr,
@@ -375,7 +375,7 @@ export default {
       }
       // 保存地址
       const params = {
-        url: '/mall4cloud_user/user_addr',
+        url: '/Haggle_user/user_addr',
         method: 'POST',
         data: {
           addr: this.addr,
@@ -419,7 +419,7 @@ export default {
      */
     getAddressList(reload) {
       const params = {
-        url: '/mall4cloud_user/user_addr/list',
+        url: '/Haggle_user/user_addr/list',
         method: 'GET',
         data: {},
         callBack: res => {
@@ -528,7 +528,7 @@ export default {
      */
     loadOrder(isFirst) {
       const params = {
-        url: '/mall4cloud_order/a/order/confirm',
+        url: '/Haggle_order/a/order/confirm',
         method: 'POST',
         data: {
           addrId:this.addrId,
@@ -604,7 +604,7 @@ export default {
         })
       })
       const params = {
-        url: '/mall4cloud_order/a/order/submit',
+        url: '/Haggle_order/a/order/submit',
         method: 'POST',
         data: {
           orderShopParam: orderShopParam

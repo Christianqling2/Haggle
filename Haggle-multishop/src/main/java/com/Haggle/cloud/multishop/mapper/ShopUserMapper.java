@@ -1,16 +1,13 @@
-package com.mall4j.cloud.multishop.mapper;
+package com.Haggle.cloud.multishop.mapper;
 
-import com.mall4j.cloud.multishop.model.ShopUser;
-import com.mall4j.cloud.multishop.vo.ShopUserVO;
-import com.mall4j.cloud.multishop.vo.ShopUserSimpleVO;
+import com.Haggle.cloud.multishop.model.ShopUser;
+import com.Haggle.cloud.multishop.vo.ShopUserVO;
+import com.Haggle.cloud.multishop.vo.ShopUserSimpleVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/09/03
- */
+
 public interface ShopUserMapper {
 
     /**

@@ -1,18 +1,12 @@
-package com.mall4j.cloud.payment.service;
+package com.Haggle.cloud.payment.service;
 
-import com.mall4j.cloud.payment.bo.PayInfoBO;
-import com.mall4j.cloud.payment.bo.PayInfoResultBO;
-import com.mall4j.cloud.payment.dto.PayInfoDTO;
-import com.mall4j.cloud.payment.model.PayInfo;
+import com.Haggle.cloud.payment.bo.PayInfoBO;
+import com.Haggle.cloud.payment.bo.PayInfoResultBO;
+import com.Haggle.cloud.payment.dto.PayInfoDTO;
+import com.Haggle.cloud.payment.model.PayInfo;
 
 import java.util.List;
 
-/**
- * 订单支付记录
- *
- * @author FrozenWatermelon
- * @date 2020-12-25 09:50:59
- */
 public interface PayInfoService {
 
     /**

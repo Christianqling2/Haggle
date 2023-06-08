@@ -1,14 +1,14 @@
-package com.mall4j.cloud.multishop.service.impl;
+package com.Haggle.cloud.multishop.service.impl;
 
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.multishop.dto.HotSearchDTO;
-import com.mall4j.cloud.multishop.model.HotSearch;
-import com.mall4j.cloud.multishop.mapper.HotSearchMapper;
-import com.mall4j.cloud.multishop.service.HotSearchService;
-import com.mall4j.cloud.multishop.vo.HotSearchVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.multishop.dto.HotSearchDTO;
+import com.Haggle.cloud.multishop.model.HotSearch;
+import com.Haggle.cloud.multishop.mapper.HotSearchMapper;
+import com.Haggle.cloud.multishop.service.HotSearchService;
+import com.Haggle.cloud.multishop.vo.HotSearchVO;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * 热搜
  *
- * @author YXF
+ * /**/ YXF
  * @date 2021-01-27 09:10:00
  */
 @Service

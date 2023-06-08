@@ -1,9 +1,9 @@
-package com.mall4j.cloud.common.util;
+package com.Haggle.cloud.common.util;
 
 import java.util.Objects;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/2
  */
 public class BooleanUtil {

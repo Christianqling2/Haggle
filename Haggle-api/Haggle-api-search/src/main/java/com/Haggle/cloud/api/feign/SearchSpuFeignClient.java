@@ -1,12 +1,12 @@
-package com.mall4j.cloud.api.feign;
+package com.Haggle.cloud.api.feign;
 
-import com.mall4j.cloud.api.dto.EsPageDTO;
-import com.mall4j.cloud.api.dto.ProductSearchDTO;
-import com.mall4j.cloud.api.vo.EsPageVO;
-import com.mall4j.cloud.api.vo.search.ProductSearchVO;
-import com.mall4j.cloud.api.vo.search.SpuSearchVO;
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.dto.EsPageDTO;
+import com.Haggle.cloud.api.dto.ProductSearchDTO;
+import com.Haggle.cloud.api.vo.EsPageVO;
+import com.Haggle.cloud.api.vo.search.ProductSearchVO;
+import com.Haggle.cloud.api.vo.search.SpuSearchVO;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,10 +15,10 @@ import java.util.List;
 
 /**
  * 商品搜索feign连接
- * @author YXF
+ * /**/ YXF
  * @date 2020/12/07
  */
-@FeignClient(value = "mall4cloud-search",contextId = "searchSpu")
+@FeignClient(value = "Haggle-search",contextId = "searchSpu")
 public interface SearchSpuFeignClient {
 
     /**

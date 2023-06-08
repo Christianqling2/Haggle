@@ -81,7 +81,7 @@ export default {
      */
     getHotSearchList() {
       const params = {
-        url: '/mall4cloud_multishop/ua/app/hot_search/list',
+        url: '/Haggle_multishop/ua/app/hot_search/list',
         method: 'GET',
         data: this.pageQuery,
         callBack: res => {

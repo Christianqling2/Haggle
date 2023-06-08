@@ -1,14 +1,9 @@
-package com.mall4j.cloud.multishop.model;
+package com.Haggle.cloud.multishop.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 热搜
- *
- * @author YXF
- * @date 2021-01-27 09:10:00
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
 public class HotSearch extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

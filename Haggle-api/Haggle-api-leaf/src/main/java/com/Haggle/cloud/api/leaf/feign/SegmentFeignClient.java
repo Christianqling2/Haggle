@@ -1,17 +1,13 @@
-package com.mall4j.cloud.api.leaf.feign;
+package com.Haggle.cloud.api.leaf.feign;
 
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/**
- *
- * @author FrozenWatermelon
- * @date 2020/09/08
- */
-@FeignClient(value = "mall4cloud-leaf",contextId ="segment")
+
+@FeignClient(value = "Haggle-leaf",contextId ="segment")
 public interface SegmentFeignClient {
 
 	/**

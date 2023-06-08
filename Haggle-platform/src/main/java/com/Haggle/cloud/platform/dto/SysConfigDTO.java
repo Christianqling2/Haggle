@@ -1,14 +1,9 @@
-package com.mall4j.cloud.platform.dto;
+package com.Haggle.cloud.platform.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
 
-/**
- * 系统配置信息表DTO
- *
- * @author lhd
- * @date 2020-12-23 16:27:57
- */
+
 public class SysConfigDTO{
     private static final long serialVersionUID = 1L;
 

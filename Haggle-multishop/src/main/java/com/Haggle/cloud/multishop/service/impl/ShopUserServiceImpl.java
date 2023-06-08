@@ -1,20 +1,20 @@
-package com.mall4j.cloud.multishop.service.impl;
+package com.Haggle.cloud.multishop.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.feign.AccountFeignClient;
-import com.mall4j.cloud.api.leaf.feign.SegmentFeignClient;
-import com.mall4j.cloud.api.rbac.dto.UserRoleDTO;
-import com.mall4j.cloud.api.rbac.feign.UserRoleFeignClient;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.multishop.mapper.ShopUserMapper;
-import com.mall4j.cloud.multishop.model.ShopUser;
-import com.mall4j.cloud.multishop.service.ShopUserService;
-import com.mall4j.cloud.multishop.vo.ShopUserVO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.feign.AccountFeignClient;
+import com.Haggle.cloud.api.leaf.feign.SegmentFeignClient;
+import com.Haggle.cloud.api.rbac.dto.UserRoleDTO;
+import com.Haggle.cloud.api.rbac.feign.UserRoleFeignClient;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.multishop.mapper.ShopUserMapper;
+import com.Haggle.cloud.multishop.model.ShopUser;
+import com.Haggle.cloud.multishop.service.ShopUserService;
+import com.Haggle.cloud.multishop.vo.ShopUserVO;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/09/03
  */
 @Service

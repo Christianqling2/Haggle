@@ -1,9 +1,6 @@
-package com.mall4j.cloud.payment.constant;
+package com.Haggle.cloud.payment.constant;
 
-/**
- * 支付回调类型
- * @author FrozenWatermelon
- */
+
 public enum BackType {
 
     /**

@@ -1,11 +1,11 @@
-package com.mall4j.cloud.rbac.service.impl;
+package com.Haggle.cloud.rbac.service.impl;
 
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.rbac.mapper.MenuMapper;
-import com.mall4j.cloud.rbac.model.Menu;
-import com.mall4j.cloud.rbac.service.MenuService;
-import com.mall4j.cloud.rbac.vo.MenuSimpleVO;
-import com.mall4j.cloud.rbac.vo.MenuVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.rbac.mapper.MenuMapper;
+import com.Haggle.cloud.rbac.model.Menu;
+import com.Haggle.cloud.rbac.service.MenuService;
+import com.Haggle.cloud.rbac.vo.MenuSimpleVO;
+import com.Haggle.cloud.rbac.vo.MenuVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -13,12 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * 菜单管理
- *
- * @author FrozenWatermelon
- * @date 2020-09-14 16:27:55
- */
+
 @Service
 public class MenuServiceImpl implements MenuService {
 

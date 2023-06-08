@@ -1,15 +1,10 @@
-package com.mall4j.cloud.auth.dto;
+package com.Haggle.cloud.auth.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- * 刷新token
- *
- * @author FrozenWatermelon
- * @date 2020/7/1
- */
+
 public class RefreshTokenDTO {
 
 	/**

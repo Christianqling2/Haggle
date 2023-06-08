@@ -1,12 +1,12 @@
-package com.mall4j.cloud.api.product.vo;
+package com.Haggle.cloud.api.product.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 属性与属性分组关联信息VO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-23 16:20:01
  */
 public class AttrCategoryVO extends BaseVO{

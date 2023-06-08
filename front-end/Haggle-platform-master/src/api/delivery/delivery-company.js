@@ -2,14 +2,14 @@ import request from '@/utils/request'
 
 export function list() {
   return request({
-    url: '/mall4cloud_delivery/p/delivery_company/list',
+    url: '/Haggle_delivery/p/delivery_company/list',
     method: 'get'
   })
 }
 
 export function get(deliveryCompanyId) {
   return request({
-    url: '/mall4cloud_delivery/p/delivery_company',
+    url: '/Haggle_delivery/p/delivery_company',
     method: 'get',
     params: {
       deliveryCompanyId
@@ -19,7 +19,7 @@ export function get(deliveryCompanyId) {
 
 export function save(data) {
   return request({
-    url: '/mall4cloud_delivery/p/delivery_company',
+    url: '/Haggle_delivery/p/delivery_company',
     method: 'post',
     data
   })
@@ -27,7 +27,7 @@ export function save(data) {
 
 export function update(data) {
   return request({
-    url: '/mall4cloud_delivery/p/delivery_company',
+    url: '/Haggle_delivery/p/delivery_company',
     method: 'put',
     data
   })
@@ -35,7 +35,7 @@ export function update(data) {
 
 export function deleteById(deliveryCompanyId) {
   return request({
-    url: '/mall4cloud_delivery/p/delivery_company',
+    url: '/Haggle_delivery/p/delivery_company',
     method: 'delete',
     params: {
       deliveryCompanyId

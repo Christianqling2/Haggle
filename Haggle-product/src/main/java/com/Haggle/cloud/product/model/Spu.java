@@ -1,15 +1,10 @@
-package com.mall4j.cloud.product.model;
+package com.Haggle.cloud.product.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.model.BaseModel;
 
-/**
- * spu信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-08 15:54:23
- */
+
 public class Spu extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

@@ -1,19 +1,14 @@
-package com.mall4j.cloud.payment.model;
+package com.Haggle.cloud.payment.model;
 
 import java.io.Serializable;
 import java.util.Date;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 订单支付记录
- *
- * @author FrozenWatermelon
- * @date 2020-12-25 09:50:59
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
 public class PayInfo extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 
-	public static final String DISTRIBUTED_ID_KEY = "mall4cloud-pay";
+	public static final String DISTRIBUTED_ID_KEY = "Haggle-pay";
 
     /**
      * 支付单号

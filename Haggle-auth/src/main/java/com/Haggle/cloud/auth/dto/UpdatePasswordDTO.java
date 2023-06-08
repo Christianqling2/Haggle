@@ -1,16 +1,11 @@
-package com.mall4j.cloud.auth.dto;
+package com.Haggle.cloud.auth.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-/**
- * 更新密码
- *
- * @author FrozenWatermelon
- * @date 2020/09/21
- */
+
 public class UpdatePasswordDTO {
 
 	@NotBlank(message = "oldPassword NotBlank")

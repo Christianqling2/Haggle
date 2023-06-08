@@ -1,17 +1,17 @@
-package com.mall4j.cloud.multishop.service;
+package com.Haggle.cloud.multishop.service;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.multishop.dto.HotSearchDTO;
-import com.mall4j.cloud.multishop.model.HotSearch;
-import com.mall4j.cloud.multishop.vo.HotSearchVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.multishop.dto.HotSearchDTO;
+import com.Haggle.cloud.multishop.model.HotSearch;
+import com.Haggle.cloud.multishop.vo.HotSearchVO;
 
 import java.util.List;
 
 /**
  * 热搜
  *
- * @author YXF
+ * /**/ YXF
  * @date 2021-01-27 09:10:00
  */
 public interface HotSearchService {

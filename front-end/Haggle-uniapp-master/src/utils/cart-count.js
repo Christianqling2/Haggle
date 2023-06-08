@@ -3,7 +3,7 @@ import http from './http'
 // 获取购物车数字
 function getCartCount() {
   const params = {
-    url: '/mall4cloud_product/a/shop_cart/prod_count',
+    url: '/Haggle_product/a/shop_cart/prod_count',
     method: 'GET',
     data: {},
     callBack: res => {

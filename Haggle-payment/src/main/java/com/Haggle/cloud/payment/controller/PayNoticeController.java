@@ -1,9 +1,9 @@
-package com.mall4j.cloud.payment.controller;
+package com.Haggle.cloud.payment.controller;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.payment.bo.PayInfoResultBO;
-import com.mall4j.cloud.payment.model.PayInfo;
-import com.mall4j.cloud.payment.service.PayInfoService;
+import com.Haggle.cloud.payment.bo.PayInfoResultBO;
+import com.Haggle.cloud.payment.model.PayInfo;
+import com.Haggle.cloud.payment.service.PayInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,9 +13,7 @@ import io.swagger.v3.oas.annotations.Hidden;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- */
+
 @Hidden
 @RestController
 @RequestMapping("/notice/pay")

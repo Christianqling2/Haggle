@@ -1,15 +1,15 @@
-package com.mall4j.cloud.product.controller.admin;
+package com.Haggle.cloud.product.controller.admin;
 
-import com.mall4j.cloud.api.product.constant.CategoryLevel;
-import com.mall4j.cloud.api.product.vo.CategoryVO;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.dto.CategoryDTO;
-import com.mall4j.cloud.product.model.Category;
-import com.mall4j.cloud.product.service.CategoryAndSpuService;
-import com.mall4j.cloud.product.service.CategoryService;
+import com.Haggle.cloud.api.product.constant.CategoryLevel;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.dto.CategoryDTO;
+import com.Haggle.cloud.product.model.Category;
+import com.Haggle.cloud.product.service.CategoryAndSpuService;
+import com.Haggle.cloud.product.service.CategoryService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -22,12 +22,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 分类信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @RestController("platformCategoryController")
 @RequestMapping("/admin/category")
 @Tag(name = "admin-分类信息")
@@ -52,7 +47,7 @@ public class CategoryController {
     @Operation(summary = "保存分类信息" , description = "保存分类信息")
     public ServerResponseEntity<Void> save(@Valid @RequestBody CategoryDTO categoryDTO) {
         if (!Objects.equals(Constant.PLATFORM_SHOP_ID, AuthUserContext.get().getTenantId()) && categoryDTO.getLevel() > CategoryLevel.SECOND.value()) {
-            throw new Mall4cloudException("分类等级最高只能为二级分类");
+            throw new HaggleException("分类等级最高只能为二级分类");
         }
         Category category = mapperFacade.map(categoryDTO, Category.class);
         categoryService.save(category);

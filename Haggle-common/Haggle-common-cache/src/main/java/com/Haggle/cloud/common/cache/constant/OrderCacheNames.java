@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.cache.constant;
+package com.Haggle.cloud.common.cache.constant;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/23
  */
 public interface OrderCacheNames {
@@ -9,7 +9,7 @@ public interface OrderCacheNames {
     /**
      * 前缀
      */
-    String ORDER_PREFIX = "mall4cloud_order:";
+    String ORDER_PREFIX = "Haggle_order:";
 
     /**
      * 确认订单信息缓存

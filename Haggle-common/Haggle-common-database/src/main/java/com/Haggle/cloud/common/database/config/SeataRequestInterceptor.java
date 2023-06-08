@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.database.config;
+package com.Haggle.cloud.common.database.config;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.common.constant.Auth;
+import com.Haggle.cloud.common.constant.Auth;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import io.seata.core.context.RootContext;
@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.stereotype.Component;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/27
  */
 @Component

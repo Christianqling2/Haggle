@@ -1,14 +1,9 @@
-package com.mall4j.cloud.user.dto;
+package com.Haggle.cloud.user.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
 
-/**
- * 用户表DTO
- *
- * @author YXF
- * @date 2020-12-08 11:18:04
- */
+
 public class UserDTO{
     private static final long serialVersionUID = 1L;
 

@@ -1,16 +1,11 @@
-package com.mall4j.cloud.user.service;
+package com.Haggle.cloud.user.service;
 
-import com.mall4j.cloud.api.user.vo.AreaVO;
-import com.mall4j.cloud.user.model.Area;
+import com.Haggle.cloud.api.user.vo.AreaVO;
+import com.Haggle.cloud.user.model.Area;
 
 import java.util.List;
 
-/**
- * 省市区地区信息
- *
- * @author YXF
- * @date 2020-11-25 14:48:52
- */
+
 public interface AreaService {
 
 	/**

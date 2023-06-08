@@ -1,15 +1,11 @@
-package com.mall4j.cloud.order.vo;
+package com.Haggle.cloud.order.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 import java.util.List;
 
-/**
- * 我的订单
- *
- * @author FrozenWatermelon
- */
+
 @Schema(description = "我的订单")
 public class MyOrderVO {
 

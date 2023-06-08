@@ -1,35 +1,35 @@
-package com.mall4j.cloud.order.service.impl;
+package com.Haggle.cloud.order.service.impl;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.mall4j.cloud.api.leaf.feign.SegmentFeignClient;
-import com.mall4j.cloud.api.order.bo.EsOrderBO;
-import com.mall4j.cloud.api.order.bo.OrderSimpleAmountInfoBO;
-import com.mall4j.cloud.api.order.bo.OrderStatusBO;
-import com.mall4j.cloud.api.order.constant.DeliveryType;
-import com.mall4j.cloud.api.order.constant.OrderStatus;
-import com.mall4j.cloud.api.order.dto.DeliveryOrderDTO;
-import com.mall4j.cloud.api.order.vo.OrderAmountVO;
-import com.mall4j.cloud.api.product.dto.SkuStockLockDTO;
-import com.mall4j.cloud.api.product.feign.ShopCartFeignClient;
-import com.mall4j.cloud.api.product.feign.SkuStockLockFeignClient;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.order.vo.ShopCartItemVO;
-import com.mall4j.cloud.common.order.vo.ShopCartOrderMergerVO;
-import com.mall4j.cloud.common.order.vo.ShopCartOrderVO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.rocketmq.config.RocketMqConstant;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.order.bo.SubmitOrderPayAmountInfoBO;
-import com.mall4j.cloud.order.mapper.OrderMapper;
-import com.mall4j.cloud.order.model.Order;
-import com.mall4j.cloud.order.model.OrderAddr;
-import com.mall4j.cloud.order.model.OrderItem;
-import com.mall4j.cloud.order.service.OrderAddrService;
-import com.mall4j.cloud.order.service.OrderItemService;
-import com.mall4j.cloud.order.service.OrderService;
-import com.mall4j.cloud.order.vo.OrderCountVO;
-import com.mall4j.cloud.order.vo.OrderVO;
+import com.Haggle.cloud.api.leaf.feign.SegmentFeignClient;
+import com.Haggle.cloud.api.order.bo.EsOrderBO;
+import com.Haggle.cloud.api.order.bo.OrderSimpleAmountInfoBO;
+import com.Haggle.cloud.api.order.bo.OrderStatusBO;
+import com.Haggle.cloud.api.order.constant.DeliveryType;
+import com.Haggle.cloud.api.order.constant.OrderStatus;
+import com.Haggle.cloud.api.order.dto.DeliveryOrderDTO;
+import com.Haggle.cloud.api.order.vo.OrderAmountVO;
+import com.Haggle.cloud.api.product.dto.SkuStockLockDTO;
+import com.Haggle.cloud.api.product.feign.ShopCartFeignClient;
+import com.Haggle.cloud.api.product.feign.SkuStockLockFeignClient;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.order.vo.ShopCartItemVO;
+import com.Haggle.cloud.common.order.vo.ShopCartOrderMergerVO;
+import com.Haggle.cloud.common.order.vo.ShopCartOrderVO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.rocketmq.config.RocketMqConstant;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.order.bo.SubmitOrderPayAmountInfoBO;
+import com.Haggle.cloud.order.mapper.OrderMapper;
+import com.Haggle.cloud.order.model.Order;
+import com.Haggle.cloud.order.model.OrderAddr;
+import com.Haggle.cloud.order.model.OrderItem;
+import com.Haggle.cloud.order.service.OrderAddrService;
+import com.Haggle.cloud.order.service.OrderItemService;
+import com.Haggle.cloud.order.service.OrderService;
+import com.Haggle.cloud.order.vo.OrderCountVO;
+import com.Haggle.cloud.order.vo.OrderVO;
 import io.seata.spring.annotation.GlobalTransactional;
 import ma.glasnost.orika.MapperFacade;
 import org.apache.rocketmq.client.producer.SendStatus;
@@ -46,12 +46,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 订单信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 14:13:50
- */
+
 @Service
 public class OrderServiceImpl implements OrderService {
     private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
@@ -104,13 +99,13 @@ public class OrderServiceImpl implements OrderService {
         ServerResponseEntity<Void> lockStockResponse = skuStockLockFeignClient.lock(skuStockLocks);
         // 锁定不成，抛异常，让回滚订单
         if (!lockStockResponse.isSuccess()) {
-            throw new Mall4cloudException(lockStockResponse.getMsg());
+            throw new HaggleException(lockStockResponse.getMsg());
         }
         // 发送消息，如果三十分钟后没有支付，则取消订单
         SendStatus sendStatus = orderCancelTemplate.syncSend(RocketMqConstant.ORDER_CANCEL_TOPIC, new GenericMessage<>(orderIds), RocketMqConstant.TIMEOUT, RocketMqConstant.CANCEL_ORDER_DELAY_LEVEL).getSendStatus();
         if (!Objects.equals(sendStatus,SendStatus.SEND_OK)) {
             // 消息发不出去就抛异常，发的出去无所谓
-            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+            throw new HaggleException(ResponseEnum.EXCEPTION);
         }
         return orderIds;
     }
@@ -171,7 +166,7 @@ public class OrderServiceImpl implements OrderService {
         SendStatus stockSendStatus = stockMqTemplate.syncSend(RocketMqConstant.STOCK_UNLOCK_TOPIC, new GenericMessage<>(orderIds)).getSendStatus();
         if (!Objects.equals(stockSendStatus,SendStatus.SEND_OK)) {
             // 消息发不出去就抛异常，发的出去无所谓
-            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+            throw new HaggleException(ResponseEnum.EXCEPTION);
         }
     }
 
@@ -180,7 +175,7 @@ public class OrderServiceImpl implements OrderService {
         Order order = orderMapper.getOrderByOrderIdAndUserId(orderId, userId);
         if (order == null) {
             // 订单不存在
-            throw new Mall4cloudException(ResponseEnum.ORDER_NOT_EXIST);
+            throw new HaggleException(ResponseEnum.ORDER_NOT_EXIST);
         }
         return order;
     }
@@ -190,7 +185,7 @@ public class OrderServiceImpl implements OrderService {
         Order order = orderMapper.getOrderByOrderIdAndShopId(orderId, AuthUserContext.get().getTenantId());
         if (order == null) {
             // 订单不存在
-            throw new Mall4cloudException(ResponseEnum.ORDER_NOT_EXIST);
+            throw new HaggleException(ResponseEnum.ORDER_NOT_EXIST);
         }
         return mapperFacade.map(order, OrderVO.class);
     }
@@ -243,7 +238,7 @@ public class OrderServiceImpl implements OrderService {
         // 地址信息
         if (Objects.isNull(orderAddr)) {
             // 请填写收货地址
-            throw new Mall4cloudException("请填写收货地址");
+            throw new HaggleException("请填写收货地址");
         }
         // 保存收货地址
         orderAddrService.save(orderAddr);
@@ -295,7 +290,7 @@ public class OrderServiceImpl implements OrderService {
     private Order getOrder(Long userId, Integer dvyType, ShopCartOrderVO shopCartOrderDto) {
         ServerResponseEntity<Long> segmentIdResponse = segmentFeignClient.getSegmentId(Order.DISTRIBUTED_ID_KEY);
         if (!segmentIdResponse.isSuccess()) {
-            throw new Mall4cloudException("获取订单id失败");
+            throw new HaggleException("获取订单id失败");
         }
         // 订单信息
         Order order = new Order();

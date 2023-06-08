@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.feign;
+package com.Haggle.cloud.common.feign;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/10
  */
 @RefreshScope

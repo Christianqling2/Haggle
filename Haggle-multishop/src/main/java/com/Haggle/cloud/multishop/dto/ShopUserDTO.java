@@ -1,14 +1,11 @@
-package com.mall4j.cloud.multishop.dto;
+package com.Haggle.cloud.multishop.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/9/8
- */
+
 public class ShopUserDTO {
 
     @Schema(description = "店铺用户id" )

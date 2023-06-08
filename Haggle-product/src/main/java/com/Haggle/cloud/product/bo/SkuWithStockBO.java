@@ -1,9 +1,6 @@
-package com.mall4j.cloud.product.bo;
+package com.Haggle.cloud.product.bo;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/12/30
- */
+
 public class SkuWithStockBO {
 
     private Long id;

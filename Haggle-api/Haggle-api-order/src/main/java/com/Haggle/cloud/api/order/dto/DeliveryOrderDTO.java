@@ -1,16 +1,11 @@
-package com.mall4j.cloud.api.order.dto;
+package com.Haggle.cloud.api.order.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
-/**
- * 订单快递信息DTO
- *
- * @author FrozenWatermelon
- * @date 2020-12-07 15:10:00
- */
+
 public class DeliveryOrderDTO{
 
 	@Schema(description = "deliveryOrderId" )

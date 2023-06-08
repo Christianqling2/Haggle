@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 
-const TokenKey = 'mall4cloud-Admin-Token'
+const TokenKey = 'Haggle-Admin-Token'
 
 export function getToken() {
   return Cookies.get(TokenKey)

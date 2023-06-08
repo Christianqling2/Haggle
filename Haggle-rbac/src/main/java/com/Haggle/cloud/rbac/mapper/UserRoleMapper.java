@@ -1,13 +1,9 @@
-package com.mall4j.cloud.rbac.mapper;
+package com.Haggle.cloud.rbac.mapper;
 
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/6/24
- */
 public interface UserRoleMapper {
 
     /**

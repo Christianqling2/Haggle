@@ -1,11 +1,11 @@
-package com.mall4j.cloud.biz.dto;
+package com.Haggle.cloud.biz.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * DTO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-04 16:15:02
  */
 public class AttachFileGroupDTO{

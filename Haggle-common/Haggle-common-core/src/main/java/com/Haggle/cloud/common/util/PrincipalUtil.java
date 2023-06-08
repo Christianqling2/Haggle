@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.util;
+package com.Haggle.cloud.common.util;
 
 import cn.hutool.core.util.StrUtil;
 
@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 /**
  * 正则表达式工具
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class PrincipalUtil {
 

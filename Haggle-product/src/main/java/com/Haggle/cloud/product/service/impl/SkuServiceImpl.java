@@ -1,21 +1,21 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.product.vo.SpuSkuAttrValueVO;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.RedisUtil;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.product.dto.SkuDTO;
-import com.mall4j.cloud.product.dto.SpuDTO;
-import com.mall4j.cloud.product.mapper.SkuMapper;
-import com.mall4j.cloud.product.model.Sku;
-import com.mall4j.cloud.product.model.SkuStock;
-import com.mall4j.cloud.product.model.SpuSkuAttrValue;
-import com.mall4j.cloud.product.service.SkuService;
-import com.mall4j.cloud.product.service.SkuStockService;
-import com.mall4j.cloud.product.service.SpuSkuAttrValueService;
-import com.mall4j.cloud.api.product.vo.SkuVO;
-import com.mall4j.cloud.product.vo.app.SkuAppVO;
+import com.Haggle.cloud.api.product.vo.SpuSkuAttrValueVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.RedisUtil;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.product.dto.SkuDTO;
+import com.Haggle.cloud.product.dto.SpuDTO;
+import com.Haggle.cloud.product.mapper.SkuMapper;
+import com.Haggle.cloud.product.model.Sku;
+import com.Haggle.cloud.product.model.SkuStock;
+import com.Haggle.cloud.product.model.SpuSkuAttrValue;
+import com.Haggle.cloud.product.service.SkuService;
+import com.Haggle.cloud.product.service.SkuStockService;
+import com.Haggle.cloud.product.service.SpuSkuAttrValueService;
+import com.Haggle.cloud.api.product.vo.SkuVO;
+import com.Haggle.cloud.product.vo.app.SkuAppVO;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,12 +29,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-/**
- * sku信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class SkuServiceImpl implements SkuService {
 

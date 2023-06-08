@@ -1,9 +1,5 @@
-package com.mall4j.cloud.payment.bo;
+package com.Haggle.cloud.payment.bo;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/12/25
- */
 public class PayInfoBO {
 
     /**

@@ -1,9 +1,6 @@
-package com.mall4j.cloud.api.order.constant;
+package com.Haggle.cloud.api.order.constant;
 
-/**
- * 配送类型
- * @author FrozenWatermelon
- */
+
 public enum DeliveryType {
 
 

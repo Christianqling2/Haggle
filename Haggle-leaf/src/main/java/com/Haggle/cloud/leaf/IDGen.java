@@ -1,9 +1,9 @@
-package com.mall4j.cloud.leaf;
+package com.Haggle.cloud.leaf;
 
-import com.mall4j.cloud.leaf.common.Result;
+import com.Haggle.cloud.leaf.common.Result;
 
 /**
- * @author leaf
+ * /**/ leaf
  */
 public interface IDGen {
 

@@ -1,14 +1,11 @@
-package com.mall4j.cloud.user.service;
+package com.Haggle.cloud.user.service;
 
-import com.mall4j.cloud.common.order.vo.UserAddrVO;
-import com.mall4j.cloud.user.model.UserAddr;
+import com.Haggle.cloud.common.order.vo.UserAddrVO;
+import com.Haggle.cloud.user.model.UserAddr;
 
 import java.util.List;
 
-/**
- * @Author lth
- * @Date 2021/7/1 17:37
- */
+
 public interface UserAddrService {
 
     /**

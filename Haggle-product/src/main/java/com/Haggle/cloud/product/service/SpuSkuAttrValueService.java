@@ -1,15 +1,10 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.product.model.SpuSkuAttrValue;
+import com.Haggle.cloud.product.model.SpuSkuAttrValue;
 
 import java.util.List;
 
-/**
- * 商品sku销售属性关联信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface SpuSkuAttrValueService {
 
 	/**

@@ -1,10 +1,8 @@
-package com.mall4j.cloud.order.vo;
+package com.Haggle.cloud.order.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * @author FrozenWatermelon
- */
+
 @Schema(description = "我的订单数量")
 public class OrderCountVO {
 

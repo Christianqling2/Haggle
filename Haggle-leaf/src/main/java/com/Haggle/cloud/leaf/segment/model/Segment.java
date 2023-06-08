@@ -1,9 +1,9 @@
-package com.mall4j.cloud.leaf.segment.model;
+package com.Haggle.cloud.leaf.segment.model;
 
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * @author left
+ * /**/ left
  */
 public class Segment {
 

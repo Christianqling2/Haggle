@@ -1,16 +1,16 @@
-package com.mall4j.cloud.biz.service;
+package com.Haggle.cloud.biz.service;
 
-import com.mall4j.cloud.biz.model.AttachFile;
-import com.mall4j.cloud.biz.vo.AttachFileVO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.biz.model.AttachFile;
+import com.Haggle.cloud.biz.vo.AttachFileVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
 
 import java.util.List;
 
 /**
  * 上传文件记录表
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-21 10:21:40
  */
 public interface AttachFileService {

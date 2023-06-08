@@ -1,15 +1,10 @@
-package com.mall4j.cloud.order.dto.multishop;
+package com.Haggle.cloud.order.dto.multishop;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotNull;
 
-/**
- * 订单参数
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+
 public class OrderAdminDTO {
 
     @Schema(description = "订单id" )

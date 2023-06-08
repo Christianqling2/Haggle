@@ -1,12 +1,12 @@
-package com.mall4j.cloud.leaf.segment;
+package com.Haggle.cloud.leaf.segment;
 
-import com.mall4j.cloud.leaf.IDGen;
-import com.mall4j.cloud.leaf.common.Result;
-import com.mall4j.cloud.leaf.common.Status;
-import com.mall4j.cloud.leaf.segment.dao.IDAllocDao;
-import com.mall4j.cloud.leaf.segment.model.LeafAlloc;
-import com.mall4j.cloud.leaf.segment.model.Segment;
-import com.mall4j.cloud.leaf.segment.model.SegmentBuffer;
+import com.Haggle.cloud.leaf.IDGen;
+import com.Haggle.cloud.leaf.common.Result;
+import com.Haggle.cloud.leaf.common.Status;
+import com.Haggle.cloud.leaf.segment.dao.IDAllocDao;
+import com.Haggle.cloud.leaf.segment.model.LeafAlloc;
+import com.Haggle.cloud.leaf.segment.model.Segment;
+import com.Haggle.cloud.leaf.segment.model.SegmentBuffer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,9 +15,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * @author leaf
- */
+
 public class SegmentIDGenImpl implements IDGen {
 
 	private static final Logger logger = LoggerFactory.getLogger(SegmentIDGenImpl.class);

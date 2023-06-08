@@ -1,16 +1,11 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.product.model.SpuAttrValue;
-import com.mall4j.cloud.api.product.vo.SpuAttrValueVO;
+import com.Haggle.cloud.product.model.SpuAttrValue;
+import com.Haggle.cloud.api.product.vo.SpuAttrValueVO;
 
 import java.util.List;
 
-/**
- * 商品规格属性关联信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface SpuAttrValueService {
 
 	/**

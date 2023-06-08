@@ -1,13 +1,8 @@
-package com.mall4j.cloud.multishop.model;
+package com.Haggle.cloud.multishop.model;
 
 import java.io.Serializable;
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 轮播图
- *
- * @author YXF
- * @date 2020-11-24 16:38:32
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
 public class IndexImg extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

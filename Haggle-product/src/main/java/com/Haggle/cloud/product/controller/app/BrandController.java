@@ -1,11 +1,11 @@
-package com.mall4j.cloud.product.controller.app;
+package com.Haggle.cloud.product.controller.app;
 
-import com.mall4j.cloud.product.dto.BrandDTO;
-import com.mall4j.cloud.product.service.BrandService;
-import com.mall4j.cloud.api.product.vo.BrandVO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.dto.BrandDTO;
+import com.Haggle.cloud.product.service.BrandService;
+import com.Haggle.cloud.api.product.vo.BrandVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-/**
- * 品牌信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @RestController("appBrandController")
 @RequestMapping("/ua/brand")
 @Tag(name = "app-品牌信息")

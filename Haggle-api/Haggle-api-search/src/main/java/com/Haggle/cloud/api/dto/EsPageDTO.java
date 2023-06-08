@@ -1,13 +1,13 @@
-package com.mall4j.cloud.api.dto;
+package com.Haggle.cloud.api.dto;
 
 
-import com.mall4j.cloud.common.util.PrincipalUtil;
+import com.Haggle.cloud.common.util.PrincipalUtil;
 import io.swagger.v3.oas.annotations.media.Schema;
 import javax.validation.constraints.NotNull;
 import java.util.Arrays;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/16
  */
 public class EsPageDTO{

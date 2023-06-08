@@ -1,14 +1,9 @@
-package com.mall4j.cloud.api.multishop.bo;
+package com.Haggle.cloud.api.multishop.bo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 店铺详情VO
- *
- * @author FrozenWatermelon
- * @date 2020-11-23 16:24:29
- */
+
 public class EsShopDetailBO extends BaseVO{
     private static final long serialVersionUID = 1L;
 

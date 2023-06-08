@@ -1,14 +1,14 @@
-package com.mall4j.cloud.search.listener;
+package com.Haggle.cloud.search.listener;
 
 import cn.hutool.core.util.StrUtil;
 import cn.throwx.canal.gule.model.CanalBinLogResult;
 import cn.throwx.canal.gule.support.processor.BaseCanalBinlogEventProcessor;
-import com.mall4j.cloud.api.product.bo.EsProductBO;
-import com.mall4j.cloud.api.product.feign.ProductFeignClient;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.search.bo.ShopDetailBO;
-import com.mall4j.cloud.search.manager.ProductUpdateManager;
+import com.Haggle.cloud.api.product.bo.EsProductBO;
+import com.Haggle.cloud.api.product.feign.ProductFeignClient;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.search.bo.ShopDetailBO;
+import com.Haggle.cloud.search.manager.ProductUpdateManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +17,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * @author YXF
- * @date 2021/01/21
- */
+
 @Component
 public class ShopDetailCanalListener extends BaseCanalBinlogEventProcessor<ShopDetailBO> {
 

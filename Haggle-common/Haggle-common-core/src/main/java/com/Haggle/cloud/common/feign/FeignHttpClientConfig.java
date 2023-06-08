@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.feign;
+package com.Haggle.cloud.common.feign;
 
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/12/11
  */
 @Configuration

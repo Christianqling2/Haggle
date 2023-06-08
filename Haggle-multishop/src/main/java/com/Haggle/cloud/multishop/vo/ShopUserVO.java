@@ -1,11 +1,11 @@
-package com.mall4j.cloud.multishop.vo;
+package com.Haggle.cloud.multishop.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/2
  */
 public class ShopUserVO {

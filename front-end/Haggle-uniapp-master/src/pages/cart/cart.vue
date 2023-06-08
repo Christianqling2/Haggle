@@ -264,7 +264,7 @@ export default {
           })
       })
       let params = {
-        url: '/mall4cloud_product/a/shop_cart/delete_item',
+        url: '/Haggle_product/a/shop_cart/delete_item',
         method: 'DELETE',
         data: selectIds,
         callBack: res => {
@@ -309,7 +309,7 @@ export default {
         }
       }
       const params = {
-        url: '/mall4cloud_product/a/shop_cart/change_item',
+        url: '/Haggle_product/a/shop_cart/change_item',
         method: 'POST',
         data: reqData,
         callBack: res => {
@@ -341,7 +341,7 @@ export default {
      */
     getCartInfo() {
       const params = {
-        url: '/mall4cloud_product/a/shop_cart/info',
+        url: '/Haggle_product/a/shop_cart/info',
         method: 'GET',
         data: {},
         callBack: res => {
@@ -496,7 +496,7 @@ export default {
      */
     calTotalPrice() {
       const params = {
-        url: '/mall4cloud_product/a/shop_cart/check_items',
+        url: '/Haggle_product/a/shop_cart/check_items',
         method: 'POST',
         data: this.reqItemList,
         callBack: res => {
@@ -539,7 +539,7 @@ export default {
       }
       let cartItem = this.shopCarts[this.shopIndex].shopCartItem[this.prodIndex]
       const params = {
-        url: '/mall4cloud_product/a/shop_cart/change_item',
+        url: '/Haggle_product/a/shop_cart/change_item',
         method: 'POST',
         data: {
           oldSkuId: this.oldSkuId,
@@ -562,7 +562,7 @@ export default {
     getProdInfo(spuId) {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_product/ua/spu/prod_info',
+        url: '/Haggle_product/ua/spu/prod_info',
         method: 'GET',
         data: {
           spuId: spuId
@@ -724,7 +724,7 @@ export default {
     getDefaultAddrStr() {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_user/user_addr/list',
+        url: '/Haggle_user/user_addr/list',
         method: 'GET',
         callBack: res => {
           if (!res.length) {

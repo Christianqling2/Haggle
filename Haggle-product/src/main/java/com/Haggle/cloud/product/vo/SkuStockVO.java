@@ -1,14 +1,8 @@
-package com.mall4j.cloud.product.vo;
+package com.Haggle.cloud.product.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 库存信息VO
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
 public class SkuStockVO extends BaseVO {
     private static final long serialVersionUID = 1L;
 

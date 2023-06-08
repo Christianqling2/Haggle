@@ -1,21 +1,17 @@
-package com.mall4j.cloud.search.feign;
+package com.Haggle.cloud.search.feign;
 
 
-import com.mall4j.cloud.api.dto.EsPageDTO;
-import com.mall4j.cloud.api.feign.SearchOrderFeignClient;
-import com.mall4j.cloud.api.vo.EsPageVO;
-import com.mall4j.cloud.api.vo.search.EsOrderVO;
-import com.mall4j.cloud.common.dto.OrderSearchDTO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.search.manager.OrderSearchManager;
+import com.Haggle.cloud.api.dto.EsPageDTO;
+import com.Haggle.cloud.api.feign.SearchOrderFeignClient;
+import com.Haggle.cloud.api.vo.EsPageVO;
+import com.Haggle.cloud.api.vo.search.EsOrderVO;
+import com.Haggle.cloud.common.dto.OrderSearchDTO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.search.manager.OrderSearchManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * 商品搜索feign连接
- * @author YXF
- * @date 2020/12/07
- */
+
 @RestController
 public class SearchOrderFeignController implements SearchOrderFeignClient {
 

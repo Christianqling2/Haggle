@@ -1,20 +1,20 @@
-package com.mall4j.cloud.product.controller.admin;
+package com.Haggle.cloud.product.controller.admin;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.dto.SkuDTO;
-import com.mall4j.cloud.product.dto.SpuDTO;
-import com.mall4j.cloud.product.dto.SpuPageSearchDTO;
-import com.mall4j.cloud.product.model.SpuExtension;
-import com.mall4j.cloud.product.service.*;
-import com.mall4j.cloud.api.product.vo.*;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.dto.SkuDTO;
+import com.Haggle.cloud.product.dto.SpuDTO;
+import com.Haggle.cloud.product.dto.SpuPageSearchDTO;
+import com.Haggle.cloud.product.model.SpuExtension;
+import com.Haggle.cloud.product.service.*;
+import com.Haggle.cloud.api.product.vo.*;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +24,7 @@ import javax.validation.Valid;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * spu信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @RestController("platformSpuController")
 @RequestMapping("/admin/spu")
 @Tag(name = "admin-spu信息")
@@ -144,7 +139,7 @@ public class SpuController {
         SpuVO dbSpu = spuService.getBySpuId(spu.getSpuId());
         String error = checkUpdateStatusData(dbSpu);
         if (StrUtil.isNotBlank(error)) {
-            throw new Mall4cloudException(error);
+            throw new HaggleException(error);
         }
         spuService.changeSpuStatus(spu.getSpuId(), spu.getStatus());
         spuService.removeSpuCacheBySpuId(spu.getSpuId());
@@ -159,7 +154,7 @@ public class SpuController {
         List<Long> errorList = new ArrayList<>(spu.getSpuIds());
         List<SpuVO> spuList = spuService.listBySpuIds(spu.getSpuIds(), null, null);
         if (CollUtil.isEmpty(spuList)) {
-            throw new Mall4cloudException("您选择的商品信息有误，请刷新后重试");
+            throw new HaggleException("您选择的商品信息有误，请刷新后重试");
         }
         Map<Long, SpuVO> spuMap = spuList.stream().collect(Collectors.toMap(SpuVO::getSpuId, s -> s));
         for (Long spuId : spu.getSpuIds()) {
@@ -170,11 +165,11 @@ public class SpuController {
             }
         }
         if (CollUtil.isEmpty(spuIds)) {
-            throw new Mall4cloudException("您所选择的商品中没有符合操作条件的商品");
+            throw new HaggleException("您所选择的商品中没有符合操作条件的商品");
         }
         spuService.batchRemoveSpuCacheBySpuId(spuIds);
         if (errorList.size() > 0) {
-            throw new Mall4cloudException("商品id为：" + errorList.toString() + "的" + errorList.size() + "件商品不符合操作条件");
+            throw new HaggleException("商品id为：" + errorList.toString() + "的" + errorList.size() + "件商品不符合操作条件");
         }
         spuService.changeSpuStatus(spu.getSpuId(), spu.getStatus());
         spuService.removeSpuCacheBySpuId(spu.getSpuId());
@@ -223,10 +218,10 @@ public class SpuController {
      */
     private void checkSaveOrUpdateInfo(SpuDTO spuDTO) {
         if (!Objects.equals(Constant.PLATFORM_SHOP_ID, AuthUserContext.get().getTenantId()) && Objects.isNull(spuDTO.getShopCategoryId())) {
-            throw new Mall4cloudException("店铺分类不能为空");
+            throw new HaggleException("店铺分类不能为空");
         }
         if (Objects.isNull(spuDTO.getCategoryId())) {
-            throw new Mall4cloudException("平台分类不能为空");
+            throw new HaggleException("平台分类不能为空");
         }
         if (Objects.isNull(spuDTO.getSeq())) {
             spuDTO.setSeq(0);

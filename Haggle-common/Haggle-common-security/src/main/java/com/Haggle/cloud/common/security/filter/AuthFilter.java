@@ -1,20 +1,20 @@
-package com.mall4j.cloud.common.security.filter;
+package com.Haggle.cloud.common.security.filter;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.constant.SysTypeEnum;
-import com.mall4j.cloud.api.auth.feign.TokenFeignClient;
-import com.mall4j.cloud.api.rbac.constant.HttpMethodEnum;
-import com.mall4j.cloud.api.rbac.feign.PermissionFeignClient;
-import com.mall4j.cloud.common.constant.Auth;
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
-import com.mall4j.cloud.common.handler.HttpHandler;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.security.adapter.AuthConfigAdapter;
-import com.mall4j.cloud.common.util.IpHelper;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.constant.SysTypeEnum;
+import com.Haggle.cloud.api.auth.feign.TokenFeignClient;
+import com.Haggle.cloud.api.rbac.constant.HttpMethodEnum;
+import com.Haggle.cloud.api.rbac.feign.PermissionFeignClient;
+import com.Haggle.cloud.common.constant.Auth;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.handler.HttpHandler;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.security.adapter.AuthConfigAdapter;
+import com.Haggle.cloud.common.util.IpHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +31,7 @@ import java.util.Objects;
 /**
  * 授权过滤，只要实现AuthConfigAdapter接口，添加对应路径即可：
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/11
  */
 @Component

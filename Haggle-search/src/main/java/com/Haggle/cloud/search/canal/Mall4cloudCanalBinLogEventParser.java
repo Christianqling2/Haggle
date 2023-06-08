@@ -1,4 +1,4 @@
-package com.mall4j.cloud.search.canal;
+package com.Haggle.cloud.search.canal;
 
 import cn.throwx.canal.gule.common.BinLogEventType;
 import cn.throwx.canal.gule.common.OperationType;
@@ -14,10 +14,8 @@ import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
-/**
- * @author FrozenWatermelon
- */
-public class Mall4cloudCanalBinLogEventParser implements CanalBinLogEventParser {
+
+public class HaggleCanalBinLogEventParser implements CanalBinLogEventParser {
 
     private static final Logger log = LoggerFactory.getLogger(DefaultCanalBinLogEventParser.class);
 
@@ -84,10 +82,10 @@ public class Mall4cloudCanalBinLogEventParser implements CanalBinLogEventParser 
         }
     }
 
-    private Mall4cloudCanalBinLogEventParser() {
+    private HaggleCanalBinLogEventParser() {
     }
 
-    public static Mall4cloudCanalBinLogEventParser of() {
-        return new Mall4cloudCanalBinLogEventParser();
+    public static HaggleCanalBinLogEventParser of() {
+        return new HaggleCanalBinLogEventParser();
     }
 }

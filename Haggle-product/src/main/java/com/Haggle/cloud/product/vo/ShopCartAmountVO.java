@@ -1,10 +1,8 @@
-package com.mall4j.cloud.product.vo;
+package com.Haggle.cloud.product.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * @author FrozenWatermelon
- */
+
 @Schema(description = "购物车合计")
 public class ShopCartAmountVO {
 

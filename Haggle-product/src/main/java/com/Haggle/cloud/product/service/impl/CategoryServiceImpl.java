@@ -1,19 +1,19 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.api.product.constant.CategoryLevel;
-import com.mall4j.cloud.product.dto.CategoryDTO;
-import com.mall4j.cloud.product.model.Category;
-import com.mall4j.cloud.product.mapper.CategoryMapper;
-import com.mall4j.cloud.product.service.CategoryService;
-import com.mall4j.cloud.api.product.vo.CategoryVO;
-import com.mall4j.cloud.product.service.SpuService;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.api.product.constant.CategoryLevel;
+import com.Haggle.cloud.product.dto.CategoryDTO;
+import com.Haggle.cloud.product.model.Category;
+import com.Haggle.cloud.product.mapper.CategoryMapper;
+import com.Haggle.cloud.product.service.CategoryService;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.product.service.SpuService;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.Caching;
@@ -24,12 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * 分类信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class CategoryServiceImpl implements CategoryService {
 
@@ -40,7 +35,7 @@ public class CategoryServiceImpl implements CategoryService {
     public CategoryVO getById(Long categoryId) {
         CategoryVO category = categoryMapper.getById(categoryId);
         if (Objects.isNull(category)) {
-//            throw new mall4cloudException("分类不存在，请刷新后重试");
+//            throw new HaggleException("分类不存在，请刷新后重试");
             return category;
         }
         List<CategoryVO> paths = new ArrayList<>();
@@ -71,7 +66,7 @@ public class CategoryServiceImpl implements CategoryService {
     public void update(Category category) {
         CategoryVO dbCategory = getById(category.getCategoryId());
         if (Objects.equals(dbCategory.getCategoryId(), category.getParentId())) {
-            throw new Mall4cloudException("分类不能成为本身的上级分类");
+            throw new HaggleException("分类不能成为本身的上级分类");
         }
         existCategoryName(category);
         int updateCount = categoryMapper.update(category);
@@ -81,7 +76,7 @@ public class CategoryServiceImpl implements CategoryService {
     public void deleteById(Long categoryId) {
         int count = categoryMapper.getCategoryUseNum(categoryId);
         if (count > 0) {
-            throw new Mall4cloudException("该分类在使用中，不能进行删除操作");
+            throw new HaggleException("该分类在使用中，不能进行删除操作");
         }
         categoryMapper.deleteById(categoryId);
     }
@@ -225,7 +220,7 @@ public class CategoryServiceImpl implements CategoryService {
         category.setShopId(AuthUserContext.get().getTenantId());
         int countByName = categoryMapper.existCategoryName(category);
         if (countByName > 0) {
-            throw new Mall4cloudException("分类名已存在，请重新输入");
+            throw new HaggleException("分类名已存在，请重新输入");
         }
     }
 }

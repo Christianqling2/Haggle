@@ -1,4 +1,4 @@
-package com.mall4j.cloud.multishop.dto;
+package com.Haggle.cloud.multishop.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -7,12 +7,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-/**
- * 店铺详情DTO
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 15:50:25
- */
+
 public class ShopDetailDTO{
     private static final long serialVersionUID = 1L;
 

@@ -1,10 +1,6 @@
-package com.mall4j.cloud.search.constant;
+package com.Haggle.cloud.search.constant;
 
-/**
- * 搜索平台的类型
- * @author YXF
- * @date 2021/03/16
- */
+
 public enum SearchTypeEnum {
 
     /**

@@ -1,13 +1,13 @@
-package com.mall4j.cloud.gateway;
+package com.Haggle.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/23
  */
-@SpringBootApplication(scanBasePackages = { "com.mall4j.cloud" })
+@SpringBootApplication(scanBasePackages = { "com.Haggle.cloud" })
 public class GatewayApplication {
 
 	public static void main(String[] args) {

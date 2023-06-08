@@ -1,12 +1,12 @@
-package com.mall4j.cloud.biz.vo;
+package com.Haggle.cloud.biz.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * VO
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-04 16:15:02
  */
 public class AttachFileGroupVO extends BaseVO{

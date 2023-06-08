@@ -1,11 +1,11 @@
-package com.mall4j.cloud.leaf.service;
+package com.Haggle.cloud.leaf.service;
 
-import com.mall4j.cloud.leaf.IDGen;
-import com.mall4j.cloud.leaf.common.Result;
-import com.mall4j.cloud.leaf.exception.InitException;
-import com.mall4j.cloud.leaf.segment.SegmentIDGenImpl;
-import com.mall4j.cloud.leaf.segment.dao.IDAllocDao;
-import com.mall4j.cloud.leaf.segment.dao.impl.IDAllocDaoImpl;
+import com.Haggle.cloud.leaf.IDGen;
+import com.Haggle.cloud.leaf.common.Result;
+import com.Haggle.cloud.leaf.exception.InitException;
+import com.Haggle.cloud.leaf.segment.SegmentIDGenImpl;
+import com.Haggle.cloud.leaf.segment.dao.IDAllocDao;
+import com.Haggle.cloud.leaf.segment.dao.impl.IDAllocDaoImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import javax.sql.DataSource;
 
 /**
- * @author left
+ * /**/ left
  */
 @Service("SegmentService")
 public class SegmentService {

@@ -1,17 +1,14 @@
-package com.mall4j.cloud.api.auth.feign;
+package com.Haggle.cloud.api.auth.feign;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.common.constant.Auth;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.common.constant.Auth;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/7/15
- */
-@FeignClient(value = "mall4cloud-auth",contextId ="token")
+
+@FeignClient(value = "Haggle-auth",contextId ="token")
 public interface TokenFeignClient {
 
 	/**

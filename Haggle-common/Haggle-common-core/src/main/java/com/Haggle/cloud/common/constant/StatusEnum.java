@@ -1,8 +1,8 @@
-package com.mall4j.cloud.common.constant;
+package com.Haggle.cloud.common.constant;
 
 /**
  * 等级
- * @author yxf
+ * /**/ yxf
  * @date 2020/11/20
  */
 public enum StatusEnum {

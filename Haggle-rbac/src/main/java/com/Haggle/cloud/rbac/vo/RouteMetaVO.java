@@ -1,12 +1,8 @@
-package com.mall4j.cloud.rbac.vo;
+package com.Haggle.cloud.rbac.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/8/7
- */
 public class RouteMetaVO {
 
 	/**

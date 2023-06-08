@@ -1,10 +1,10 @@
-package com.mall4j.cloud.multishop.controller.app;
+package com.Haggle.cloud.multishop.controller.app;
 
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.multishop.dto.ShopDetailDTO;
-import com.mall4j.cloud.multishop.service.ShopDetailService;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.multishop.dto.ShopDetailDTO;
+import com.Haggle.cloud.multishop.service.ShopDetailService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Objects;
 
-/**
- * @Author lth
- * @Date 2021/6/30 9:37
- */
+
 @RequestMapping(value = "/my_shop_detail")
 @RestController("appMyShopDetailController")
 @Tag(name = "app-我的店铺详情信息")

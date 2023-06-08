@@ -1,11 +1,11 @@
-package com.mall4j.cloud.api.vo;
+package com.Haggle.cloud.api.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/16
  */
 public class EsPageVO<T> {

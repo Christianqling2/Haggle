@@ -281,7 +281,7 @@ export default {
       }
       if (this.skuPopConfirmType === 1) {
         const params = {
-          url: '/mall4cloud_product/a/shop_cart/change_item',
+          url: '/Haggle_product/a/shop_cart/change_item',
           method: 'POST',
           data: {
             skuId: this.defaultSku.skuId,
@@ -376,7 +376,7 @@ export default {
     getProdInfo() {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_product/ua/spu/prod_info',
+        url: '/Haggle_product/ua/spu/prod_info',
         method: 'GET',
         data: {
           spuId: this.spuId
@@ -409,7 +409,7 @@ export default {
      */
     getShopInfo() {
       const params = {
-        url: '/mall4cloud_multishop/ua/shop_detail/head_info',
+        url: '/Haggle_multishop/ua/shop_detail/head_info',
         method: 'GET',
         data: {
           shopId: this.shopId
@@ -617,7 +617,7 @@ export default {
      */
     getCartCount() {
       const params = {
-        url: '/mall4cloud_product/a/shop_cart/prod_count',
+        url: '/Haggle_product/a/shop_cart/prod_count',
         method: 'GET',
         data: {},
         callBack: res => {

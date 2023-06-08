@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>mall4cloud</artifactId>
-        <groupId>com.mall4j.cloud</groupId>
+        <artifactId>Haggle</artifactId>
+        <groupId>com.Haggle.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mall4cloud-gateway</artifactId>
+    <artifactId>Haggle-gateway</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>

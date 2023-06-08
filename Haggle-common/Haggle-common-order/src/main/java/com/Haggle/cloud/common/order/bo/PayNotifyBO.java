@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.order.bo;
+package com.Haggle.cloud.common.order.bo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 订单支付成功通知
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/12/8
  */
 public class PayNotifyBO {

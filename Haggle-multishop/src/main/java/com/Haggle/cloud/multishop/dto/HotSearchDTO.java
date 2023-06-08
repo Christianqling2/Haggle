@@ -1,14 +1,9 @@
-package com.mall4j.cloud.multishop.dto;
+package com.Haggle.cloud.multishop.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
 
-/**
- * 热搜DTO
- *
- * @author YXF
- * @date 2021-01-27 09:10:00
- */
+
 public class HotSearchDTO{
     private static final long serialVersionUID = 1L;
 

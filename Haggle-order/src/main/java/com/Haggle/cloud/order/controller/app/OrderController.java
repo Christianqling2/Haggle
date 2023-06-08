@@ -1,25 +1,25 @@
-package com.mall4j.cloud.order.controller.app;
+package com.Haggle.cloud.order.controller.app;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.api.product.manager.ShopCartAdapter;
-import com.mall4j.cloud.api.user.feign.UserAddrFeignClient;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.constant.OrderCacheNames;
-import com.mall4j.cloud.common.cache.util.CacheManagerUtil;
-import com.mall4j.cloud.common.cache.util.RedisUtil;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.order.vo.*;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.order.bo.SubmitOrderPayAmountInfoBO;
-import com.mall4j.cloud.order.dto.app.OrderDTO;
-import com.mall4j.cloud.order.model.OrderAddr;
-import com.mall4j.cloud.order.service.OrderAddrService;
-import com.mall4j.cloud.order.service.OrderItemService;
-import com.mall4j.cloud.order.service.OrderService;
-import com.mall4j.cloud.order.vo.SubmitOrderPayInfoVO;
+import com.Haggle.cloud.api.product.manager.ShopCartAdapter;
+import com.Haggle.cloud.api.user.feign.UserAddrFeignClient;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.constant.OrderCacheNames;
+import com.Haggle.cloud.common.cache.util.CacheManagerUtil;
+import com.Haggle.cloud.common.cache.util.RedisUtil;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.order.vo.*;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.order.bo.SubmitOrderPayAmountInfoBO;
+import com.Haggle.cloud.order.dto.app.OrderDTO;
+import com.Haggle.cloud.order.model.OrderAddr;
+import com.Haggle.cloud.order.service.OrderAddrService;
+import com.Haggle.cloud.order.service.OrderItemService;
+import com.Haggle.cloud.order.service.OrderService;
+import com.Haggle.cloud.order.vo.SubmitOrderPayInfoVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -30,12 +30,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.*;
 
-/**
- * 订单信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 14:13:50
- */
+
 @RestController("appOrderController")
 @RequestMapping("/a/order")
 @Tag(name = "app-订单信息")

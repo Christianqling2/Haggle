@@ -1,15 +1,15 @@
-package com.mall4j.cloud.search.listener;
+package com.Haggle.cloud.search.listener;
 
 
 import cn.throwx.canal.gule.model.CanalBinLogResult;
 import cn.throwx.canal.gule.support.processor.BaseCanalBinlogEventProcessor;
-import com.mall4j.cloud.api.product.bo.EsProductBO;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.CacheManagerUtil;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.util.Json;
-import com.mall4j.cloud.search.bo.SpuExtensionBO;
-import com.mall4j.cloud.search.constant.EsIndexEnum;
+import com.Haggle.cloud.api.product.bo.EsProductBO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.CacheManagerUtil;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.util.Json;
+import com.Haggle.cloud.search.bo.SpuExtensionBO;
+import com.Haggle.cloud.search.constant.EsIndexEnum;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.RequestOptions;
@@ -22,10 +22,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/11/13
- */
+
 @Component
 public class SpuExtensionCanalListener extends BaseCanalBinlogEventProcessor<SpuExtensionBO> {
 
@@ -71,7 +68,7 @@ public class SpuExtensionCanalListener extends BaseCanalBinlogEventProcessor<Spu
             log.info(updateResponse.toString());
         } catch (IOException e) {
             log.error(e.toString());
-            throw new Mall4cloudException("更新es信息异常",e);
+            throw new HaggleException("更新es信息异常",e);
         }
     }
 }

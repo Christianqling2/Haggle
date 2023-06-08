@@ -1,19 +1,14 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.api.product.dto.SkuStockLockDTO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.product.model.SkuStockLock;
+import com.Haggle.cloud.api.product.dto.SkuStockLockDTO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.product.model.SkuStockLock;
 
 import java.util.List;
 
-/**
- * 库存锁定信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-22 16:12:10
- */
+
 public interface SkuStockLockService {
 
 	/**

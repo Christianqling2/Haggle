@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.dto;
+package com.Haggle.cloud.common.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -9,7 +9,7 @@ import java.util.Date;
  * unsigned、单表时自增、步长为 1。create_time, update_time 的类型均为 datetime
  * 类型，前者现在时表示主动式创建，后者过去分词表示被动式更新。
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class BaseDTO {
 

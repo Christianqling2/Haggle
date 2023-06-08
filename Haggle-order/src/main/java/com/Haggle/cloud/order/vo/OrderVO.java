@@ -1,17 +1,12 @@
-package com.mall4j.cloud.order.vo;
+package com.Haggle.cloud.order.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 import java.util.List;
 
-/**
- * 订单信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 14:13:50
- */
+
 public class OrderVO extends BaseVO {
 
 	@Schema(description = "订单ID" )

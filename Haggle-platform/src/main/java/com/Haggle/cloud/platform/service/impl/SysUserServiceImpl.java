@@ -1,19 +1,19 @@
-package com.mall4j.cloud.platform.service.impl;
+package com.Haggle.cloud.platform.service.impl;
 
-import com.mall4j.cloud.platform.model.SysUser;
-import com.mall4j.cloud.platform.vo.SysUserVO;
+import com.Haggle.cloud.platform.model.SysUser;
+import com.Haggle.cloud.platform.vo.SysUserVO;
 import org.springframework.cache.annotation.Cacheable;
-import com.mall4j.cloud.api.auth.feign.AccountFeignClient;
-import com.mall4j.cloud.api.rbac.dto.UserRoleDTO;
-import com.mall4j.cloud.api.rbac.feign.UserRoleFeignClient;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.platform.mapper.SysUserMapper;
-import com.mall4j.cloud.platform.service.SysUserService;
-import com.mall4j.cloud.platform.vo.SysUserSimpleVO;
+import com.Haggle.cloud.api.auth.feign.AccountFeignClient;
+import com.Haggle.cloud.api.rbac.dto.UserRoleDTO;
+import com.Haggle.cloud.api.rbac.feign.UserRoleFeignClient;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.platform.mapper.SysUserMapper;
+import com.Haggle.cloud.platform.service.SysUserService;
+import com.Haggle.cloud.platform.vo.SysUserSimpleVO;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -23,10 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 import java.util.List;
 
-/**
- * @author lhd
- * @date 2020/12/22
- */
+
 @Service
 public class SysUserServiceImpl implements SysUserService {
 

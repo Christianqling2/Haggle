@@ -1,16 +1,16 @@
-package com.mall4j.cloud.platform.service.impl;
+package com.Haggle.cloud.platform.service.impl;
 
-import com.mall4j.cloud.api.auth.dto.AuthAccountDTO;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.feign.AccountFeignClient;
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.util.IpHelper;
-import com.mall4j.cloud.platform.dto.ChangeAccountDTO;
-import com.mall4j.cloud.platform.mapper.SysUserMapper;
-import com.mall4j.cloud.platform.model.SysUser;
-import com.mall4j.cloud.platform.service.SysUserAccountService;
+import com.Haggle.cloud.api.auth.dto.AuthAccountDTO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.feign.AccountFeignClient;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.util.IpHelper;
+import com.Haggle.cloud.platform.dto.ChangeAccountDTO;
+import com.Haggle.cloud.platform.mapper.SysUserMapper;
+import com.Haggle.cloud.platform.model.SysUser;
+import com.Haggle.cloud.platform.service.SysUserAccountService;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,10 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
-/**
- * @author lhd
- * @date 2020/12/22
- */
+
 @Service
 public class SysUserAccountServiceImpl implements SysUserAccountService {
 

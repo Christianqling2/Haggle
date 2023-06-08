@@ -1,8 +1,8 @@
-package com.mall4j.cloud.biz.mapper;
+package com.Haggle.cloud.biz.mapper;
 
 
-import com.mall4j.cloud.biz.model.AttachFile;
-import com.mall4j.cloud.biz.vo.AttachFileVO;
+import com.Haggle.cloud.biz.model.AttachFile;
+import com.Haggle.cloud.biz.vo.AttachFileVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 上传文件记录表
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-21 10:21:40
  */
 public interface AttachFileMapper {

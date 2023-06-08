@@ -1,21 +1,16 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.api.product.bo.EsProductBO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.product.dto.SpuDTO;
-import com.mall4j.cloud.product.dto.SpuPageSearchDTO;
-import com.mall4j.cloud.product.model.SpuExtension;
+import com.Haggle.cloud.api.product.bo.EsProductBO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.product.dto.SpuDTO;
+import com.Haggle.cloud.product.dto.SpuPageSearchDTO;
+import com.Haggle.cloud.product.model.SpuExtension;
 
 import java.util.List;
 
-/**
- * spu信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface SpuService {
 
 	/**

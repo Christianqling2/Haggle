@@ -1,13 +1,9 @@
-package com.mall4j.cloud.rbac.vo;
+package com.Haggle.cloud.rbac.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 菜单资源简易VO
- *
- * @author FrozenWatermelon
- * @date 2020-09-17 16:35:01
- */
+
+
 public class MenuPermissionSimpleVO {
     private static final long serialVersionUID = 1L;
 

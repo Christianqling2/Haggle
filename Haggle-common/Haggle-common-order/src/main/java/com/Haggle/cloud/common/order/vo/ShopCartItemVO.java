@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.order.vo;
+package com.Haggle.cloud.common.order.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-11-20 15:47:32
  */
 public class ShopCartItemVO implements Serializable {

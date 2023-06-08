@@ -51,7 +51,7 @@ export default {
   methods: {
     getUserInfo() {
       var params = {
-        url: '/mall4cloud_user/a/user/ma/user_detail_info',
+        url: '/Haggle_user/a/user/ma/user_detail_info',
         method: 'get',
         callBack: res => {
           this.userInfo = res
@@ -74,7 +74,7 @@ export default {
 
     loginOut() {
       var params = {
-        url: '/mall4cloud_auth/login_out',
+        url: '/Haggle_auth/login_out',
         method: 'post',
         callBack: res => {
           console.log('退出登录token:', uni.getStorageSync('token'))
@@ -102,7 +102,7 @@ export default {
     // 修改头像信息
     submitUserPic() {
       var params = {
-        url: '/mall4cloud_user/a/user/ma/update_user',
+        url: '/Haggle_user/a/user/ma/update_user',
         method: 'post',
         data: {
           pic: this.userPicUrl

@@ -1,15 +1,10 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
 
 import java.util.List;
 
-/**
- * 属性与属性分组关联信息
- *
- * @author YXF
- * @date 2020-11-23 16:20:01
- */
+
 public interface AttrCategoryService {
 
 	/**

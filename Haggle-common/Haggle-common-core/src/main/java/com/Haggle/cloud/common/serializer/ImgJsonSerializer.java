@@ -1,10 +1,10 @@
-package com.mall4j.cloud.common.serializer;
+package com.Haggle.cloud.common.serializer;
 
 import cn.hutool.core.util.StrUtil;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
-import com.mall4j.cloud.common.util.PrincipalUtil;
+import com.Haggle.cloud.common.util.PrincipalUtil;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/09/03
  */
 @Component

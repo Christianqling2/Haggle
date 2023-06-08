@@ -1,24 +1,24 @@
-package com.mall4j.cloud.user.service.impl;
+package com.Haggle.cloud.user.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.auth.constant.SysTypeEnum;
-import com.mall4j.cloud.api.auth.dto.AuthAccountDTO;
-import com.mall4j.cloud.api.auth.feign.AccountFeignClient;
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.api.leaf.feign.SegmentFeignClient;
-import com.mall4j.cloud.api.user.vo.UserApiVO;
-import com.mall4j.cloud.common.cache.constant.UserCacheNames;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.util.IpHelper;
-import com.mall4j.cloud.user.dto.UserRegisterDTO;
-import com.mall4j.cloud.user.model.User;
-import com.mall4j.cloud.user.mapper.UserMapper;
-import com.mall4j.cloud.user.service.UserService;
+import com.Haggle.cloud.api.auth.constant.SysTypeEnum;
+import com.Haggle.cloud.api.auth.dto.AuthAccountDTO;
+import com.Haggle.cloud.api.auth.feign.AccountFeignClient;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.api.leaf.feign.SegmentFeignClient;
+import com.Haggle.cloud.api.user.vo.UserApiVO;
+import com.Haggle.cloud.common.cache.constant.UserCacheNames;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.util.IpHelper;
+import com.Haggle.cloud.user.dto.UserRegisterDTO;
+import com.Haggle.cloud.user.model.User;
+import com.Haggle.cloud.user.mapper.UserMapper;
+import com.Haggle.cloud.user.service.UserService;
 import io.seata.spring.annotation.GlobalTransactional;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.cache.annotation.CacheEvict;
@@ -32,12 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 用户表
- *
- * @author YXF
- * @date 2020-12-08 11:18:04
- */
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -88,7 +83,7 @@ public class UserServiceImpl implements UserService {
 
         ServerResponseEntity<Long> segmentIdResponse = segmentFeignClient.getSegmentId(User.DISTRIBUTED_ID_KEY);
         if (!segmentIdResponse.isSuccess()) {
-            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+            throw new HaggleException(ResponseEnum.EXCEPTION);
         }
         Long userId = segmentIdResponse.getData();
 
@@ -107,7 +102,7 @@ public class UserServiceImpl implements UserService {
         ServerResponseEntity<Long> serverResponse = accountFeignClient.save(authAccountDTO);
         // 抛异常回滚
         if (!serverResponse.isSuccess()) {
-            throw new Mall4cloudException(serverResponse.getMsg());
+            throw new HaggleException(serverResponse.getMsg());
         }
 
         User user = new User();
@@ -124,10 +119,10 @@ public class UserServiceImpl implements UserService {
     private void checkRegisterInfo(UserRegisterDTO userRegisterDTO) {
         ServerResponseEntity<AuthAccountVO> responseEntity = accountFeignClient.getByUsernameAndSysType(userRegisterDTO.getUserName(), SysTypeEnum.ORDINARY);
         if (!responseEntity.isSuccess()) {
-            throw new Mall4cloudException(responseEntity.getMsg());
+            throw new HaggleException(responseEntity.getMsg());
         }
         if (Objects.nonNull(responseEntity.getData())) {
-            throw new Mall4cloudException("用户名已存在");
+            throw new HaggleException("用户名已存在");
         }
     }
 

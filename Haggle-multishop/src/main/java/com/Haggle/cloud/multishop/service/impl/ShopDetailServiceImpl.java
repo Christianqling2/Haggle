@@ -1,39 +1,39 @@
-package com.mall4j.cloud.multishop.service.impl;
+package com.Haggle.cloud.multishop.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.constant.SysTypeEnum;
-import com.mall4j.cloud.api.auth.dto.AuthAccountDTO;
-import com.mall4j.cloud.api.auth.feign.AccountFeignClient;
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.api.feign.SearchSpuFeignClient;
-import com.mall4j.cloud.api.multishop.bo.EsShopDetailBO;
-import com.mall4j.cloud.api.vo.search.SpuSearchVO;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.constant.UserAdminType;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.util.IpHelper;
-import com.mall4j.cloud.common.util.PrincipalUtil;
-import com.mall4j.cloud.multishop.constant.ShopStatus;
-import com.mall4j.cloud.multishop.constant.ShopType;
-import com.mall4j.cloud.multishop.dto.ShopDetailDTO;
-import com.mall4j.cloud.multishop.mapper.ShopDetailMapper;
-import com.mall4j.cloud.multishop.model.ShopDetail;
-import com.mall4j.cloud.multishop.model.ShopUser;
-import com.mall4j.cloud.multishop.service.ShopDetailService;
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.multishop.service.ShopUserService;
-import com.mall4j.cloud.multishop.vo.ShopDetailAppVO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.constant.SysTypeEnum;
+import com.Haggle.cloud.api.auth.dto.AuthAccountDTO;
+import com.Haggle.cloud.api.auth.feign.AccountFeignClient;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.api.feign.SearchSpuFeignClient;
+import com.Haggle.cloud.api.multishop.bo.EsShopDetailBO;
+import com.Haggle.cloud.api.vo.search.SpuSearchVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.constant.UserAdminType;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.util.IpHelper;
+import com.Haggle.cloud.common.util.PrincipalUtil;
+import com.Haggle.cloud.multishop.constant.ShopStatus;
+import com.Haggle.cloud.multishop.constant.ShopType;
+import com.Haggle.cloud.multishop.dto.ShopDetailDTO;
+import com.Haggle.cloud.multishop.mapper.ShopDetailMapper;
+import com.Haggle.cloud.multishop.model.ShopDetail;
+import com.Haggle.cloud.multishop.model.ShopUser;
+import com.Haggle.cloud.multishop.service.ShopDetailService;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.multishop.service.ShopUserService;
+import com.Haggle.cloud.multishop.vo.ShopDetailAppVO;
 import io.seata.spring.annotation.GlobalTransactional;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.cache.annotation.CacheEvict;
@@ -49,7 +49,7 @@ import java.util.stream.Collectors;
 /**
  * 店铺详情
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-11-23 16:24:29
  */
 @Service
@@ -78,7 +78,7 @@ public class ShopDetailServiceImpl implements ShopDetailService {
     public ShopDetailVO getByShopId(Long shopId) {
         ServerResponseEntity<AuthAccountVO> accountRes = accountFeignClient.getMerchantInfoByTenantId(shopId);
         if (!accountRes.isSuccess()) {
-            throw new Mall4cloudException("商家信息获取失败");
+            throw new HaggleException("商家信息获取失败");
         }
         AuthAccountVO authAccountVO = accountRes.getData();
         ShopDetailVO shopDetailVO = shopDetailMapper.getByShopId(shopId);
@@ -119,7 +119,7 @@ public class ShopDetailServiceImpl implements ShopDetailService {
         Set<Long> spuIdSet = page.getList().stream().map(ShopDetailAppVO::getShopId).collect(Collectors.toSet());
         ServerResponseEntity<List<SpuSearchVO>> spuResponse = searchSpuFeignClient.limitSizeListByShopIds(new ArrayList<>(spuIdSet), Constant.SPU_SIZE_FIVE);
         if (!Objects.equals(spuResponse.getCode(), ResponseEnum.OK.value())) {
-            throw new Mall4cloudException(spuResponse.getMsg());
+            throw new HaggleException(spuResponse.getMsg());
         } else if (CollectionUtil.isEmpty(spuResponse.getData())) {
             return page;
         }
@@ -169,7 +169,7 @@ public class ShopDetailServiceImpl implements ShopDetailService {
         checkShopInfo(shopDetailDTO);
         UserInfoInTokenBO userInfoInTokenBO = AuthUserContext.get();
         if (Objects.nonNull(userInfoInTokenBO.getTenantId())) {
-            throw new Mall4cloudException("该用户已经创建过店铺");
+            throw new HaggleException("该用户已经创建过店铺");
         }
         // 保存店铺
         ShopDetail shopDetail = mapperFacade.map(shopDetailDTO, ShopDetail.class);
@@ -197,7 +197,7 @@ public class ShopDetailServiceImpl implements ShopDetailService {
         userInfoInTokenBO.setTenantId(shopDetail.getShopId());
         ServerResponseEntity<Void> updateTenantIdRes = accountFeignClient.updateUserInfoByUserIdAndSysType(userInfoInTokenBO, AuthUserContext.get().getUserId(), SysTypeEnum.ORDINARY.value());
         if (!Objects.equals(updateTenantIdRes.getCode(), ResponseEnum.OK.value())) {
-            throw new Mall4cloudException(updateTenantIdRes.getMsg());
+            throw new HaggleException(updateTenantIdRes.getMsg());
         }
     }
 
@@ -222,23 +222,23 @@ public class ShopDetailServiceImpl implements ShopDetailService {
             shopDetailDTO.setShopName(shopDetailDTO.getShopName().trim());
         }
         if(shopDetailMapper.countShopName(shopDetailDTO.getShopName(), null) > 0) {
-            throw new Mall4cloudException("店铺名称已存在");
+            throw new HaggleException("店铺名称已存在");
         }
 
         String username = shopDetailDTO.getUsername();
         // 用户名
         if (!PrincipalUtil.isUserName(username)) {
-            throw new Mall4cloudException("用户名格式不正确");
+            throw new HaggleException("用户名格式不正确");
         }
 
         ServerResponseEntity<AuthAccountVO> accountResponse = accountFeignClient.getByUsernameAndSysType(username, SysTypeEnum.MULTISHOP);
         if (!Objects.equals(accountResponse.getCode(), ResponseEnum.OK.value())) {
-            throw new Mall4cloudException(accountResponse.getMsg());
+            throw new HaggleException(accountResponse.getMsg());
         }
 
         AuthAccountVO authAccountVO = accountResponse.getData();
         if (Objects.nonNull(authAccountVO)) {
-            throw new Mall4cloudException("用户账号已存在");
+            throw new HaggleException("用户账号已存在");
         }
     }
 
@@ -266,7 +266,7 @@ public class ShopDetailServiceImpl implements ShopDetailService {
         authAccountDTO.setIsAdmin(UserAdminType.ADMIN.value());
         ServerResponseEntity<Long> save = accountFeignClient.save(authAccountDTO);
         if (!Objects.equals(save.getCode(), ResponseEnum.OK.value())) {
-            throw new Mall4cloudException(save.getMsg());
+            throw new HaggleException(save.getMsg());
         }
     }
 }

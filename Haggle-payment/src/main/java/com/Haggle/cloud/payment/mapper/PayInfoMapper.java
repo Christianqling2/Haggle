@@ -1,14 +1,9 @@
-package com.mall4j.cloud.payment.mapper;
+package com.Haggle.cloud.payment.mapper;
 
-import com.mall4j.cloud.payment.model.PayInfo;
+import com.Haggle.cloud.payment.model.PayInfo;
 import org.apache.ibatis.annotations.Param;
 
-/**
- * 订单支付记录
- *
- * @author FrozenWatermelon
- * @date 2020-12-25 09:50:59
- */
+
 public interface PayInfoMapper {
 
 	/**

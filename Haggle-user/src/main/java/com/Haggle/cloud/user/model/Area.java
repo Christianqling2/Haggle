@@ -1,15 +1,10 @@
-package com.mall4j.cloud.user.model;
+package com.Haggle.cloud.user.model;
 
-import com.mall4j.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.model.BaseModel;
 
 import java.io.Serializable;
 
-/**
- * 省市区地区信息
- *
- * @author YXF
- * @date 2020-11-25 15:16:14
- */
+
 public class Area extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

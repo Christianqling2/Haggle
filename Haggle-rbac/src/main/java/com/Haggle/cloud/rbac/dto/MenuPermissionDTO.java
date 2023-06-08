@@ -1,16 +1,11 @@
-package com.mall4j.cloud.rbac.dto;
+package com.Haggle.cloud.rbac.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-/**
- * 菜单资源DTO
- *
- * @author FrozenWatermelon
- * @date 2020-09-15 16:35:01
- */
+
 public class MenuPermissionDTO {
     private static final long serialVersionUID = 1L;
 

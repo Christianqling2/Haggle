@@ -1,12 +1,12 @@
-package com.mall4j.cloud.biz.model;
+package com.Haggle.cloud.biz.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.model.BaseModel;
 /**
  *
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-04 16:15:02
  */
 public class AttachFileGroup extends BaseModel implements Serializable{

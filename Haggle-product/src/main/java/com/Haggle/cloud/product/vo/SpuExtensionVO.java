@@ -1,16 +1,11 @@
-package com.mall4j.cloud.product.vo;
+package com.Haggle.cloud.product.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 
-/**
- * VO
- *
- * @author FrozenWatermelon
- * @date 2020-11-11 13:49:06
- */
+
 public class SpuExtensionVO extends BaseVO {
     private static final long serialVersionUID = 1L;
 

@@ -1,10 +1,10 @@
-package com.mall4j.cloud.api.rbac.dto;
+package com.Haggle.cloud.api.rbac.dto;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/2
  */
 public class CheckPermissionDTO {

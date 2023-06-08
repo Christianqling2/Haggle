@@ -1,18 +1,13 @@
-package com.mall4j.cloud.multishop.mapper;
+package com.Haggle.cloud.multishop.mapper;
 
-import com.mall4j.cloud.multishop.dto.IndexImgDTO;
-import com.mall4j.cloud.multishop.model.IndexImg;
-import com.mall4j.cloud.multishop.vo.IndexImgVO;
+import com.Haggle.cloud.multishop.dto.IndexImgDTO;
+import com.Haggle.cloud.multishop.model.IndexImg;
+import com.Haggle.cloud.multishop.vo.IndexImgVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 轮播图
- *
- * @author YXF
- * @date 2020-11-24 16:38:32
- */
+
 public interface IndexImgMapper {
 
 	/**

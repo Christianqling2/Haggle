@@ -1,16 +1,13 @@
-package com.mall4j.cloud.rbac.mapper;
+package com.Haggle.cloud.rbac.mapper;
 
-import com.mall4j.cloud.api.rbac.bo.UriPermissionBO;
-import com.mall4j.cloud.rbac.model.MenuPermission;
-import com.mall4j.cloud.rbac.vo.MenuPermissionVO;
+import com.Haggle.cloud.api.rbac.bo.UriPermissionBO;
+import com.Haggle.cloud.rbac.model.MenuPermission;
+import com.Haggle.cloud.rbac.vo.MenuPermissionVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/09/03
- */
+
 public interface MenuPermissionMapper {
 
 	/**

@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.util;
+package com.Haggle.cloud.common.util;
 
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * IP帮助工具
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class IpHelper {
     private static final String UNKNOWN = "unknown";

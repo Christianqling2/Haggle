@@ -1,7 +1,7 @@
-package com.mall4j.cloud.api.product.bo;
+package com.Haggle.cloud.api.product.bo;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/12
  */
 public class EsAttrBO {

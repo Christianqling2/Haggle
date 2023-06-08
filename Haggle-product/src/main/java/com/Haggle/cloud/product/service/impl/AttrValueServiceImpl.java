@@ -1,16 +1,16 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.product.constant.AttrType;
-import com.mall4j.cloud.product.mapper.AttrMapper;
-import com.mall4j.cloud.product.model.Attr;
-import com.mall4j.cloud.product.model.AttrValue;
-import com.mall4j.cloud.product.mapper.AttrValueMapper;
-import com.mall4j.cloud.product.model.SpuAttrValue;
-import com.mall4j.cloud.product.service.AttrValueService;
-import com.mall4j.cloud.api.product.vo.AttrVO;
-import com.mall4j.cloud.api.product.vo.AttrValueVO;
-import com.mall4j.cloud.product.service.SpuAttrValueService;
+import com.Haggle.cloud.product.constant.AttrType;
+import com.Haggle.cloud.product.mapper.AttrMapper;
+import com.Haggle.cloud.product.model.Attr;
+import com.Haggle.cloud.product.model.AttrValue;
+import com.Haggle.cloud.product.mapper.AttrValueMapper;
+import com.Haggle.cloud.product.model.SpuAttrValue;
+import com.Haggle.cloud.product.service.AttrValueService;
+import com.Haggle.cloud.api.product.vo.AttrVO;
+import com.Haggle.cloud.api.product.vo.AttrValueVO;
+import com.Haggle.cloud.product.service.SpuAttrValueService;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * 属性值信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class AttrValueServiceImpl implements AttrValueService {
 

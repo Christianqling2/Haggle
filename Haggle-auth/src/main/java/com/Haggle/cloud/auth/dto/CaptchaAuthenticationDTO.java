@@ -1,13 +1,8 @@
-package com.mall4j.cloud.auth.dto;
+package com.Haggle.cloud.auth.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 验证码登陆
- *
- * @author FrozenWatermelon
- * @date 2020/7/1
- */
+
 public class CaptchaAuthenticationDTO extends AuthenticationDTO {
 
 	@Schema(description = "验证码" , required = true)

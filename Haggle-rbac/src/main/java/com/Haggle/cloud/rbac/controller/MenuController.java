@@ -1,17 +1,17 @@
-package com.mall4j.cloud.rbac.controller;
+package com.Haggle.cloud.rbac.controller;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.util.BooleanUtil;
-import com.mall4j.cloud.rbac.dto.MenuDTO;
-import com.mall4j.cloud.rbac.model.Menu;
-import com.mall4j.cloud.rbac.service.MenuService;
-import com.mall4j.cloud.rbac.vo.MenuSimpleVO;
-import com.mall4j.cloud.rbac.vo.MenuVO;
-import com.mall4j.cloud.rbac.vo.RouteMetaVO;
-import com.mall4j.cloud.rbac.vo.RouteVO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.util.BooleanUtil;
+import com.Haggle.cloud.rbac.dto.MenuDTO;
+import com.Haggle.cloud.rbac.model.Menu;
+import com.Haggle.cloud.rbac.service.MenuService;
+import com.Haggle.cloud.rbac.vo.MenuSimpleVO;
+import com.Haggle.cloud.rbac.vo.MenuVO;
+import com.Haggle.cloud.rbac.vo.RouteMetaVO;
+import com.Haggle.cloud.rbac.vo.RouteVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -23,10 +23,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/08/06
- */
+
 @RequestMapping(value = "/menu")
 @RestController
 @Tag(name = "菜单接口")
@@ -92,7 +89,7 @@ public class MenuController {
 	private Menu checkAndGenerate(@RequestBody @Valid MenuDTO menuDTO) {
 		UserInfoInTokenBO userInfoInTokenBO = AuthUserContext.get();
 		if(!Objects.equals(userInfoInTokenBO.getTenantId(),0L)){
-			throw new Mall4cloudException("无权限操作！");
+			throw new HaggleException("无权限操作！");
 		}
 		Menu menu = mapperFacade.map(menuDTO, Menu.class);
 		menu.setBizType(menuDTO.getSysType());
@@ -115,7 +112,7 @@ public class MenuController {
 	public ServerResponseEntity<Void> delete(@RequestParam("menuId") Long menuId,@RequestParam("sysType") Integer sysType) {
 		UserInfoInTokenBO userInfoInTokenBO = AuthUserContext.get();
 		if(!Objects.equals(userInfoInTokenBO.getTenantId(),0L)){
-			throw new Mall4cloudException("无权限操作！");
+			throw new HaggleException("无权限操作！");
 		}
 		sysType = Objects.isNull(sysType) ? userInfoInTokenBO.getSysType():sysType;
 		menuService.deleteById(menuId,sysType);

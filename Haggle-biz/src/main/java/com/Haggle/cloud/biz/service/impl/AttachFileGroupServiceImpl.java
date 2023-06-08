@@ -1,11 +1,11 @@
-package com.mall4j.cloud.biz.service.impl;
+package com.Haggle.cloud.biz.service.impl;
 
-import com.mall4j.cloud.biz.mapper.AttachFileMapper;
-import com.mall4j.cloud.biz.model.AttachFileGroup;
-import com.mall4j.cloud.biz.mapper.AttachFileGroupMapper;
-import com.mall4j.cloud.biz.service.AttachFileGroupService;
-import com.mall4j.cloud.biz.vo.AttachFileGroupVO;
-import com.mall4j.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.biz.mapper.AttachFileMapper;
+import com.Haggle.cloud.biz.model.AttachFileGroup;
+import com.Haggle.cloud.biz.mapper.AttachFileGroupMapper;
+import com.Haggle.cloud.biz.service.AttachFileGroupService;
+import com.Haggle.cloud.biz.vo.AttachFileGroupVO;
+import com.Haggle.cloud.common.security.AuthUserContext;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import java.util.List;
 /**
  *
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-04 16:15:02
  */
 @Service

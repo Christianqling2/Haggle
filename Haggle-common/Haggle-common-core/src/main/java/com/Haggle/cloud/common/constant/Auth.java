@@ -1,9 +1,9 @@
-package com.mall4j.cloud.common.constant;
+package com.Haggle.cloud.common.constant;
 
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/12/8
  */
 public interface Auth {

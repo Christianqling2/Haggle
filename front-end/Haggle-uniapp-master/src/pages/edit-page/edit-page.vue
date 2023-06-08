@@ -110,7 +110,7 @@ export default {
       }
       this.pswErrorTips = -1
       const params = {
-        url: '/mall4cloud_auth/update_password',
+        url: '/Haggle_auth/update_password',
         method: 'PUT',
         data: {
           newPassword: this.newPassword,
@@ -154,7 +154,7 @@ export default {
       }
       this.shopErrorTips = 0
       var params = {
-        url: '/mall4cloud_biz/ua/sms/verification_code/bind',
+        url: '/Haggle_biz/ua/sms/verification_code/bind',
         method: 'PUT',
         data: {
           mobile: this.shopAccount,
@@ -192,7 +192,7 @@ export default {
     // 修改头像信息
     submitNickName() {
       var params = {
-        url: '/mall4cloud_user/a/user/ma/update_user',
+        url: '/Haggle_user/a/user/ma/update_user',
         method: 'post',
         data: {
           nickName: this.nickName

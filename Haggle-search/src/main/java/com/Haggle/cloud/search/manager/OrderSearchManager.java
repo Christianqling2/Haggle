@@ -1,14 +1,14 @@
-package com.mall4j.cloud.search.manager;
+package com.Haggle.cloud.search.manager;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.api.dto.EsPageDTO;
-import com.mall4j.cloud.api.vo.EsPageVO;
-import com.mall4j.cloud.api.vo.search.EsOrderVO;
-import com.mall4j.cloud.common.dto.OrderSearchDTO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.util.BooleanUtil;
-import com.mall4j.cloud.common.util.Json;
-import com.mall4j.cloud.search.constant.EsIndexEnum;
+import com.Haggle.cloud.api.dto.EsPageDTO;
+import com.Haggle.cloud.api.vo.EsPageVO;
+import com.Haggle.cloud.api.vo.search.EsOrderVO;
+import com.Haggle.cloud.common.dto.OrderSearchDTO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.util.BooleanUtil;
+import com.Haggle.cloud.common.util.Json;
+import com.Haggle.cloud.search.constant.EsIndexEnum;
 import org.apache.lucene.search.join.ScoreMode;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -32,10 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/11/16
- */
+
 @Component
 public class OrderSearchManager {
 
@@ -68,7 +65,7 @@ public class OrderSearchManager {
             result = buildSearchResult(pageDTO, response);
         } catch (IOException e) {
             log.error(e.toString());
-            throw new Mall4cloudException("搜索服务出了点小差，请稍后再试", e);
+            throw new HaggleException("搜索服务出了点小差，请稍后再试", e);
         }
         return result;
     }

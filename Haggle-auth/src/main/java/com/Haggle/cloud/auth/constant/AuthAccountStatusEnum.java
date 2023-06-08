@@ -1,10 +1,6 @@
-package com.mall4j.cloud.auth.constant;
+package com.Haggle.cloud.auth.constant;
 
-/**
- * 统一账户信息状态
- * @author FrozenWatermelon
- * @date 2020/09/22
- */
+
 public enum AuthAccountStatusEnum {
 
 	/**

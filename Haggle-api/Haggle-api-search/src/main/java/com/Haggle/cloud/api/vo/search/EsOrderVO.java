@@ -1,4 +1,4 @@
-package com.mall4j.cloud.api.vo.search;
+package com.Haggle.cloud.api.vo.search;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2021/2/5
  */
 public class EsOrderVO {

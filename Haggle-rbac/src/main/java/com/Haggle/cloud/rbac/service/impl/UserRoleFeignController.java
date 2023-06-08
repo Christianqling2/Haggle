@@ -1,11 +1,11 @@
-package com.mall4j.cloud.rbac.service.impl;
+package com.Haggle.cloud.rbac.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.rbac.dto.UserRoleDTO;
-import com.mall4j.cloud.api.rbac.feign.UserRoleFeignClient;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.rbac.mapper.UserRoleMapper;
+import com.Haggle.cloud.api.rbac.dto.UserRoleDTO;
+import com.Haggle.cloud.api.rbac.feign.UserRoleFeignClient;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.rbac.mapper.UserRoleMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/7/15
- */
+
+
 @RestController
 public class UserRoleFeignController implements UserRoleFeignClient {
 

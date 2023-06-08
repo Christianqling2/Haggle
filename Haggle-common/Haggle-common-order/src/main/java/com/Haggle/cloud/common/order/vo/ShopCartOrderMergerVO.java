@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.order.vo;
+package com.Haggle.cloud.common.order.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 多个店铺订单合并在一起的合并类
  * "/confirm" 使用
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class ShopCartOrderMergerVO {
 

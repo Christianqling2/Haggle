@@ -1,13 +1,8 @@
-package com.mall4j.cloud.order.service;
+package com.Haggle.cloud.order.service;
 
-import com.mall4j.cloud.order.model.OrderPayInfo;
+import com.Haggle.cloud.order.model.OrderPayInfo;
 
-/**
- * 订单支付记录
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+
 public interface OrderPayInfoService {
 
 	/**

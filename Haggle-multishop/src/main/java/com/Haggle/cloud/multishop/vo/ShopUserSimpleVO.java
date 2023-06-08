@@ -1,11 +1,11 @@
-package com.mall4j.cloud.multishop.vo;
+package com.Haggle.cloud.multishop.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/2
  */
 public class ShopUserSimpleVO {

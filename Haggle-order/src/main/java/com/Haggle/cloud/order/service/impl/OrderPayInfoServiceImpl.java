@@ -1,19 +1,13 @@
-package com.mall4j.cloud.order.service.impl;
+package com.Haggle.cloud.order.service.impl;
 
-import com.mall4j.cloud.order.model.OrderPayInfo;
-import com.mall4j.cloud.order.mapper.OrderPayInfoMapper;
-import com.mall4j.cloud.order.service.OrderPayInfoService;
+import com.Haggle.cloud.order.model.OrderPayInfo;
+import com.Haggle.cloud.order.mapper.OrderPayInfoMapper;
+import com.Haggle.cloud.order.service.OrderPayInfoService;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-/**
- * 订单支付记录
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
-@Service
+
 public class OrderPayInfoServiceImpl implements OrderPayInfoService {
 
     @Autowired

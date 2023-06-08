@@ -1,17 +1,14 @@
-package com.mall4j.cloud.product.mapper;
+package com.Haggle.cloud.product.mapper;
 
-import com.mall4j.cloud.product.bo.SkuWithStockBO;
-import com.mall4j.cloud.product.model.SpuExtension;
-import com.mall4j.cloud.product.vo.SpuExtensionVO;
+import com.Haggle.cloud.product.bo.SkuWithStockBO;
+import com.Haggle.cloud.product.model.SpuExtension;
+import com.Haggle.cloud.product.vo.SpuExtensionVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 
-/**
- * @author FrozenWatermelon
- * @date 2020-11-11 13:49:06
- */
+
 public interface SpuExtensionMapper {
 
 	/**

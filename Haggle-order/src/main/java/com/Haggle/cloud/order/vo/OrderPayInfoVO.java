@@ -1,15 +1,10 @@
-package com.mall4j.cloud.order.vo;
+package com.Haggle.cloud.order.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Date;
 
-/**
- * 订单支付记录VO
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+
 public class OrderPayInfoVO extends BaseVO{
     private static final long serialVersionUID = 1L;
 

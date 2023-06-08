@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.order.vo;
+package com.Haggle.cloud.common.order.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 单个店铺的订单信息
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class ShopCartOrderVO implements Serializable{
 

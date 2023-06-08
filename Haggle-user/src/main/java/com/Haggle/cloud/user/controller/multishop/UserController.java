@@ -1,12 +1,12 @@
-package com.mall4j.cloud.user.controller.multishop;
+package com.Haggle.cloud.user.controller.multishop;
 
-import com.mall4j.cloud.api.user.vo.UserApiVO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.user.model.User;
-import com.mall4j.cloud.user.service.UserService;
-import com.mall4j.cloud.user.dto.UserDTO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.user.vo.UserApiVO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.user.model.User;
+import com.Haggle.cloud.user.service.UserService;
+import com.Haggle.cloud.user.dto.UserDTO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -14,12 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
-/**
- * 用户表
- *
- * @author YXF
- * @date 2020-12-08 11:18:04
- */
+
 @RestController("multishopUserController")
 @RequestMapping("/m/user")
 @Tag(name = "店铺-用户表")

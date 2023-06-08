@@ -1,13 +1,13 @@
-package com.mall4j.cloud.biz.model;
+package com.Haggle.cloud.biz.model;
 
-import com.mall4j.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.model.BaseModel;
 
 import java.io.Serializable;
 
 /**
  * 上传文件记录表
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-11-21 10:21:40
  */
 public class AttachFile extends BaseModel implements Serializable {

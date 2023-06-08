@@ -1,15 +1,15 @@
-package com.mall4j.cloud.biz.service.impl;
+package com.Haggle.cloud.biz.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import com.mall4j.cloud.biz.config.MinioTemplate;
-import com.mall4j.cloud.biz.mapper.AttachFileMapper;
-import com.mall4j.cloud.biz.model.AttachFile;
-import com.mall4j.cloud.biz.service.AttachFileService;
-import com.mall4j.cloud.biz.vo.AttachFileVO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.biz.config.MinioTemplate;
+import com.Haggle.cloud.biz.mapper.AttachFileMapper;
+import com.Haggle.cloud.biz.model.AttachFile;
+import com.Haggle.cloud.biz.service.AttachFileService;
+import com.Haggle.cloud.biz.vo.AttachFileVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.security.AuthUserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import java.util.Objects;
 /**
  * 上传文件记录表
  *
- * @author YXF
+ * /**/ YXF
  * @date 2020-11-21 10:21:40
  */
 @Service

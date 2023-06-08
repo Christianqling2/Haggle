@@ -1,23 +1,23 @@
-package com.mall4j.cloud.product.controller.app;
+package com.Haggle.cloud.product.controller.app;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.mall4j.cloud.api.product.manager.ShopCartAdapter;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.order.vo.ShopCartVO;
-import com.mall4j.cloud.common.order.vo.ShopCartWithAmountVO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.dto.shopcart.ChangeShopCartItemDTO;
-import com.mall4j.cloud.product.dto.shopcart.CheckShopCartItemDTO;
-import com.mall4j.cloud.product.model.ShopCartItem;
-import com.mall4j.cloud.product.service.ShopCartService;
-import com.mall4j.cloud.product.service.SkuService;
-import com.mall4j.cloud.product.service.SpuService;
-import com.mall4j.cloud.api.product.vo.SkuVO;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.common.order.vo.ShopCartItemVO;
-import com.mall4j.cloud.product.vo.ShopCartAmountVO;
+import com.Haggle.cloud.api.product.manager.ShopCartAdapter;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.order.vo.ShopCartVO;
+import com.Haggle.cloud.common.order.vo.ShopCartWithAmountVO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.dto.shopcart.ChangeShopCartItemDTO;
+import com.Haggle.cloud.product.dto.shopcart.CheckShopCartItemDTO;
+import com.Haggle.cloud.product.model.ShopCartItem;
+import com.Haggle.cloud.product.service.ShopCartService;
+import com.Haggle.cloud.product.service.SkuService;
+import com.Haggle.cloud.product.service.SpuService;
+import com.Haggle.cloud.api.product.vo.SkuVO;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.common.order.vo.ShopCartItemVO;
+import com.Haggle.cloud.product.vo.ShopCartAmountVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -29,12 +29,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 购物车
- *
- * @author FrozenWatermelon
- * @date 2020-11-20 15:47:32
- */
+
 @RestController
 @RequestMapping("/a/shop_cart")
 @Tag(name = "app-购物车")

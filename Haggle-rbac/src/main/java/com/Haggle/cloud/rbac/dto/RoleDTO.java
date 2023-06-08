@@ -1,14 +1,9 @@
-package com.mall4j.cloud.rbac.dto;
+package com.Haggle.cloud.rbac.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.List;
 
-/**
- * 角色DTO
- *
- * @author FrozenWatermelon
- * @date 2020-09-17 19:15:44
- */
+
 public class RoleDTO{
     private static final long serialVersionUID = 1L;
 

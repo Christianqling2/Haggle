@@ -1,13 +1,9 @@
-package com.mall4j.cloud.rbac.dto;
+package com.Haggle.cloud.rbac.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.List;
 
-/**
- * 菜单id和权限id列表
- * @author FrozenWatermelon
- * @date 2020/9/18
- */
+
 public class MenuWithPermissionIdDTO {
 
     @Schema(description = "菜单id" )

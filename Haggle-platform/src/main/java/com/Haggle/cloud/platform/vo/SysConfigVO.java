@@ -1,14 +1,9 @@
-package com.mall4j.cloud.platform.vo;
+package com.Haggle.cloud.platform.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 系统配置信息表VO
- *
- * @author lhd
- * @date 2020-12-23 16:27:57
- */
+
 public class SysConfigVO extends BaseVO{
     private static final long serialVersionUID = 1L;
 

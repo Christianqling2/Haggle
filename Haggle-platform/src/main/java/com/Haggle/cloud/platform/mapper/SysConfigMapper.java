@@ -1,17 +1,12 @@
-package com.mall4j.cloud.platform.mapper;
+package com.Haggle.cloud.platform.mapper;
 
-import com.mall4j.cloud.platform.model.SysConfig;
-import com.mall4j.cloud.platform.vo.SysConfigVO;
+import com.Haggle.cloud.platform.model.SysConfig;
+import com.Haggle.cloud.platform.vo.SysConfigVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 系统配置信息表
- *
- * @author lhd
- * @date 2020-12-23 16:27:57
- */
+
 public interface SysConfigMapper {
 
 	/**

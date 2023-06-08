@@ -74,7 +74,7 @@ export default {
       }
       this.errorTips = 0
       var params = {
-        url: '/mall4cloud_auth/ua/login',
+        url: '/Haggle_auth/ua/login',
         method: 'POST',
         data: {
           principal: this.principal,

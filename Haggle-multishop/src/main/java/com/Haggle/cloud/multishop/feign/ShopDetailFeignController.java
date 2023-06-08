@@ -1,11 +1,11 @@
-package com.mall4j.cloud.multishop.feign;
+package com.Haggle.cloud.multishop.feign;
 
-import com.mall4j.cloud.api.multishop.bo.EsShopDetailBO;
-import com.mall4j.cloud.api.multishop.feign.ShopDetailFeignClient;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.multishop.model.ShopDetail;
-import com.mall4j.cloud.multishop.service.ShopDetailService;
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.api.multishop.bo.EsShopDetailBO;
+import com.Haggle.cloud.api.multishop.feign.ShopDetailFeignClient;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.multishop.model.ShopDetail;
+import com.Haggle.cloud.multishop.service.ShopDetailService;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,10 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/11/23
- */
+
 @RestController
 public class ShopDetailFeignController implements ShopDetailFeignClient {
 

@@ -1,13 +1,10 @@
-package com.mall4j.cloud.platform.service;
+package com.Haggle.cloud.platform.service;
 
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.platform.dto.ChangeAccountDTO;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.platform.dto.ChangeAccountDTO;
 
-/**
- * @author lhd
- * @date 2020/12/22
- */
+
 public interface SysUserAccountService {
 
 	/**

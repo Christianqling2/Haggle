@@ -1,18 +1,13 @@
-package com.mall4j.cloud.product.mapper;
+package com.Haggle.cloud.product.mapper;
 
-import com.mall4j.cloud.product.dto.shopcart.CheckShopCartItemDTO;
-import com.mall4j.cloud.product.model.ShopCartItem;
-import com.mall4j.cloud.common.order.vo.ShopCartItemVO;
+import com.Haggle.cloud.product.dto.shopcart.CheckShopCartItemDTO;
+import com.Haggle.cloud.product.model.ShopCartItem;
+import com.Haggle.cloud.common.order.vo.ShopCartItemVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 购物车
- *
- * @author FrozenWatermelon
- * @date 2020-11-21 10:01:23
- */
+
 public interface ShopCartItemMapper {
 
 	/**

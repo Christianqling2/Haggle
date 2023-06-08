@@ -1,8 +1,8 @@
-package com.mall4j.cloud.common.constant;
+package com.Haggle.cloud.common.constant;
 
 
 /**
- * @author lhd
+ * /**/ lhd
  * @date 2020/12/30
  */
 public enum UserAdminType {

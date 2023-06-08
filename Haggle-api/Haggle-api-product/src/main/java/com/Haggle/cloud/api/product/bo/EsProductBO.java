@@ -1,13 +1,13 @@
-package com.mall4j.cloud.api.product.bo;
+package com.Haggle.cloud.api.product.bo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 
 import java.util.Date;
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/12
  */
 public class EsProductBO {

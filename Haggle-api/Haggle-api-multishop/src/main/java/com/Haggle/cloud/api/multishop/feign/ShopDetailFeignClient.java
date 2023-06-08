@@ -1,20 +1,17 @@
-package com.mall4j.cloud.api.multishop.feign;
+package com.Haggle.cloud.api.multishop.feign;
 
-import com.mall4j.cloud.api.multishop.bo.EsShopDetailBO;
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.multishop.bo.EsShopDetailBO;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/11/23
- */
-@FeignClient(value = "mall4cloud-multishop",contextId = "shopDetail")
+
+@FeignClient(value = "Haggle-multishop",contextId = "shopDetail")
 public interface ShopDetailFeignClient {
 
 

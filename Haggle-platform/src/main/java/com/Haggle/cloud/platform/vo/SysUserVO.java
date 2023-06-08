@@ -1,15 +1,11 @@
-package com.mall4j.cloud.platform.vo;
+package com.Haggle.cloud.platform.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
 
-/**
- * @author lhd
- * @date 2020/9/2
- */
 public class SysUserVO {
 
 	/**

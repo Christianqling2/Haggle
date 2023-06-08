@@ -1,18 +1,13 @@
-package com.mall4j.cloud.product.mapper;
+package com.Haggle.cloud.product.mapper;
 
-import com.mall4j.cloud.product.model.AttrValue;
-import com.mall4j.cloud.product.model.SpuAttrValue;
-import com.mall4j.cloud.product.model.SpuSkuAttrValue;
+import com.Haggle.cloud.product.model.AttrValue;
+import com.Haggle.cloud.product.model.SpuAttrValue;
+import com.Haggle.cloud.product.model.SpuSkuAttrValue;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 属性值信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface AttrValueMapper {
 
     /**

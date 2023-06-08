@@ -1,9 +1,9 @@
-package com.mall4j.cloud.multishop.vo;
+package com.Haggle.cloud.multishop.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.api.vo.search.SpuSearchVO;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.api.vo.search.SpuSearchVO;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 店铺详情VO
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-12-05 15:50:25
  */
 public class ShopDetailAppVO extends BaseVO{

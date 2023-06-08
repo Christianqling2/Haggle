@@ -1,8 +1,8 @@
-package com.mall4j.cloud.common.constant;
+package com.Haggle.cloud.common.constant;
 
 /**
  * 常量
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class Constant {
 

@@ -1,11 +1,11 @@
-package com.mall4j.cloud.user.service.impl;
+package com.Haggle.cloud.user.service.impl;
 
-import com.mall4j.cloud.api.user.vo.AreaVO;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.user.mapper.AreaMapper;
-import com.mall4j.cloud.user.model.Area;
-import com.mall4j.cloud.user.service.AreaService;
+import com.Haggle.cloud.api.user.vo.AreaVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.user.mapper.AreaMapper;
+import com.Haggle.cloud.user.model.Area;
+import com.Haggle.cloud.user.service.AreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -15,12 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 省市区地区信息
- *
- * @author YXF
- * @date 2020-11-25 14:48:52
- */
+
 @Service
 public class AreaServiceImpl implements AreaService {
 
@@ -76,7 +71,7 @@ public class AreaServiceImpl implements AreaService {
     public void deleteById(Long areaId) {
         int areaNum = areaMapper.countByAreaId(areaId);
         if (areaNum > 0) {
-            throw new Mall4cloudException("请先删除子地区");
+            throw new HaggleException("请先删除子地区");
         }
         areaMapper.deleteById(areaId);
     }

@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.cache.constant;
+package com.Haggle.cloud.common.cache.constant;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/23
  */
 public interface ProductCacheNames {
@@ -9,7 +9,7 @@ public interface ProductCacheNames {
     /**
      * 前缀
      */
-    String PRODUCT_PREFIX = "mall4cloud_product:";
+    String PRODUCT_PREFIX = "Haggle_product:";
 
     /**
      * 根据skuid获取sku的缓存key

@@ -1,20 +1,17 @@
-package com.mall4j.cloud.product.feign;
+package com.Haggle.cloud.product.feign;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.mall4j.cloud.api.product.feign.ShopCartFeignClient;
-import com.mall4j.cloud.common.order.vo.ShopCartItemVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.service.ShopCartService;
+import com.Haggle.cloud.api.product.feign.ShopCartFeignClient;
+import com.Haggle.cloud.common.order.vo.ShopCartItemVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.service.ShopCartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/12/8
- */
+
 @RestController
 public class ShopCartFeignController implements ShopCartFeignClient {
 

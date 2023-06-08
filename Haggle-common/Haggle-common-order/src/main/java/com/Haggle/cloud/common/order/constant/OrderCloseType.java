@@ -1,9 +1,9 @@
-package com.mall4j.cloud.common.order.constant;
+package com.Haggle.cloud.common.order.constant;
 
 /**
  * 订单关闭
  *
- * @author YXF
+ * /**/ YXF
  *  * @date 2021-01-27 09:10:00
  */
 public enum OrderCloseType {

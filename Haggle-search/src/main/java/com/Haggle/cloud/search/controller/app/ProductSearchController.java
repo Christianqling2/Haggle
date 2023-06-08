@@ -1,17 +1,17 @@
-package com.mall4j.cloud.search.controller.app;
+package com.Haggle.cloud.search.controller.app;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.multishop.bo.EsShopDetailBO;
-import com.mall4j.cloud.api.multishop.feign.ShopDetailFeignClient;
-import com.mall4j.cloud.api.vo.search.ShopInfoSearchVO;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.api.dto.EsPageDTO;
-import com.mall4j.cloud.api.dto.ProductSearchDTO;
-import com.mall4j.cloud.search.manager.ProductSearchManager;
-import com.mall4j.cloud.api.vo.EsPageVO;
-import com.mall4j.cloud.api.vo.search.ProductSearchVO;
+import com.Haggle.cloud.api.multishop.bo.EsShopDetailBO;
+import com.Haggle.cloud.api.multishop.feign.ShopDetailFeignClient;
+import com.Haggle.cloud.api.vo.search.ShopInfoSearchVO;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.dto.EsPageDTO;
+import com.Haggle.cloud.api.dto.ProductSearchDTO;
+import com.Haggle.cloud.search.manager.ProductSearchManager;
+import com.Haggle.cloud.api.vo.EsPageVO;
+import com.Haggle.cloud.api.vo.search.ProductSearchVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,11 +23,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 商品搜索
- * @author FrozenWatermelon
- * @date 2020/11/16
- */
+
 @RestController("appSearchSpuController")
 @RequestMapping("/ua/search")
 @Tag(name = "app-spu搜索接口")

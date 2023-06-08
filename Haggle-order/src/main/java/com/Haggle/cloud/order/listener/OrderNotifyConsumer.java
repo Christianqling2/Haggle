@@ -1,11 +1,11 @@
-package com.mall4j.cloud.order.listener;
+package com.Haggle.cloud.order.listener;
 
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.order.bo.PayNotifyBO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.rocketmq.config.RocketMqConstant;
-import com.mall4j.cloud.common.util.Json;
-import com.mall4j.cloud.order.service.OrderService;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.order.bo.PayNotifyBO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.rocketmq.config.RocketMqConstant;
+import com.Haggle.cloud.common.util.Json;
+import com.Haggle.cloud.order.service.OrderService;
 import org.apache.rocketmq.client.producer.SendStatus;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
@@ -18,10 +18,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon
- * @date 2021/1/7
- */
+
 @Component
 @RocketMQMessageListener(topic = RocketMqConstant.ORDER_NOTIFY_TOPIC,consumerGroup = RocketMqConstant.ORDER_NOTIFY_TOPIC)
 public class OrderNotifyConsumer implements RocketMQListener<PayNotifyBO> {
@@ -40,7 +37,7 @@ public class OrderNotifyConsumer implements RocketMQListener<PayNotifyBO> {
         // 发送消息，订单支付成功 通知库存扣减
         SendStatus sendStockStatus = orderNotifyStockTemplate.syncSend(RocketMqConstant.ORDER_NOTIFY_STOCK_TOPIC, new GenericMessage<>(message)).getSendStatus();
         if (!Objects.equals(sendStockStatus,SendStatus.SEND_OK)) {
-            throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+            throw new HaggleException(ResponseEnum.EXCEPTION);
         }
     }
 }

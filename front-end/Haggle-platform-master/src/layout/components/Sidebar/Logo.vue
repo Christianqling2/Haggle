@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      title: 'mall4cloud'
+      title: 'Haggle'
     }
   }
 }

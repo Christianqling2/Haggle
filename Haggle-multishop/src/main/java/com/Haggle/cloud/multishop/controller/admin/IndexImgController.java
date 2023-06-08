@@ -1,16 +1,16 @@
-package com.mall4j.cloud.multishop.controller.admin;
+package com.Haggle.cloud.multishop.controller.admin;
 
-import com.mall4j.cloud.api.product.feign.SpuFeignClient;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.multishop.dto.IndexImgDTO;
-import com.mall4j.cloud.multishop.model.IndexImg;
-import com.mall4j.cloud.multishop.service.IndexImgService;
-import com.mall4j.cloud.multishop.vo.IndexImgVO;
+import com.Haggle.cloud.api.product.feign.SpuFeignClient;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.multishop.dto.IndexImgDTO;
+import com.Haggle.cloud.multishop.model.IndexImg;
+import com.Haggle.cloud.multishop.service.IndexImgService;
+import com.Haggle.cloud.multishop.vo.IndexImgVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -20,12 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Objects;
 
-/**
- * 轮播图
- *
- * @author YXF
- * @date 2020-11-24 16:38:32
- */
+
 @RestController("adminIndexImgController")
 @RequestMapping("/admin/index_img")
 @Tag(name = "admin-轮播图")

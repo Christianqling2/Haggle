@@ -1,16 +1,11 @@
-package com.mall4j.cloud.user.vo;
+package com.Haggle.cloud.user.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.List;
 
-/**
- * 用户表VO
- *
- * @author YXF
- * @date 2020-12-08 11:18:04
- */
+
 public class UserVO extends BaseVO{
     private static final long serialVersionUID = 1L;
 

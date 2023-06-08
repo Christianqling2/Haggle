@@ -187,7 +187,7 @@ export default {
         // alert('公众号网页登录location.href:' + location.href)
         const code = util.getUrlKey('code')
         // alert('H5-微信环境 code:' + code)
-        this.login('/mall4cloud_auth/ua/social/mp', code) // 先请求微信公众号登录接口
+        this.login('/Haggle_auth/ua/social/mp', code) // 先请求微信公众号登录接口
       } else {
         this.queryDataGroup()
       }
@@ -278,7 +278,7 @@ export default {
     getIndexImgs() {
       uni.showLoading()
       var params = {
-        url: '/mall4cloud_multishop/ua/index_img/list',
+        url: '/Haggle_multishop/ua/index_img/list',
         method: 'GET',
         data: {
           shopId: this.pageQuery.shopId
@@ -299,7 +299,7 @@ export default {
       this.isLoadAll = false
       this.searchListQuery.primaryCategoryId = this.selectedCategoryId
       const params = {
-        url: '/mall4cloud_search/ua/search/simple_page',
+        url: '/Haggle_search/ua/search/simple_page',
         method: 'GET',
         data: this.searchListQuery,
         callBack: res => {
@@ -348,7 +348,7 @@ export default {
     getPlatformCategoryList() {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_product/ua/category/category_list',
+        url: '/Haggle_product/ua/category/category_list',
         method: 'GET',
         data: {
           shopId: 0,

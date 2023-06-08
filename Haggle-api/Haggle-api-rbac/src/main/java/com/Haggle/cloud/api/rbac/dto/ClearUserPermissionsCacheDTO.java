@@ -1,9 +1,9 @@
-package com.mall4j.cloud.api.rbac.dto;
+package com.Haggle.cloud.api.rbac.dto;
 
 import javax.validation.constraints.NotNull;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/27
  */
 public class ClearUserPermissionsCacheDTO {

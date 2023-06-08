@@ -1,11 +1,11 @@
-package com.mall4j.cloud.common.security.bo;
+package com.Haggle.cloud.common.security.bo;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
 
 /**
  * 用于校验的用户信息
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/3
  */
 public class AuthAccountInVerifyBO extends UserInfoInTokenBO {

@@ -1,17 +1,12 @@
-package com.mall4j.cloud.rbac.mapper;
+package com.Haggle.cloud.rbac.mapper;
 
-import com.mall4j.cloud.rbac.model.Role;
-import com.mall4j.cloud.rbac.vo.RoleVO;
+import com.Haggle.cloud.rbac.model.Role;
+import com.Haggle.cloud.rbac.vo.RoleVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 角色
- *
- * @author FrozenWatermelon
- * @date 2020-09-17 19:15:44
- */
+
 public interface RoleMapper {
 
 	/**

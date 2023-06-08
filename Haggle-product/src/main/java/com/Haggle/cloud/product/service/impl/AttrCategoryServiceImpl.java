@@ -1,9 +1,9 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.product.vo.CategoryVO;
-import com.mall4j.cloud.product.mapper.AttrCategoryMapper;
-import com.mall4j.cloud.product.service.AttrCategoryService;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.product.mapper.AttrCategoryMapper;
+import com.Haggle.cloud.product.service.AttrCategoryService;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 属性与属性分组关联信息
- *
- * @author YXF
- * @date 2020-11-23 16:20:01
- */
+
 @Service
 public class AttrCategoryServiceImpl implements AttrCategoryService {
 

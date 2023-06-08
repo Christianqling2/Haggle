@@ -1,14 +1,14 @@
-package com.mall4j.cloud.leaf;
+package com.Haggle.cloud.leaf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @author leaf
+ * /**/ leaf
  */
-@SpringBootApplication(scanBasePackages = { "com.mall4j.cloud" })
-@EnableFeignClients(basePackages = {"com.mall4j.cloud.api.**.feign"})
+@SpringBootApplication(scanBasePackages = { "com.Haggle.cloud" })
+@EnableFeignClients(basePackages = {"com.Haggle.cloud.api.**.feign"})
 public class LeafServerApplication {
 
 	public static void main(String[] args) {

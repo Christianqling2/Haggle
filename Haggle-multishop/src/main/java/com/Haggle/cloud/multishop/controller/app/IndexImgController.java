@@ -1,8 +1,8 @@
-package com.mall4j.cloud.multishop.controller.app;
+package com.Haggle.cloud.multishop.controller.app;
 
-import com.mall4j.cloud.multishop.service.IndexImgService;
-import com.mall4j.cloud.multishop.vo.IndexImgVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.multishop.service.IndexImgService;
+import com.Haggle.cloud.multishop.vo.IndexImgVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Operation;
@@ -10,12 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-/**
- * 轮播图
- *
- * @author YXF
- * @date 2020-11-24 16:38:32
- */
+
 @RestController("appIndexImgController")
 @RequestMapping("/ua/index_img")
 @Tag(name = "app-轮播图")

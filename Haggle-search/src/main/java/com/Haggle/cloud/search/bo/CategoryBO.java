@@ -1,15 +1,10 @@
-package com.mall4j.cloud.search.bo;
+package com.Haggle.cloud.search.bo;
 
 import cn.throwx.canal.gule.annotation.CanalModel;
 import cn.throwx.canal.gule.common.FieldNamingPolicy;
 
-/**
- * 分类信息
- *
- * @author YXF
- * @date 2020-12-23 15:27:24
- */
-@CanalModel(database = "mall4cloud_product", table = "category", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
+
+@CanalModel(database = "Haggle_product", table = "category", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
 public class CategoryBO {
     /**
      * 分类id

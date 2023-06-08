@@ -1,15 +1,10 @@
-package com.mall4j.cloud.product.dto;
+package com.Haggle.cloud.product.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.Date;
 
-/**
- * DTO
- *
- * @author FrozenWatermelon
- * @date 2020-11-11 13:49:06
- */
+
 public class SpuExtensionDTO{
     private static final long serialVersionUID = 1L;
 

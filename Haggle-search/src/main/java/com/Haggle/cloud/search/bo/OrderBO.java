@@ -1,17 +1,12 @@
-package com.mall4j.cloud.search.bo;
+package com.Haggle.cloud.search.bo;
 
 import cn.throwx.canal.gule.annotation.CanalModel;
 import cn.throwx.canal.gule.common.FieldNamingPolicy;
 
 import java.util.Date;
 
-/**
- * 商品信息
- *
- * @author YXF
- * @date 2020-12-23 15:27:24
- */
-@CanalModel(database = "mall4cloud_order", table = "order", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
+
+@CanalModel(database = "Haggle_order", table = "order", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
 public class OrderBO {
 
     /**

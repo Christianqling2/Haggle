@@ -1,15 +1,10 @@
-package com.mall4j.cloud.search.bo;
+package com.Haggle.cloud.search.bo;
 
 import cn.throwx.canal.gule.annotation.CanalModel;
 import cn.throwx.canal.gule.common.FieldNamingPolicy;
 
-/**
- * 品牌信息
- *
- * @author YXF
- * @date 2020-12-23 15:27:24
- */
-@CanalModel(database = "mall4cloud_multishop", table = "shop_detail", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
+
+@CanalModel(database = "Haggle_multishop", table = "shop_detail", fieldNamingPolicy = FieldNamingPolicy.LOWER_UNDERSCORE)
 public class ShopDetailBO {
     /**
      * 店铺id

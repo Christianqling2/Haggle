@@ -1,11 +1,8 @@
-package com.mall4j.cloud.api.auth.vo;
+package com.Haggle.cloud.api.auth.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/9/22
- */
+
 public class AuthAccountVO {
     /**
      * 全平台用户唯一id

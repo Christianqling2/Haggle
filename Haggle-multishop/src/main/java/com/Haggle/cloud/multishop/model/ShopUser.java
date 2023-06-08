@@ -1,21 +1,17 @@
-package com.mall4j.cloud.multishop.model;
+package com.Haggle.cloud.multishop.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.database.annotations.DistributedId;
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 商家用户
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 15:50:25
- */
+import com.Haggle.cloud.common.database.annotations.DistributedId;
+import com.Haggle.cloud.common.model.BaseModel;
+
+
 public class ShopUser extends BaseModel implements Serializable{
 
     /**
      * 商家用户id
      */
-	@DistributedId("mall4cloud-multishop-user")
+	@DistributedId("Haggle-multishop-user")
     private Long shopUserId;
 
     /**

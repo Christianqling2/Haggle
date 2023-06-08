@@ -1,13 +1,9 @@
-package com.mall4j.cloud.user.dto;
+package com.Haggle.cloud.user.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- * @author lhd
- * @date 2020/12/30
- */
 @Schema(description = "用户注册信息")
 public class UserRegisterDTO {
 

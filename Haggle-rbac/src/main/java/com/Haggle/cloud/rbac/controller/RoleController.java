@@ -1,15 +1,15 @@
-package com.mall4j.cloud.rbac.controller;
+package com.Haggle.cloud.rbac.controller;
 
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.rbac.model.Role;
-import com.mall4j.cloud.rbac.service.RoleService;
-import com.mall4j.cloud.rbac.vo.RoleVO;
-import com.mall4j.cloud.rbac.dto.RoleDTO;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.rbac.model.Role;
+import com.Haggle.cloud.rbac.service.RoleService;
+import com.Haggle.cloud.rbac.vo.RoleVO;
+import com.Haggle.cloud.rbac.dto.RoleDTO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -19,12 +19,7 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * 角色
- *
- * @author FrozenWatermelon
- * @date 2020-09-17 19:15:44
- */
+
 @RestController
 @RequestMapping("/role")
 @Tag(name = "角色")

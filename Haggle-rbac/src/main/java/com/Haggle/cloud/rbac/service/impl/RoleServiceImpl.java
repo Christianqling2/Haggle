@@ -1,16 +1,16 @@
-package com.mall4j.cloud.rbac.service.impl;
+package com.Haggle.cloud.rbac.service.impl;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.rbac.mapper.RoleMenuMapper;
-import com.mall4j.cloud.rbac.mapper.UserRoleMapper;
-import com.mall4j.cloud.rbac.model.Role;
-import com.mall4j.cloud.rbac.mapper.RoleMapper;
-import com.mall4j.cloud.rbac.model.RoleMenu;
-import com.mall4j.cloud.rbac.service.RoleService;
-import com.mall4j.cloud.rbac.vo.RoleVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.rbac.mapper.RoleMenuMapper;
+import com.Haggle.cloud.rbac.mapper.UserRoleMapper;
+import com.Haggle.cloud.rbac.model.Role;
+import com.Haggle.cloud.rbac.mapper.RoleMapper;
+import com.Haggle.cloud.rbac.model.RoleMenu;
+import com.Haggle.cloud.rbac.service.RoleService;
+import com.Haggle.cloud.rbac.vo.RoleVO;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * 角色
- *
- * @author FrozenWatermelon
- * @date 2020-09-17 19:15:44
- */
+
 @Service
 public class RoleServiceImpl implements RoleService {
 

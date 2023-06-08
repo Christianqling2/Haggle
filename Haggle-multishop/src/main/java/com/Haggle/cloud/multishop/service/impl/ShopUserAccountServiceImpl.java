@@ -1,16 +1,16 @@
-package com.mall4j.cloud.multishop.service.impl;
+package com.Haggle.cloud.multishop.service.impl;
 
-import com.mall4j.cloud.api.auth.dto.AuthAccountDTO;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.feign.AccountFeignClient;
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.common.util.IpHelper;
-import com.mall4j.cloud.multishop.dto.ChangeAccountDTO;
-import com.mall4j.cloud.multishop.mapper.ShopUserMapper;
-import com.mall4j.cloud.multishop.model.ShopUser;
-import com.mall4j.cloud.multishop.service.ShopUserAccountService;
+import com.Haggle.cloud.api.auth.dto.AuthAccountDTO;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.feign.AccountFeignClient;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.common.util.IpHelper;
+import com.Haggle.cloud.multishop.dto.ChangeAccountDTO;
+import com.Haggle.cloud.multishop.mapper.ShopUserMapper;
+import com.Haggle.cloud.multishop.model.ShopUser;
+import com.Haggle.cloud.multishop.service.ShopUserAccountService;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/09/03
  */
 @Service

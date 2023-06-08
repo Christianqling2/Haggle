@@ -1,11 +1,8 @@
-package com.mall4j.cloud.search.vo;
+package com.Haggle.cloud.search.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * @Author lth
- * @Date 2021/6/21 10:38
- */
+
 public class SpuAdminVO {
     @Schema(description = "商品id" )
     private Long spuId;

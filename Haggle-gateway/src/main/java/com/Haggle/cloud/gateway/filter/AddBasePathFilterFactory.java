@@ -1,4 +1,4 @@
-package com.mall4j.cloud.gateway.filter;
+package com.Haggle.cloud.gateway.filter;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,19 +1,14 @@
-package com.mall4j.cloud.product.mapper;
+package com.Haggle.cloud.product.mapper;
 
-import com.mall4j.cloud.common.database.util.PageAdapter;
-import com.mall4j.cloud.product.dto.AttrDTO;
-import com.mall4j.cloud.product.model.Attr;
-import com.mall4j.cloud.api.product.vo.AttrVO;
+import com.Haggle.cloud.common.database.util.PageAdapter;
+import com.Haggle.cloud.product.dto.AttrDTO;
+import com.Haggle.cloud.product.model.Attr;
+import com.Haggle.cloud.api.product.vo.AttrVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 属性信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:23
- */
+
 public interface AttrMapper {
 
 	/**

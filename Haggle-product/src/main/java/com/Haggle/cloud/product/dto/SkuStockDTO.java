@@ -1,13 +1,7 @@
-package com.mall4j.cloud.product.dto;
+package com.Haggle.cloud.product.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 库存信息DTO
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
 public class SkuStockDTO {
     private static final long serialVersionUID = 1L;
 

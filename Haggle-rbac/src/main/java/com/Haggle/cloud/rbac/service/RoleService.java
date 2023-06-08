@@ -1,18 +1,13 @@
-package com.mall4j.cloud.rbac.service;
+package com.Haggle.cloud.rbac.service;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.rbac.model.Role;
-import com.mall4j.cloud.rbac.vo.RoleVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.rbac.model.Role;
+import com.Haggle.cloud.rbac.vo.RoleVO;
 
 import java.util.List;
 
-/**
- * 角色
- *
- * @author FrozenWatermelon
- * @date 2020-09-17 19:15:44
- */
+
 public interface RoleService {
 
 	/**

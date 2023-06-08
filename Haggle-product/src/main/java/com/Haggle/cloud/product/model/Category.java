@@ -1,14 +1,11 @@
-package com.mall4j.cloud.product.model;
+package com.Haggle.cloud.product.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 分类信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
+
+
 public class Category extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

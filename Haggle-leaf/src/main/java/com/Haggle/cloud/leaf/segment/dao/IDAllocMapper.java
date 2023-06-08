@@ -1,13 +1,11 @@
-package com.mall4j.cloud.leaf.segment.dao;
+package com.Haggle.cloud.leaf.segment.dao;
 
-import com.mall4j.cloud.leaf.segment.model.LeafAlloc;
+import com.Haggle.cloud.leaf.segment.model.LeafAlloc;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * @author leaf
- */
+
 public interface IDAllocMapper {
 
 	/**

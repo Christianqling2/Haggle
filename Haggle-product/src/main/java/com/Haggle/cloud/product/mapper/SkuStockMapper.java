@@ -1,19 +1,14 @@
-package com.mall4j.cloud.product.mapper;
+package com.Haggle.cloud.product.mapper;
 
-import com.mall4j.cloud.product.bo.SkuWithStockBO;
-import com.mall4j.cloud.product.model.SkuStock;
-import com.mall4j.cloud.product.vo.SkuStockVO;
-import com.mall4j.cloud.api.product.vo.SkuVO;
+import com.Haggle.cloud.product.bo.SkuWithStockBO;
+import com.Haggle.cloud.product.model.SkuStock;
+import com.Haggle.cloud.product.vo.SkuStockVO;
+import com.Haggle.cloud.api.product.vo.SkuVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 库存信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface SkuStockMapper {
 
 	/**

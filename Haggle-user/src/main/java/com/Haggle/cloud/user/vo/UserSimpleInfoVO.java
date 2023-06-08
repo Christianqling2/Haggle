@@ -1,11 +1,8 @@
-package com.mall4j.cloud.user.vo;
+package com.Haggle.cloud.user.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * @author FrozenWatermelon
- * @date 2021/2/25
- */
+
 public class UserSimpleInfoVO {
 
     @Schema(description = "用户昵称" ,required=true)

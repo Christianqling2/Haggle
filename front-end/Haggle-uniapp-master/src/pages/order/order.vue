@@ -151,13 +151,13 @@ export default {
       let url = ''
       let reqMethod = ''
       if (this.operType===0) {
-        url = '/mall4cloud_order/p/myOrder/'
+        url = '/Haggle_order/p/myOrder/'
         reqMethod = 'DELETE'
       } else if (this.operType===1) {
-        url = '/mall4cloud_order/p/myOrder/cancel/'
+        url = '/Haggle_order/p/myOrder/cancel/'
         reqMethod = 'PUT'
       } else if (this.operType===2) {
-        url = '/mall4cloud_order/p/myOrder/receipt/'
+        url = '/Haggle_order/p/myOrder/receipt/'
         reqMethod = 'PUT'
       }
       url = url + this.operOrderId
@@ -202,7 +202,7 @@ export default {
      */
     getOrderList() {
       const params = {
-        url: '/mall4cloud_order/p/myOrder/search_order',
+        url: '/Haggle_order/p/myOrder/search_order',
         method: 'GET',
         data: {
           status: this.orderStatus,

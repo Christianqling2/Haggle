@@ -162,7 +162,7 @@ export default {
      */
     getMyShopInfo() {
       var params = {
-        url: '/mall4cloud_multishop/my_shop_detail',
+        url: '/Haggle_multishop/my_shop_detail',
         method: 'GET',
         callBack: res => {
           uni.hideLoading()
@@ -194,7 +194,7 @@ export default {
      */
     getShopAudit() {
       var params = {
-        url: '/mall4cloud_multishop/a/shop_auditing/shop_audit',
+        url: '/Haggle_multishop/a/shop_auditing/shop_audit',
         method: 'GET',
         callBack: res => {
           uni.hideLoading()
@@ -329,7 +329,7 @@ export default {
         return
       }
       var params = {
-        url: '/mall4cloud_multishop/ua/shop_detail/check_shop_name',
+        url: '/Haggle_multishop/ua/shop_detail/check_shop_name',
         method: 'GET',
         data: {
           shopName: this.shopName
@@ -445,7 +445,7 @@ export default {
       }
       uni.showLoading()
       var params = {
-        url: '/mall4cloud_multishop/my_shop_detail/create',
+        url: '/Haggle_multishop/my_shop_detail/create',
         method: 'POST',
         data: shopDetailDTO,
         callBack: res => {

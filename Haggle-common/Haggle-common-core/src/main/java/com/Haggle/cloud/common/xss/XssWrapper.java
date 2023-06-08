@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.xss;
+package com.Haggle.cloud.common.xss;
 
 import cn.hutool.core.util.StrUtil;
 
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequestWrapper;
 /**
  * xss 攻击过滤
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  */
 public class XssWrapper extends HttpServletRequestWrapper {
 

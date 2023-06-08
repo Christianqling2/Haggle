@@ -8,15 +8,15 @@
  * 版权所有，侵权必究！
  */
 
-package com.mall4j.cloud.multishop.vo;
+package com.Haggle.cloud.multishop.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.mall4j.cloud.common.serializer.ImgJsonSerializer;
+import com.Haggle.cloud.common.serializer.ImgJsonSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 店铺的头信息
- * @author LGH
+ * /**/ LGH
  */
 public class ShopHeadInfoVO {
 

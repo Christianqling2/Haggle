@@ -1,20 +1,20 @@
-package com.mall4j.cloud.order.controller.multishop;
+package com.Haggle.cloud.order.controller.multishop;
 
-import com.mall4j.cloud.api.feign.SearchOrderFeignClient;
-import com.mall4j.cloud.api.order.constant.OrderStatus;
-import com.mall4j.cloud.api.order.dto.DeliveryOrderDTO;
-import com.mall4j.cloud.api.vo.EsPageVO;
-import com.mall4j.cloud.api.vo.search.EsOrderVO;
-import com.mall4j.cloud.common.dto.OrderSearchDTO;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.order.model.Order;
-import com.mall4j.cloud.order.model.OrderAddr;
-import com.mall4j.cloud.order.service.OrderAddrService;
-import com.mall4j.cloud.order.service.OrderService;
-import com.mall4j.cloud.order.vo.OrderAddrVO;
-import com.mall4j.cloud.order.vo.OrderVO;
+import com.Haggle.cloud.api.feign.SearchOrderFeignClient;
+import com.Haggle.cloud.api.order.constant.OrderStatus;
+import com.Haggle.cloud.api.order.dto.DeliveryOrderDTO;
+import com.Haggle.cloud.api.vo.EsPageVO;
+import com.Haggle.cloud.api.vo.search.EsOrderVO;
+import com.Haggle.cloud.common.dto.OrderSearchDTO;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.order.model.Order;
+import com.Haggle.cloud.order.model.OrderAddr;
+import com.Haggle.cloud.order.service.OrderAddrService;
+import com.Haggle.cloud.order.service.OrderService;
+import com.Haggle.cloud.order.vo.OrderAddrVO;
+import com.Haggle.cloud.order.vo.OrderVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -25,9 +25,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Objects;
 
-/**
- * @author FrozenWatermelon on 2018/09/15.
- */
+
 @RestController("multishopOrderController")
 @Controller
 @RequestMapping("/m/order")

@@ -1,4 +1,4 @@
-package com.mall4j.cloud.api.product.dto;
+package com.Haggle.cloud.api.product.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 购物车物品参数
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-12-04 11:27:35
  */
 public class ShopCartItemDTO {

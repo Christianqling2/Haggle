@@ -1,20 +1,17 @@
-package com.mall4j.cloud.api.auth.feign;
+package com.Haggle.cloud.api.auth.feign;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.constant.SysTypeEnum;
-import com.mall4j.cloud.api.auth.dto.AuthAccountDTO;
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.api.auth.vo.TokenInfoVO;
-import com.mall4j.cloud.common.feign.FeignInsideAuthConfig;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.constant.SysTypeEnum;
+import com.Haggle.cloud.api.auth.dto.AuthAccountDTO;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.api.auth.vo.TokenInfoVO;
+import com.Haggle.cloud.common.feign.FeignInsideAuthConfig;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/9/22
- */
-@FeignClient(value = "mall4cloud-auth",contextId ="account")
+
+@FeignClient(value = "Haggle-auth",contextId ="account")
 public interface AccountFeignClient {
 
 	/**

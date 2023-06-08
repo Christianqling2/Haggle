@@ -1,8 +1,8 @@
-package com.mall4j.cloud.user.controller.app;
+package com.Haggle.cloud.user.controller.app;
 
-import com.mall4j.cloud.api.user.vo.AreaVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.user.service.AreaService;
+import com.Haggle.cloud.api.user.vo.AreaVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.user.service.AreaService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,12 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * 省市区地区信息
- *
- * @author YXF
- * @date 2020-11-25 14:48:52
- */
+
 @RestController("appAreaController")
 @RequestMapping("/area")
 @Tag(name = "app-地区信息")

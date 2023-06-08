@@ -1,21 +1,16 @@
-package com.mall4j.cloud.platform.model;
+package com.Haggle.cloud.platform.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.database.annotations.DistributedId;
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 平台用户
- *
- * @author lhd
- * @date 2020-12-21 14:16:34
- */
+import com.Haggle.cloud.common.database.annotations.DistributedId;
+import com.Haggle.cloud.common.model.BaseModel;
+
 public class SysUser extends BaseModel implements Serializable{
 
     /**
      * 平台用户id
      */
-	@DistributedId("mall4cloud-platform-user")
+	@DistributedId("Haggle-platform-user")
     private Long sysUserId;
 
     /**

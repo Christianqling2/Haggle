@@ -1,6 +1,6 @@
-package com.mall4j.cloud.common.security.filter;
+package com.Haggle.cloud.common.security.filter;
 
-import com.mall4j.cloud.common.xss.XssWrapper;
+import com.Haggle.cloud.common.xss.XssWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.Ordered;
@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * 一些简单的安全过滤： xss
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/11
  */
 @WebFilter(filterName = "xssFilter")

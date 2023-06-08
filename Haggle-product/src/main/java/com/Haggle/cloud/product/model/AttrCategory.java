@@ -1,14 +1,11 @@
-package com.mall4j.cloud.product.model;
+package com.Haggle.cloud.product.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 属性与属性分组关联信息
- *
- * @author YXF
- * @date 2020-11-23 16:20:01
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
+
+
 public class AttrCategory extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

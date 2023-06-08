@@ -1,13 +1,8 @@
-package com.mall4j.cloud.api.order.dto;
+package com.Haggle.cloud.api.order.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * 物流订单项信息DTO
- *
- * @author FrozenWatermelon
- * @date 2020-12-07 15:10:00
- */
+
 public class DeliveryOrderItemDTO{
 
     @Schema(description = "id" )

@@ -1,9 +1,9 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.product.model.CategoryBrand;
-import com.mall4j.cloud.product.mapper.CategoryBrandMapper;
-import com.mall4j.cloud.product.service.CategoryBrandService;
+import com.Haggle.cloud.product.model.CategoryBrand;
+import com.Haggle.cloud.product.mapper.CategoryBrandMapper;
+import com.Haggle.cloud.product.service.CategoryBrandService;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 品牌分类关联信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class CategoryBrandServiceImpl implements CategoryBrandService {
 

@@ -1,13 +1,8 @@
-package com.mall4j.cloud.rbac.model;
+package com.Haggle.cloud.rbac.model;
 
-import com.mall4j.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.model.BaseModel;
 
-/**
- * 用户与角色对应关系
- *
- * @author FrozenWatermelon
- * @date 2020/6/24
- */
+
 public class UserRole extends BaseModel {
 
 	/**

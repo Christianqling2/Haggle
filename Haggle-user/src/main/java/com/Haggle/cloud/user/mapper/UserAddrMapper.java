@@ -1,15 +1,12 @@
-package com.mall4j.cloud.user.mapper;
+package com.Haggle.cloud.user.mapper;
 
-import com.mall4j.cloud.common.order.vo.UserAddrVO;
-import com.mall4j.cloud.user.model.UserAddr;
+import com.Haggle.cloud.common.order.vo.UserAddrVO;
+import com.Haggle.cloud.user.model.UserAddr;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * @Author lth
- * @Date 2021/7/1 17:42
- */
+
 public interface UserAddrMapper {
 
     /**

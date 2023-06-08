@@ -1,14 +1,14 @@
-package com.mall4j.cloud.auth.controller;
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.rbac.dto.ClearUserPermissionsCacheDTO;
-import com.mall4j.cloud.api.rbac.feign.PermissionFeignClient;
-import com.mall4j.cloud.auth.dto.AuthenticationDTO;
-import com.mall4j.cloud.auth.manager.TokenStore;
-import com.mall4j.cloud.auth.service.AuthAccountService;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.api.auth.vo.TokenInfoVO;
+package com.Haggle.cloud.auth.controller;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.rbac.dto.ClearUserPermissionsCacheDTO;
+import com.Haggle.cloud.api.rbac.feign.PermissionFeignClient;
+import com.Haggle.cloud.auth.dto.AuthenticationDTO;
+import com.Haggle.cloud.auth.manager.TokenStore;
+import com.Haggle.cloud.auth.service.AuthAccountService;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.api.auth.vo.TokenInfoVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/6/30
- */
+
 @RestController
 @Tag(name = "登录")
 public class LoginController {

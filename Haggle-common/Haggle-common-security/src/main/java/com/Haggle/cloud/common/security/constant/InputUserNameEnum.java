@@ -1,8 +1,8 @@
-package com.mall4j.cloud.common.security.constant;
+package com.Haggle.cloud.common.security.constant;
 
 /**
  * 输入的用户名类型枚举 1.username 2.mobile 3.email
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/3
  */
 public enum InputUserNameEnum {

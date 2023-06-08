@@ -1,12 +1,12 @@
-package com.mall4j.cloud.platform.controller;
+package com.Haggle.cloud.platform.controller;
 
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.platform.dto.ChangeAccountDTO;
-import com.mall4j.cloud.platform.service.SysUserAccountService;
-import com.mall4j.cloud.platform.service.SysUserService;
-import com.mall4j.cloud.platform.vo.SysUserVO;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.platform.dto.ChangeAccountDTO;
+import com.Haggle.cloud.platform.service.SysUserAccountService;
+import com.Haggle.cloud.platform.service.SysUserService;
+import com.Haggle.cloud.platform.vo.SysUserVO;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.*;
@@ -14,10 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Objects;
 
-/**
- * @author lhd
- * @date 2020/12/21
- */
+
 @RequestMapping(value = "/sys_user/account")
 @RestController
 @Tag(name = "平台用户账号信息")

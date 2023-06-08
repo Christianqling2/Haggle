@@ -1,11 +1,6 @@
-package com.mall4j.cloud.search.constant;
+package com.Haggle.cloud.search.constant;
 
-/**
- * 配置缓存名字
- *
- * @author lhd
- * @date 2020/12/30
- */
+
 public interface EsConstant {
 
     /**

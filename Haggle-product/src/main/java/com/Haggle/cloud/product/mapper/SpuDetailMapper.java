@@ -1,14 +1,9 @@
-package com.mall4j.cloud.product.mapper;
+package com.Haggle.cloud.product.mapper;
 
-import com.mall4j.cloud.product.model.SpuDetail;
+import com.Haggle.cloud.product.model.SpuDetail;
 import org.apache.ibatis.annotations.Param;
 
-/**
- * 商品详情信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface SpuDetailMapper {
 
 	/**

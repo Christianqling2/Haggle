@@ -1,16 +1,16 @@
-package com.mall4j.cloud.search.listener;
+package com.Haggle.cloud.search.listener;
 
 import cn.throwx.canal.gule.model.CanalBinLogEvent;
 import cn.throwx.canal.gule.model.CanalBinLogResult;
 import cn.throwx.canal.gule.support.processor.BaseCanalBinlogEventProcessor;
 import cn.throwx.canal.gule.support.processor.ExceptionHandler;
-import com.mall4j.cloud.api.order.bo.EsOrderBO;
-import com.mall4j.cloud.api.order.feign.OrderFeignClient;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.util.Json;
-import com.mall4j.cloud.search.bo.OrderBO;
-import com.mall4j.cloud.search.constant.EsIndexEnum;
+import com.Haggle.cloud.api.order.bo.EsOrderBO;
+import com.Haggle.cloud.api.order.feign.OrderFeignClient;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.util.Json;
+import com.Haggle.cloud.search.bo.OrderBO;
+import com.Haggle.cloud.search.constant.EsIndexEnum;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.update.UpdateRequest;
@@ -25,11 +25,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-/**
- * 订单的监听
- * @author FrozenWatermelon
- * @date 2021/02/03
- */
+
 @Component
 public class OrderCanalListener extends BaseCanalBinlogEventProcessor<OrderBO> {
 
@@ -58,7 +54,7 @@ public class OrderCanalListener extends BaseCanalBinlogEventProcessor<OrderBO> {
         } catch (IOException e) {
             e.printStackTrace();
             log.error(e.toString());
-            throw new Mall4cloudException("保存es信息异常", e);
+            throw new HaggleException("保存es信息异常", e);
         }
     }
 
@@ -77,14 +73,14 @@ public class OrderCanalListener extends BaseCanalBinlogEventProcessor<OrderBO> {
             log.info(updateResponse.toString());
         } catch (IOException e) {
             log.error(e.toString());
-            throw new Mall4cloudException("更新订单es信息异常",e);
+            throw new HaggleException("更新订单es信息异常",e);
         }
     }
 
     @Override
     protected ExceptionHandler exceptionHandler() {
         return (CanalBinLogEvent event, Throwable throwable) -> {
-            throw new Mall4cloudException("创建索引异常",throwable);
+            throw new HaggleException("创建索引异常",throwable);
         };
     }
 }

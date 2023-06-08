@@ -1,12 +1,12 @@
-package com.mall4j.cloud.api.product.vo;
+package com.Haggle.cloud.api.product.vo;
 
-import com.mall4j.cloud.common.vo.BaseVO;
+import com.Haggle.cloud.common.vo.BaseVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
  * 商品sku销售属性关联信息VO
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-10-28 15:27:24
  */
 public class SpuSkuAttrValueVO extends BaseVO {

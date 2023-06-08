@@ -1,17 +1,12 @@
-package com.mall4j.cloud.product.mapper;
+package com.Haggle.cloud.product.mapper;
 
-import com.mall4j.cloud.product.bo.SkuWithStockBO;
-import com.mall4j.cloud.product.model.SkuStockLock;
+import com.Haggle.cloud.product.bo.SkuWithStockBO;
+import com.Haggle.cloud.product.model.SkuStockLock;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 库存锁定信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-22 16:12:10
- */
+
 public interface SkuStockLockMapper {
 
 	/**

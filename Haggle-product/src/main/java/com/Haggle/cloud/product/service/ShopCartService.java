@@ -1,18 +1,13 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
-import com.mall4j.cloud.product.dto.shopcart.ChangeShopCartItemDTO;
-import com.mall4j.cloud.product.dto.shopcart.CheckShopCartItemDTO;
-import com.mall4j.cloud.product.model.ShopCartItem;
-import com.mall4j.cloud.common.order.vo.ShopCartItemVO;
+import com.Haggle.cloud.product.dto.shopcart.ChangeShopCartItemDTO;
+import com.Haggle.cloud.product.dto.shopcart.CheckShopCartItemDTO;
+import com.Haggle.cloud.product.model.ShopCartItem;
+import com.Haggle.cloud.common.order.vo.ShopCartItemVO;
 
 import java.util.List;
 
-/**
- * 购物车
- *
- * @author FrozenWatermelon
- * @date 2020-11-20 15:47:32
- */
+
 public interface ShopCartService {
 
 	/**

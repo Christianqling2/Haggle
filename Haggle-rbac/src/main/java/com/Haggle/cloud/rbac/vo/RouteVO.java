@@ -1,11 +1,8 @@
-package com.mall4j.cloud.rbac.vo;
+package com.Haggle.cloud.rbac.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/8/6
- */
+
 public class RouteVO {
 
 	@Schema(description = "id" )

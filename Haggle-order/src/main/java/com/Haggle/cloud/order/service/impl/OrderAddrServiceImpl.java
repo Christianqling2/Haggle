@@ -1,20 +1,15 @@
-package com.mall4j.cloud.order.service.impl;
+package com.Haggle.cloud.order.service.impl;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.order.mapper.OrderAddrMapper;
-import com.mall4j.cloud.order.model.OrderAddr;
-import com.mall4j.cloud.order.service.OrderAddrService;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.order.mapper.OrderAddrMapper;
+import com.Haggle.cloud.order.model.OrderAddr;
+import com.Haggle.cloud.order.service.OrderAddrService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * 用户订单配送地址
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 14:13:50
- */
+
 @Service
 public class OrderAddrServiceImpl implements OrderAddrService {
 

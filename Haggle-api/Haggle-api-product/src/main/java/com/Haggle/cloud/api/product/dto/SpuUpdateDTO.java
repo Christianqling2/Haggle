@@ -1,10 +1,10 @@
-package com.mall4j.cloud.api.product.dto;
+package com.Haggle.cloud.api.product.dto;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/11/12
  */
 public class SpuUpdateDTO implements Serializable {

@@ -1,12 +1,12 @@
-package com.mall4j.cloud.leaf.feign;
+package com.Haggle.cloud.leaf.feign;
 
-import com.mall4j.cloud.api.leaf.feign.SegmentFeignClient;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.leaf.common.Result;
-import com.mall4j.cloud.leaf.common.Status;
-import com.mall4j.cloud.leaf.exception.LeafServerException;
-import com.mall4j.cloud.leaf.exception.NoKeyException;
-import com.mall4j.cloud.leaf.service.SegmentService;
+import com.Haggle.cloud.api.leaf.feign.SegmentFeignClient;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.leaf.common.Result;
+import com.Haggle.cloud.leaf.common.Status;
+import com.Haggle.cloud.leaf.exception.LeafServerException;
+import com.Haggle.cloud.leaf.exception.NoKeyException;
+import com.Haggle.cloud.leaf.service.SegmentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Objects;
 
 
-/**
- * @author FrozenWatermelon
- * @date 2020/7/15
- */
+/**/
 @RestController
 public class SegmentFeignController implements SegmentFeignClient {
 

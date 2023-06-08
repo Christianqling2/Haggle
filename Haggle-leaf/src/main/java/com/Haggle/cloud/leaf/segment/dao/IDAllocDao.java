@@ -1,16 +1,14 @@
-package com.mall4j.cloud.leaf.segment.dao;
+package com.Haggle.cloud.leaf.segment.dao;
 
-import com.mall4j.cloud.leaf.segment.model.LeafAlloc;
+import com.Haggle.cloud.leaf.segment.model.LeafAlloc;
 
 import java.util.List;
 
-/**
- * @author leaf
- */
+
 public interface IDAllocDao {
 
 	/**
-	 * com.mall4j.cloud.leaf.segment.dao.IDAllocMapper.getAllLeafAllocs
+	 * com.Haggle.cloud.leaf.segment.dao.IDAllocMapper.getAllLeafAllocs
 	 * @return List<LeafAlloc>
 	 */
 	List<LeafAlloc> getAllLeafAllocs();

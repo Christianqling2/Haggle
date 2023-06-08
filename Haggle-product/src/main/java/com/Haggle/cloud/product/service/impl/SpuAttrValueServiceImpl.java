@@ -1,13 +1,13 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.RedisUtil;
-import com.mall4j.cloud.product.mapper.SpuAttrValueMapper;
-import com.mall4j.cloud.product.mapper.SpuMapper;
-import com.mall4j.cloud.product.model.SpuAttrValue;
-import com.mall4j.cloud.product.service.SpuAttrValueService;
-import com.mall4j.cloud.api.product.vo.SpuAttrValueVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.RedisUtil;
+import com.Haggle.cloud.product.mapper.SpuAttrValueMapper;
+import com.Haggle.cloud.product.mapper.SpuMapper;
+import com.Haggle.cloud.product.model.SpuAttrValue;
+import com.Haggle.cloud.product.service.SpuAttrValueService;
+import com.Haggle.cloud.api.product.vo.SpuAttrValueVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,12 +17,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-/**
- * 商品规格属性关联信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class SpuAttrValueServiceImpl implements SpuAttrValueService {
 

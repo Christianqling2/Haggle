@@ -1,7 +1,7 @@
-package com.mall4j.cloud.common.cache.constant;
+package com.Haggle.cloud.common.cache.constant;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2021/01/25
  */
 public interface BizCacheNames {
@@ -9,6 +9,6 @@ public interface BizCacheNames {
     /**
      * 前缀
      */
-    String COUPON_PREFIX = "mall4cloud_biz:";
+    String COUPON_PREFIX = "Haggle_biz:";
 
 }

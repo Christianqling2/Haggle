@@ -1,4 +1,4 @@
-package com.mall4j.cloud.search.canal;
+package com.Haggle.cloud.search.canal;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.throwx.canal.gule.CanalGlue;
@@ -10,10 +10,8 @@ import cn.throwx.canal.gule.support.processor.CanalBinlogEventProcessorFactory;
 
 import java.util.List;
 
-/**
- * @author FrozenWatermelon
- */
-public class Mall4cloudCanalGlue implements CanalGlue {
+
+public class HaggleCanalGlue implements CanalGlue {
 
     private final CanalBinlogEventProcessorFactory canalBinlogEventProcessorFactory;
 
@@ -31,11 +29,11 @@ public class Mall4cloudCanalGlue implements CanalGlue {
     }
 
 
-    private Mall4cloudCanalGlue(CanalBinlogEventProcessorFactory canalBinlogEventProcessorFactory) {
+    private HaggleCanalGlue(CanalBinlogEventProcessorFactory canalBinlogEventProcessorFactory) {
         this.canalBinlogEventProcessorFactory = canalBinlogEventProcessorFactory;
     }
 
-    public static Mall4cloudCanalGlue of(CanalBinlogEventProcessorFactory canalBinlogEventProcessorFactory) {
-        return new Mall4cloudCanalGlue(canalBinlogEventProcessorFactory);
+    public static HaggleCanalGlue of(CanalBinlogEventProcessorFactory canalBinlogEventProcessorFactory) {
+        return new HaggleCanalGlue(canalBinlogEventProcessorFactory);
     }
 }

@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.rocketmq.config;
+package com.Haggle.cloud.common.rocketmq.config;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
@@ -9,7 +9,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2021/3/30
  */
 @RefreshScope

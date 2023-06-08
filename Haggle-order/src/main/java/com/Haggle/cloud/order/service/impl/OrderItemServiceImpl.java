@@ -1,21 +1,16 @@
-package com.mall4j.cloud.order.service.impl;
+package com.Haggle.cloud.order.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.order.model.OrderItem;
-import com.mall4j.cloud.order.mapper.OrderItemMapper;
-import com.mall4j.cloud.order.service.OrderItemService;
+import com.Haggle.cloud.order.model.OrderItem;
+import com.Haggle.cloud.order.mapper.OrderItemMapper;
+import com.Haggle.cloud.order.service.OrderItemService;
 import org.springframework.stereotype.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-/**
- * 订单项
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+
 @Service
 public class OrderItemServiceImpl implements OrderItemService {
 

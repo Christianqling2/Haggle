@@ -60,7 +60,7 @@ export default {
     initCityData(provinceId, cityId, areaId) {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_user/area/list',
+        url: '/Haggle_user/area/list',
         method: 'GET',
         data: {},
         callBack: res => {

@@ -119,7 +119,7 @@ export default {
      */
     delAddress() {
       const params = {
-        url: '/mall4cloud_user/user_addr?addrId=' + this.addrId,
+        url: '/Haggle_user/user_addr?addrId=' + this.addrId,
         method: 'DELETE',
         callBack: res => {
           uni.showToast({
@@ -210,7 +210,7 @@ export default {
       this.saveing = true
       // 保存地址
       const params = {
-        url: '/mall4cloud_user/user_addr',
+        url: '/Haggle_user/user_addr',
         method: this.addrId ? 'PUT' : 'POST',
         data: {
           addr: this.addr,
@@ -247,7 +247,7 @@ export default {
      */
     getAddressById() {
       const params = {
-        url: '/mall4cloud_user/user_addr',
+        url: '/Haggle_user/user_addr',
         method: 'GET',
         data: {
           addrId: this.addrId

@@ -1,13 +1,8 @@
-package com.mall4j.cloud.product.service;
+package com.Haggle.cloud.product.service;
 
 import java.util.List;
 
-/**
- * 品牌分类关联信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 public interface CategoryBrandService {
 
 	/**

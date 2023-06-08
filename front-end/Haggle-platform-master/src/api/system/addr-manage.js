@@ -2,14 +2,14 @@ import request from '@/utils/request'
 
 export function page() {
   return request({
-    url: '/mall4cloud_delivery/m/area/list',
+    url: '/Haggle_delivery/m/area/list',
     method: 'get'
   })
 }
 
 export function get(areaId) {
   return request({
-    url: '/mall4cloud_delivery/m/area',
+    url: '/Haggle_delivery/m/area',
     method: 'get',
     params: {
       areaId
@@ -19,7 +19,7 @@ export function get(areaId) {
 
 export function save(data) {
   return request({
-    url: '/mall4cloud_delivery/m/area',
+    url: '/Haggle_delivery/m/area',
     method: 'post',
     data
   })
@@ -27,7 +27,7 @@ export function save(data) {
 
 export function update(data) {
   return request({
-    url: '/mall4cloud_delivery/m/area',
+    url: '/Haggle_delivery/m/area',
     method: 'put',
     data
   })
@@ -35,7 +35,7 @@ export function update(data) {
 
 export function deleteById(areaId) {
   return request({
-    url: '/mall4cloud_delivery/m/area',
+    url: '/Haggle_delivery/m/area',
     method: 'delete',
     params: {
       areaId

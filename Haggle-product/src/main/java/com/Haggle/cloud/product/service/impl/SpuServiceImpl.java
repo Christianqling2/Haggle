@@ -1,32 +1,32 @@
-package com.mall4j.cloud.product.service.impl;
+package com.Haggle.cloud.product.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import com.mall4j.cloud.api.multishop.feign.IndexImgFeignClient;
-import com.mall4j.cloud.api.multishop.feign.ShopDetailFeignClient;
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.api.product.bo.EsAttrBO;
-import com.mall4j.cloud.api.product.bo.EsProductBO;
-import com.mall4j.cloud.api.product.vo.CategoryVO;
-import com.mall4j.cloud.api.product.vo.SpuAttrValueVO;
-import com.mall4j.cloud.common.cache.constant.CacheNames;
-import com.mall4j.cloud.common.cache.util.RedisUtil;
-import com.mall4j.cloud.common.constant.Constant;
-import com.mall4j.cloud.common.constant.StatusEnum;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.util.PageUtil;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
-import com.mall4j.cloud.product.dto.SpuDTO;
-import com.mall4j.cloud.product.dto.SpuPageSearchDTO;
-import com.mall4j.cloud.product.mapper.SpuMapper;
-import com.mall4j.cloud.product.service.*;
-import com.mall4j.cloud.api.product.vo.SpuVO;
-import com.mall4j.cloud.product.model.Spu;
-import com.mall4j.cloud.product.model.SpuAttrValue;
-import com.mall4j.cloud.product.model.SpuDetail;
-import com.mall4j.cloud.product.model.SpuExtension;
+import com.Haggle.cloud.api.multishop.feign.IndexImgFeignClient;
+import com.Haggle.cloud.api.multishop.feign.ShopDetailFeignClient;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.api.product.bo.EsAttrBO;
+import com.Haggle.cloud.api.product.bo.EsProductBO;
+import com.Haggle.cloud.api.product.vo.CategoryVO;
+import com.Haggle.cloud.api.product.vo.SpuAttrValueVO;
+import com.Haggle.cloud.common.cache.constant.CacheNames;
+import com.Haggle.cloud.common.cache.util.RedisUtil;
+import com.Haggle.cloud.common.constant.Constant;
+import com.Haggle.cloud.common.constant.StatusEnum;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.util.PageUtil;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.product.dto.SpuDTO;
+import com.Haggle.cloud.product.dto.SpuPageSearchDTO;
+import com.Haggle.cloud.product.mapper.SpuMapper;
+import com.Haggle.cloud.product.service.*;
+import com.Haggle.cloud.api.product.vo.SpuVO;
+import com.Haggle.cloud.product.model.Spu;
+import com.Haggle.cloud.product.model.SpuAttrValue;
+import com.Haggle.cloud.product.model.SpuDetail;
+import com.Haggle.cloud.product.model.SpuExtension;
 import io.seata.spring.annotation.GlobalTransactional;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.aop.framework.AopContext;
@@ -40,12 +40,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * spu信息
- *
- * @author FrozenWatermelon
- * @date 2020-10-28 15:27:24
- */
+
 @Service
 public class SpuServiceImpl implements SpuService {
 
@@ -119,7 +114,7 @@ public class SpuServiceImpl implements SpuService {
             SpuVO spuVO = spuMapper.getBySpuId(spuId);
             ServerResponseEntity<Void> imgRes = indexImgFeignClient.deleteBySpuId(spuVO.getSpuId(), spuVO.getShopId());
             if (!imgRes.isSuccess()) {
-                throw new Mall4cloudException("服务异常");
+                throw new HaggleException("服务异常");
             }
         }
     }
@@ -192,7 +187,7 @@ public class SpuServiceImpl implements SpuService {
     public void deleteById(Long spuId) {
         SpuVO spuVO = getBySpuId(spuId);
         if(Objects.isNull(spuVO) || Objects.equals(spuVO.getStatus(), StatusEnum.DELETE.value())){
-            throw new Mall4cloudException("商品不存在或者已被删除！");
+            throw new HaggleException("商品不存在或者已被删除！");
         }
         // 删除商品、sku信息(逻辑删除)
         spuMapper.updateStatusBySpuId(spuId);
@@ -200,7 +195,7 @@ public class SpuServiceImpl implements SpuService {
         // 把轮播图中关联了该商品的数据删除
         ServerResponseEntity<Void> imgRes = indexImgFeignClient.deleteBySpuId(spuId, spuVO.getShopId());
         if (!imgRes.isSuccess()) {
-            throw new Mall4cloudException("服务异常");
+            throw new HaggleException("服务异常");
         }
     }
 

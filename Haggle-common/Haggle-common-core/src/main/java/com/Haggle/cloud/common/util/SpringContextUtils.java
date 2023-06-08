@@ -1,4 +1,4 @@
-package com.mall4j.cloud.common.util;
+package com.Haggle.cloud.common.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * Spring Context 工具类
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/11
  */
 @Component

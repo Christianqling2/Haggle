@@ -1,9 +1,9 @@
-package com.mall4j.cloud.common.cache.bo;
+package com.Haggle.cloud.common.cache.bo;
 
 /**
  * 通过 cacheName 配置 和 时间告诉缓存多久清楚一遍
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/4
  */
 public class CacheNameWithTtlBO {

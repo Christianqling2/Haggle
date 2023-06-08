@@ -1,14 +1,11 @@
-package com.mall4j.cloud.auth.mapper;
+package com.Haggle.cloud.auth.mapper;
 
-import com.mall4j.cloud.api.auth.vo.AuthAccountVO;
-import com.mall4j.cloud.auth.model.AuthAccount;
-import com.mall4j.cloud.common.security.bo.AuthAccountInVerifyBO;
+import com.Haggle.cloud.api.auth.vo.AuthAccountVO;
+import com.Haggle.cloud.auth.model.AuthAccount;
+import com.Haggle.cloud.common.security.bo.AuthAccountInVerifyBO;
 import org.apache.ibatis.annotations.Param;
 
-/**
- * @author FrozenWatermelon
- * @date 2020/7/2
- */
+
 public interface AuthAccountMapper {
 
 	/**

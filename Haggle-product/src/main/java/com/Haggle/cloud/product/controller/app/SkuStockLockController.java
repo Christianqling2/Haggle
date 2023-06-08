@@ -1,12 +1,12 @@
-package com.mall4j.cloud.product.controller.app;
+package com.Haggle.cloud.product.controller.app;
 
-import com.mall4j.cloud.product.model.SkuStockLock;
-import com.mall4j.cloud.product.service.SkuStockLockService;
-import com.mall4j.cloud.product.dto.SkuStockLockDTO;
+import com.Haggle.cloud.product.model.SkuStockLock;
+import com.Haggle.cloud.product.service.SkuStockLockService;
+import com.Haggle.cloud.product.dto.SkuStockLockDTO;
 
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import ma.glasnost.orika.MapperFacade;
@@ -14,12 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
-/**
- * 库存锁定信息
- *
- * @author FrozenWatermelon
- * @date 2020-12-22 16:12:10
- */
+
 @RestController("appSkuStockLockController")
 @RequestMapping("/a/sku_stock_lock")
 @Tag(name = "库存锁定信息")

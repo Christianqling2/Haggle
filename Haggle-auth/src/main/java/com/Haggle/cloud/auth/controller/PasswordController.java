@@ -1,13 +1,13 @@
-package com.mall4j.cloud.auth.controller;
+package com.Haggle.cloud.auth.controller;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.api.auth.vo.TokenInfoVO;
-import com.mall4j.cloud.auth.dto.UpdatePasswordDTO;
-import com.mall4j.cloud.auth.manager.TokenStore;
-import com.mall4j.cloud.auth.model.AuthAccount;
-import com.mall4j.cloud.auth.service.AuthAccountService;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.common.security.AuthUserContext;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.api.auth.vo.TokenInfoVO;
+import com.Haggle.cloud.auth.dto.UpdatePasswordDTO;
+import com.Haggle.cloud.auth.manager.TokenStore;
+import com.Haggle.cloud.auth.model.AuthAccount;
+import com.Haggle.cloud.auth.service.AuthAccountService;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.common.security.AuthUserContext;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
-/**
- * @author FrozenWatermelon
- * @date 2021/01/29
- */
+
 @RestController
 @Tag(name = "密码")
 public class PasswordController {

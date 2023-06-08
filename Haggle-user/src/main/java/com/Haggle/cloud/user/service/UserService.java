@@ -1,19 +1,14 @@
-package com.mall4j.cloud.user.service;
+package com.Haggle.cloud.user.service;
 
-import com.mall4j.cloud.api.user.vo.UserApiVO;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.user.dto.UserRegisterDTO;
-import com.mall4j.cloud.user.model.User;
+import com.Haggle.cloud.api.user.vo.UserApiVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.user.dto.UserRegisterDTO;
+import com.Haggle.cloud.user.model.User;
 
 import java.util.List;
 
-/**
- * 用户表
- *
- * @author YXF
- * @date 2020-12-08 11:18:04
- */
+
 public interface UserService {
 
 	/**

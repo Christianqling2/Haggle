@@ -77,7 +77,7 @@ export default {
     getPlatformCategoryList() {
       uni.showLoading()
       const params = {
-        url: '/mall4cloud_product/ua/category/shop_category_list',
+        url: '/Haggle_product/ua/category/shop_category_list',
         method: 'GET',
         data: {
           shopId: 0,

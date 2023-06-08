@@ -1,7 +1,7 @@
-package com.mall4j.cloud.product.listener;
+package com.Haggle.cloud.product.listener;
 
-import com.mall4j.cloud.common.rocketmq.config.RocketMqConstant;
-import com.mall4j.cloud.product.service.SkuStockLockService;
+import com.Haggle.cloud.common.rocketmq.config.RocketMqConstant;
+import com.Haggle.cloud.product.service.SkuStockLockService;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * 解锁库存的监听
- * @author FrozenWatermelon
- */
+
 @Component
 @RocketMQMessageListener(topic = RocketMqConstant.STOCK_UNLOCK_TOPIC,consumerGroup = RocketMqConstant.STOCK_UNLOCK_TOPIC)
 public class StockUnlockConsumer implements RocketMQListener<List<Long>> {

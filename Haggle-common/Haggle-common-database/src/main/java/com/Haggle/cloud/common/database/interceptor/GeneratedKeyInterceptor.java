@@ -1,11 +1,11 @@
-package com.mall4j.cloud.common.database.interceptor;
+package com.Haggle.cloud.common.database.interceptor;
 
-import com.mall4j.cloud.api.leaf.feign.SegmentFeignClient;
-import com.mall4j.cloud.common.database.annotations.DistributedId;
-import com.mall4j.cloud.common.exception.Mall4cloudException;
-import com.mall4j.cloud.common.model.BaseModel;
-import com.mall4j.cloud.common.response.ResponseEnum;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.leaf.feign.SegmentFeignClient;
+import com.Haggle.cloud.common.database.annotations.DistributedId;
+import com.Haggle.cloud.common.exception.HaggleException;
+import com.Haggle.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.response.ResponseEnum;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.mapping.SqlCommandType;
@@ -23,10 +23,10 @@ import java.util.Map;
 
 /**
  * 分布式id生成
- * 1. 分布式id是通过美团的leaf生成的，是需要与mall4cloud-leaf数据库 当中 leaf_alloc表中 biz_tag字段相关联的key
+ * 1. 分布式id是通过美团的leaf生成的，是需要与Haggle-leaf数据库 当中 leaf_alloc表中 biz_tag字段相关联的key
  * 2. 为了注入分布式id更加方便，规定为DistributedId为注解的字段加入该字段
  * @see DistributedId
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/9/9
  */
 @Component
@@ -144,7 +144,7 @@ public class GeneratedKeyInterceptor implements Interceptor {
                 field.set(parameter,segmentIdResponseEntity.getData());
             } else {
                 logger.error("can't get distributed id !!!! ");
-                throw new Mall4cloudException(ResponseEnum.EXCEPTION);
+                throw new HaggleException(ResponseEnum.EXCEPTION);
             }
         }
     }

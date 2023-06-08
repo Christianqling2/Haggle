@@ -1,4 +1,4 @@
-package com.mall4j.cloud.leaf.segment.model;
+package com.Haggle.cloud.leaf.segment.model;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 /**
  * 双buffer
  *
- * @author left
+ * /**/ left
  */
 public class SegmentBuffer {
 

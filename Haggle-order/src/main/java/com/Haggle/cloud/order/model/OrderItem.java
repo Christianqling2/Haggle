@@ -1,14 +1,9 @@
-package com.mall4j.cloud.order.model;
+package com.Haggle.cloud.order.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import com.mall4j.cloud.common.model.BaseModel;
-/**
- * 订单项
- *
- * @author FrozenWatermelon
- * @date 2020-12-04 11:27:35
- */
+import com.Haggle.cloud.common.model.BaseModel;
+
 public class OrderItem extends BaseModel implements Serializable{
     private static final long serialVersionUID = 1L;
 

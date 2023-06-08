@@ -1,13 +1,13 @@
-package com.mall4j.cloud.auth.service;
+package com.Haggle.cloud.auth.service;
 
-import com.mall4j.cloud.api.auth.bo.UserInfoInTokenBO;
-import com.mall4j.cloud.auth.model.AuthAccount;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.api.auth.bo.UserInfoInTokenBO;
+import com.Haggle.cloud.auth.model.AuthAccount;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
 
 /**
  * 统一账户信息
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020/7/2
  */
 public interface AuthAccountService {

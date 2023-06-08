@@ -1,12 +1,12 @@
-package com.mall4j.cloud.multishop.model;
+package com.Haggle.cloud.multishop.model;
 
 import java.io.Serializable;
 
-import com.mall4j.cloud.common.model.BaseModel;
+import com.Haggle.cloud.common.model.BaseModel;
 /**
  * 店铺详情
  *
- * @author FrozenWatermelon
+ * /**/ FrozenWatermelon
  * @date 2020-12-05 15:50:25
  */
 public class ShopDetail extends BaseModel implements Serializable{

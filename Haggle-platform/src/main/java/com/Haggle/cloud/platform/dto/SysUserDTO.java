@@ -1,14 +1,10 @@
-package com.mall4j.cloud.platform.dto;
+package com.Haggle.cloud.platform.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import javax.validation.constraints.NotBlank;
 import java.util.List;
 
-/**
- * @author lhd
- * @date 2020/9/8
- */
 public class SysUserDTO {
 
     @Schema(description = "平台用户id" )

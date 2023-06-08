@@ -1,20 +1,14 @@
-package com.mall4j.cloud.rbac.service;
+package com.Haggle.cloud.rbac.service;
 
-import com.mall4j.cloud.api.rbac.bo.UriPermissionBO;
+import com.Haggle.cloud.api.rbac.bo.UriPermissionBO;
 
 import java.util.List;
-import com.mall4j.cloud.common.database.dto.PageDTO;
-import com.mall4j.cloud.common.database.vo.PageVO;
-import com.mall4j.cloud.common.response.ServerResponseEntity;
-import com.mall4j.cloud.rbac.model.MenuPermission;
-import com.mall4j.cloud.rbac.vo.MenuPermissionVO;
+import com.Haggle.cloud.common.database.dto.PageDTO;
+import com.Haggle.cloud.common.database.vo.PageVO;
+import com.Haggle.cloud.common.response.ServerResponseEntity;
+import com.Haggle.cloud.rbac.model.MenuPermission;
+import com.Haggle.cloud.rbac.vo.MenuPermissionVO;
 
-/**
- * 菜单资源
- *
- * @author FrozenWatermelon
- * @date 2020-09-14 16:27:55
- */
 public interface MenuPermissionService {
 
 	/**

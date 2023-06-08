@@ -1,14 +1,9 @@
-package com.mall4j.cloud.user.dto;
+package com.Haggle.cloud.user.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import org.hibernate.validator.constraints.Length;
 
-/**
- * 用户地址DTO
- *
- * @author FrozenWatermelon
- * @date 2020-12-07 15:50:02
- */
+
 public class UserAddrDTO {
     private static final long serialVersionUID = 1L;
 

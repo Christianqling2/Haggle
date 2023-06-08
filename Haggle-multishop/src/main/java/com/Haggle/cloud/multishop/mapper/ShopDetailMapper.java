@@ -1,20 +1,15 @@
-package com.mall4j.cloud.multishop.mapper;
+package com.Haggle.cloud.multishop.mapper;
 
-import com.mall4j.cloud.api.multishop.bo.EsShopDetailBO;
-import com.mall4j.cloud.multishop.dto.ShopDetailDTO;
-import com.mall4j.cloud.multishop.model.ShopDetail;
-import com.mall4j.cloud.api.multishop.vo.ShopDetailVO;
-import com.mall4j.cloud.multishop.vo.ShopDetailAppVO;
+import com.Haggle.cloud.api.multishop.bo.EsShopDetailBO;
+import com.Haggle.cloud.multishop.dto.ShopDetailDTO;
+import com.Haggle.cloud.multishop.model.ShopDetail;
+import com.Haggle.cloud.api.multishop.vo.ShopDetailVO;
+import com.Haggle.cloud.multishop.vo.ShopDetailAppVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
- * 店铺详情
- *
- * @author FrozenWatermelon
- * @date 2020-12-05 15:50:25
- */
+
 public interface ShopDetailMapper {
 
 	/**

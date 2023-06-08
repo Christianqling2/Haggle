@@ -1,13 +1,13 @@
-package com.mall4j.cloud.biz.mapper;
+package com.Haggle.cloud.biz.mapper;
 
-import com.mall4j.cloud.biz.model.AttachFileGroup;
-import com.mall4j.cloud.biz.vo.AttachFileGroupVO;
+import com.Haggle.cloud.biz.model.AttachFileGroup;
+import com.Haggle.cloud.biz.vo.AttachFileGroupVO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 /**
- * @author YXF
+ * /**/ YXF
  * @date 2020-12-04 16:15:02
  */
 public interface AttachFileGroupMapper {
